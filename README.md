@@ -1,3 +1,3 @@
-#Game
+# Game
 
 we make cool game
