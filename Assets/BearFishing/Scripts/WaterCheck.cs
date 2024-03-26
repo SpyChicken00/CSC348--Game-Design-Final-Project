@@ -19,17 +19,22 @@ public class WaterCheck : MonoBehaviour
     public eType boundsType = eType.center;                                   // a
     public float radius = 1f;
     public bool keepOnScreen = true;
+    public float waterLower;
+    public float waterUpper;
+    public float waterLeft;
+    public float waterRight;
 
     [Header("Dynamic")]
     public eScreenLocs screenLocs = eScreenLocs.onScreen;
-    public float waterWidth;
-    public float waterHeight;
+
     public GameObject waterfall;
 
     void Awake()
     {
-        waterHeight = Camera.main.ScreenToWorldPoint(Vector3.zero).y - waterfall.transform.position.y;                             // b
-        waterWidth = Screen.width;                            // c
+        waterLower = Camera.main.ScreenToWorldPoint(Vector3.zero).y;
+        waterUpper = waterfall.transform.position.y;
+        waterLeft = Camera.main.ScreenToWorldPoint(Vector3.zero).x;
+        waterRight = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0)).x;                         // c
     }
 
     void LateUpdate()
@@ -43,26 +48,26 @@ public class WaterCheck : MonoBehaviour
         screenLocs = eScreenLocs.onScreen;
 
         // Restrict the X position to camWidth
-        if (pos.x > waterWidth + checkRadius)
+        if (pos.x > waterRight + checkRadius)
         {                                  // c
-            pos.x = waterWidth + checkRadius;
+            pos.x = waterRight + checkRadius;
             screenLocs |= eScreenLocs.offRight;
         }
-        if (pos.x < -waterWidth - checkRadius)
+        if (pos.x < waterLeft - checkRadius)
         {                                 // c
-            pos.x = -waterWidth - checkRadius;                                   // c
+            pos.x = waterLeft - checkRadius;                                   // c
             screenLocs |= eScreenLocs.offLeft;
         }
 
         // Restrict the Y position to camHeight
-        if (pos.y > waterHeight + checkRadius)
+        if (pos.y > waterUpper + checkRadius)
         {                                 // c
-            pos.y = waterHeight + checkRadius;                                   // c
+            pos.y = waterUpper + checkRadius;                                   // c
             screenLocs |= eScreenLocs.offUp;
         }
-        if (pos.y < -waterHeight - checkRadius)
+        if (pos.y < waterLower - checkRadius)
         {                                // c
-            pos.y = -waterHeight - checkRadius;                                  // c
+            pos.y = waterLower - checkRadius;                                  // c
             screenLocs |= eScreenLocs.offDown;
         }
 
