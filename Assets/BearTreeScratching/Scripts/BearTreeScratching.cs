@@ -36,14 +36,7 @@ public class BearTreeScratching : MonoBehaviour
 
         // Sets and executes bear moves
         bearMoves = DecideBearMoves(movesQuantity);
-        StartCoroutine(Delay(startDelay));
         StartCoroutine(MakeBearMoves());
-    }
-
-    // delays actions for a set period at start
-    private IEnumerator Delay(float waitTime)
-    {
-            yield return new WaitForSeconds(waitTime);
     }
 
     // randomly selects bear moves
@@ -59,6 +52,10 @@ public class BearTreeScratching : MonoBehaviour
     // executes bear moves while pausing between each one
     private IEnumerator MakeBearMoves()
     {
+        // waits before start
+        yield return new WaitForSeconds(startDelay);
+
+        // makes moves
         for (int i = 0; i < bearMoves.Length; i++)
         {
             MoveBear(bearMoves[i]);
