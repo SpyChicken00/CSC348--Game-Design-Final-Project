@@ -18,12 +18,14 @@ public class Player : MonoBehaviour
         if(Input.GetKey(KeyCode.W))
         {
             //move player up
-            transform.position += new Vector3(0, 0.01f, 0);
+            if (transform.position.y < 4) {transform.position += new Vector3(0, 0.01f, 0);}
+            //4
         }
         if (Input.GetKey(KeyCode.S))
         {
             //move player down
-            transform.position += new Vector3(0, -0.01f, 0);
+            if (transform.position.y > -4.3) {transform.position += new Vector3(0, -0.01f, 0);}
+            //-4.3
         }
         if (Input.GetKey(KeyCode.A))
         {
