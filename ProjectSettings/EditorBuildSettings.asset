@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Hub/Hub.unity
+    guid: 65654e9b7f0ba4cef94fcd520af3ca1f
+  - enabled: 1
+    path: Assets/BearBrawling/Scenes/BearBrawling.unity
+    guid: 16a6c28adc286bf4c944fdd43a54cc7d
+  - enabled: 1
+    path: Assets/BearTreeScratching/BearTreeScratching.unity
+    guid: a3f9ad56de5a44026931ad261db8f140
   m_configObjects: {}

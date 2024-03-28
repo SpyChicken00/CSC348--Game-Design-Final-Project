@@ -1,238 +1,238 @@
 fileFormatVersion: 2
-guid: a298f6079ff694695a3a9c340995755a
+guid: 9b041f4fea0564c62be780e4f21fd538
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2202891253590962351
-    second: Forest-Pixel-Art-Environment-set3-720x480_0
+      213: 7641253463663106441
+    second: Forest-Pixel-Art-Environment-set2-720x480_0
   - first:
-      213: -6239729335582637726
-    second: Forest-Pixel-Art-Environment-set3-720x480_1
+      213: -789790058434515595
+    second: Forest-Pixel-Art-Environment-set2-720x480_1
   - first:
-      213: -7435806477262211024
-    second: Forest-Pixel-Art-Environment-set3-720x480_2
+      213: -3913498105567657631
+    second: Forest-Pixel-Art-Environment-set2-720x480_2
   - first:
-      213: -4431834638102635427
-    second: Forest-Pixel-Art-Environment-set3-720x480_3
+      213: -4879857602199352508
+    second: Forest-Pixel-Art-Environment-set2-720x480_3
   - first:
-      213: -2012953874915642549
-    second: Forest-Pixel-Art-Environment-set3-720x480_4
+      213: 1588209065393665230
+    second: Forest-Pixel-Art-Environment-set2-720x480_4
   - first:
-      213: -1897345209824565187
-    second: Forest-Pixel-Art-Environment-set3-720x480_5
+      213: 2926054884079144431
+    second: Forest-Pixel-Art-Environment-set2-720x480_5
   - first:
-      213: -7248226362665121713
-    second: Forest-Pixel-Art-Environment-set3-720x480_6
+      213: -8140436664062602988
+    second: Forest-Pixel-Art-Environment-set2-720x480_6
   - first:
-      213: -5042506470007664424
-    second: Forest-Pixel-Art-Environment-set3-720x480_7
+      213: 9088210510659258433
+    second: Forest-Pixel-Art-Environment-set2-720x480_7
   - first:
-      213: -5403546101236208125
-    second: Forest-Pixel-Art-Environment-set3-720x480_8
+      213: 2161858838296287373
+    second: Forest-Pixel-Art-Environment-set2-720x480_8
   - first:
-      213: 5822993631530663960
-    second: Forest-Pixel-Art-Environment-set3-720x480_9
+      213: 5277584809106494379
+    second: Forest-Pixel-Art-Environment-set2-720x480_9
   - first:
-      213: -8935102828310908589
-    second: Forest-Pixel-Art-Environment-set3-720x480_10
+      213: 8298081610480195357
+    second: Forest-Pixel-Art-Environment-set2-720x480_10
   - first:
-      213: 3852606569342577540
-    second: Forest-Pixel-Art-Environment-set3-720x480_11
+      213: 2674797568964329283
+    second: Forest-Pixel-Art-Environment-set2-720x480_11
   - first:
-      213: -6536852126828874878
-    second: Forest-Pixel-Art-Environment-set3-720x480_12
+      213: 7061266283859343501
+    second: Forest-Pixel-Art-Environment-set2-720x480_12
   - first:
-      213: -3538658043884280064
-    second: Forest-Pixel-Art-Environment-set3-720x480_13
+      213: 5444626589833973423
+    second: Forest-Pixel-Art-Environment-set2-720x480_13
   - first:
-      213: 359849505755636928
-    second: Forest-Pixel-Art-Environment-set3-720x480_14
+      213: 5627940503560242415
+    second: Forest-Pixel-Art-Environment-set2-720x480_14
   - first:
-      213: 844231760565662942
-    second: Forest-Pixel-Art-Environment-set3-720x480_15
+      213: -8355114830262674328
+    second: Forest-Pixel-Art-Environment-set2-720x480_15
   - first:
-      213: -2034387380506066015
-    second: Forest-Pixel-Art-Environment-set3-720x480_16
+      213: -1397799961644035489
+    second: Forest-Pixel-Art-Environment-set2-720x480_16
   - first:
-      213: 3068588488812630015
-    second: Forest-Pixel-Art-Environment-set3-720x480_17
+      213: -6161446963788574027
+    second: Forest-Pixel-Art-Environment-set2-720x480_17
   - first:
-      213: -8587283095037474539
-    second: Forest-Pixel-Art-Environment-set3-720x480_18
+      213: 7910793362796474945
+    second: Forest-Pixel-Art-Environment-set2-720x480_18
   - first:
-      213: -3751562117943697231
-    second: Forest-Pixel-Art-Environment-set3-720x480_19
+      213: 9059123695253662786
+    second: Forest-Pixel-Art-Environment-set2-720x480_19
   - first:
-      213: 1160641739913276935
-    second: Forest-Pixel-Art-Environment-set3-720x480_20
+      213: -8897865526144139831
+    second: Forest-Pixel-Art-Environment-set2-720x480_20
   - first:
-      213: 8817980651204087078
-    second: Forest-Pixel-Art-Environment-set3-720x480_21
+      213: -3870089263506823664
+    second: Forest-Pixel-Art-Environment-set2-720x480_21
   - first:
-      213: 8127800404905299969
-    second: Forest-Pixel-Art-Environment-set3-720x480_22
+      213: 5773745219211692801
+    second: Forest-Pixel-Art-Environment-set2-720x480_22
   - first:
-      213: 1639966531024351945
-    second: Forest-Pixel-Art-Environment-set3-720x480_23
+      213: -5305642379630514479
+    second: Forest-Pixel-Art-Environment-set2-720x480_23
   - first:
-      213: 9111491788233575743
-    second: Forest-Pixel-Art-Environment-set3-720x480_24
+      213: -4866682208307155519
+    second: Forest-Pixel-Art-Environment-set2-720x480_24
   - first:
-      213: -4386015002643472934
-    second: Forest-Pixel-Art-Environment-set3-720x480_25
+      213: 5684341912083796358
+    second: Forest-Pixel-Art-Environment-set2-720x480_25
   - first:
-      213: 8712726292363776898
-    second: Forest-Pixel-Art-Environment-set3-720x480_26
+      213: -2179254298441234777
+    second: Forest-Pixel-Art-Environment-set2-720x480_26
   - first:
-      213: -7516686367744276495
-    second: Forest-Pixel-Art-Environment-set3-720x480_27
+      213: 3029242891103005598
+    second: Forest-Pixel-Art-Environment-set2-720x480_27
   - first:
-      213: 670727327852426768
-    second: Forest-Pixel-Art-Environment-set3-720x480_28
+      213: -7918169127143671595
+    second: Forest-Pixel-Art-Environment-set2-720x480_28
   - first:
-      213: -1018625521290690411
-    second: Forest-Pixel-Art-Environment-set3-720x480_29
+      213: -5782652671839605109
+    second: Forest-Pixel-Art-Environment-set2-720x480_29
   - first:
-      213: -1650357031419860976
-    second: Forest-Pixel-Art-Environment-set3-720x480_30
+      213: -5187958604749147246
+    second: Forest-Pixel-Art-Environment-set2-720x480_30
   - first:
-      213: -8762482790972653617
-    second: Forest-Pixel-Art-Environment-set3-720x480_31
+      213: 5479684431481274939
+    second: Forest-Pixel-Art-Environment-set2-720x480_31
   - first:
-      213: 5242471096243701009
-    second: Forest-Pixel-Art-Environment-set3-720x480_32
+      213: -1331192426692518050
+    second: Forest-Pixel-Art-Environment-set2-720x480_32
   - first:
-      213: 5068227066118431115
-    second: Forest-Pixel-Art-Environment-set3-720x480_33
+      213: -7125901185694625681
+    second: Forest-Pixel-Art-Environment-set2-720x480_33
   - first:
-      213: -2185610313419693405
-    second: Forest-Pixel-Art-Environment-set3-720x480_34
+      213: 4609745373070357011
+    second: Forest-Pixel-Art-Environment-set2-720x480_34
   - first:
-      213: 3787345183826617192
-    second: Forest-Pixel-Art-Environment-set3-720x480_35
+      213: -5802006477469009097
+    second: Forest-Pixel-Art-Environment-set2-720x480_35
   - first:
-      213: -7868429755678020395
-    second: Forest-Pixel-Art-Environment-set3-720x480_36
+      213: 6280157085502878598
+    second: Forest-Pixel-Art-Environment-set2-720x480_36
   - first:
-      213: -7059348571001653460
-    second: Forest-Pixel-Art-Environment-set3-720x480_37
+      213: -2427663725342047101
+    second: Forest-Pixel-Art-Environment-set2-720x480_37
   - first:
-      213: -1175666396729340058
-    second: Forest-Pixel-Art-Environment-set3-720x480_38
+      213: 526022358926889417
+    second: Forest-Pixel-Art-Environment-set2-720x480_38
   - first:
-      213: 5273884042041357471
-    second: Forest-Pixel-Art-Environment-set3-720x480_39
+      213: 4291986012893053271
+    second: Forest-Pixel-Art-Environment-set2-720x480_39
   - first:
-      213: 5740948539852364181
-    second: Forest-Pixel-Art-Environment-set3-720x480_40
+      213: 7818074056036267939
+    second: Forest-Pixel-Art-Environment-set2-720x480_40
   - first:
-      213: -2110189503262747504
-    second: Forest-Pixel-Art-Environment-set3-720x480_41
+      213: -589576197571896677
+    second: Forest-Pixel-Art-Environment-set2-720x480_41
   - first:
-      213: 9003556708694977273
-    second: Forest-Pixel-Art-Environment-set3-720x480_42
+      213: -6791152812523996114
+    second: Forest-Pixel-Art-Environment-set2-720x480_42
   - first:
-      213: 7958549375453219712
-    second: Forest-Pixel-Art-Environment-set3-720x480_43
+      213: -5507005046624462990
+    second: Forest-Pixel-Art-Environment-set2-720x480_43
   - first:
-      213: 1495561811681125707
-    second: Forest-Pixel-Art-Environment-set3-720x480_44
+      213: -3661401016432194154
+    second: Forest-Pixel-Art-Environment-set2-720x480_44
   - first:
-      213: 8509024799725145847
-    second: Forest-Pixel-Art-Environment-set3-720x480_45
+      213: 966345862063075998
+    second: Forest-Pixel-Art-Environment-set2-720x480_45
   - first:
-      213: -6344485528669062937
-    second: Forest-Pixel-Art-Environment-set3-720x480_46
+      213: -8594760198389991501
+    second: Forest-Pixel-Art-Environment-set2-720x480_46
   - first:
-      213: -8330535948941323079
-    second: Forest-Pixel-Art-Environment-set3-720x480_47
+      213: -5874213357121229341
+    second: Forest-Pixel-Art-Environment-set2-720x480_47
   - first:
-      213: 8255919941263390608
-    second: Forest-Pixel-Art-Environment-set3-720x480_48
+      213: -1254707129568455124
+    second: Forest-Pixel-Art-Environment-set2-720x480_48
   - first:
-      213: -6305802918720288616
-    second: Forest-Pixel-Art-Environment-set3-720x480_49
+      213: 3915332183911741899
+    second: Forest-Pixel-Art-Environment-set2-720x480_49
   - first:
-      213: -2672724732979699203
-    second: Forest-Pixel-Art-Environment-set3-720x480_50
+      213: -918621183559336536
+    second: Forest-Pixel-Art-Environment-set2-720x480_50
   - first:
-      213: -3018943390102524506
-    second: Forest-Pixel-Art-Environment-set3-720x480_51
+      213: -3864131200583936870
+    second: Forest-Pixel-Art-Environment-set2-720x480_51
   - first:
-      213: 5331504087476374245
-    second: Forest-Pixel-Art-Environment-set3-720x480_52
+      213: -5703451931524204040
+    second: Forest-Pixel-Art-Environment-set2-720x480_52
   - first:
-      213: -2913036902340421031
-    second: Forest-Pixel-Art-Environment-set3-720x480_53
+      213: -4607490335535626420
+    second: Forest-Pixel-Art-Environment-set2-720x480_53
   - first:
-      213: -2345343861912941890
-    second: Forest-Pixel-Art-Environment-set3-720x480_54
+      213: 6176286816005015059
+    second: Forest-Pixel-Art-Environment-set2-720x480_54
   - first:
-      213: -5352596809367220469
-    second: Forest-Pixel-Art-Environment-set3-720x480_55
+      213: -563130628499003078
+    second: Forest-Pixel-Art-Environment-set2-720x480_55
   - first:
-      213: -5118494118836062657
-    second: Forest-Pixel-Art-Environment-set3-720x480_56
+      213: 534061278962449251
+    second: Forest-Pixel-Art-Environment-set2-720x480_56
   - first:
-      213: 3579898728390308659
-    second: Forest-Pixel-Art-Environment-set3-720x480_57
+      213: 7216131823904391614
+    second: Forest-Pixel-Art-Environment-set2-720x480_57
   - first:
-      213: 3487183864529553845
-    second: Forest-Pixel-Art-Environment-set3-720x480_58
+      213: -1017083769572527287
+    second: Forest-Pixel-Art-Environment-set2-720x480_58
   - first:
-      213: 6136148962649208084
-    second: Forest-Pixel-Art-Environment-set3-720x480_59
+      213: 3454658467327689157
+    second: Forest-Pixel-Art-Environment-set2-720x480_59
   - first:
-      213: -4861777568305620721
-    second: Forest-Pixel-Art-Environment-set3-720x480_60
+      213: -2269678723739196397
+    second: Forest-Pixel-Art-Environment-set2-720x480_60
   - first:
-      213: -4719026185593049883
-    second: Forest-Pixel-Art-Environment-set3-720x480_61
+      213: -1453663363865094641
+    second: Forest-Pixel-Art-Environment-set2-720x480_61
   - first:
-      213: -6992064054517592918
-    second: Forest-Pixel-Art-Environment-set3-720x480_62
+      213: -9204931894333968402
+    second: Forest-Pixel-Art-Environment-set2-720x480_62
   - first:
-      213: -9114814349052870983
-    second: Forest-Pixel-Art-Environment-set3-720x480_63
+      213: -3803962729191231104
+    second: Forest-Pixel-Art-Environment-set2-720x480_63
   - first:
-      213: -3850163085066370902
-    second: Forest-Pixel-Art-Environment-set3-720x480_64
+      213: -1359898723084006997
+    second: Forest-Pixel-Art-Environment-set2-720x480_64
   - first:
-      213: 1528345254200968319
-    second: Forest-Pixel-Art-Environment-set3-720x480_65
+      213: -7415162898560269779
+    second: Forest-Pixel-Art-Environment-set2-720x480_65
   - first:
-      213: 1695777593177347777
-    second: Forest-Pixel-Art-Environment-set3-720x480_66
+      213: 9121366882171187661
+    second: Forest-Pixel-Art-Environment-set2-720x480_66
   - first:
-      213: 7525929485970980431
-    second: Forest-Pixel-Art-Environment-set3-720x480_67
+      213: 1708357540320060262
+    second: Forest-Pixel-Art-Environment-set2-720x480_67
   - first:
-      213: -3887642680095921446
-    second: Forest-Pixel-Art-Environment-set3-720x480_68
+      213: -7924603590942238521
+    second: Forest-Pixel-Art-Environment-set2-720x480_68
   - first:
-      213: -1045751437717729484
-    second: Forest-Pixel-Art-Environment-set3-720x480_69
+      213: 80409613310342460
+    second: Forest-Pixel-Art-Environment-set2-720x480_69
   - first:
-      213: -5163599987199393981
-    second: Forest-Pixel-Art-Environment-set3-720x480_70
+      213: -4438682712251922647
+    second: Forest-Pixel-Art-Environment-set2-720x480_70
   - first:
-      213: 4563372105359708313
-    second: Forest-Pixel-Art-Environment-set3-720x480_71
+      213: -1978325342401805310
+    second: Forest-Pixel-Art-Environment-set2-720x480_71
   - first:
-      213: -6680558554448306984
-    second: Forest-Pixel-Art-Environment-set3-720x480_72
+      213: -2870596228016521331
+    second: Forest-Pixel-Art-Environment-set2-720x480_72
   - first:
-      213: 151876787594108824
-    second: Forest-Pixel-Art-Environment-set3-720x480_73
+      213: -8401717764332046594
+    second: Forest-Pixel-Art-Environment-set2-720x480_73
   - first:
-      213: 2598524544576672837
-    second: Forest-Pixel-Art-Environment-set3-720x480_74
+      213: 7841932092101031702
+    second: Forest-Pixel-Art-Environment-set2-720x480_74
   - first:
-      213: 460820699450850861
-    second: Forest-Pixel-Art-Environment-set3-720x480_75
+      213: 2659846914925363864
+    second: Forest-Pixel-Art-Environment-set2-720x480_75
   - first:
-      213: 2056034782248528295
-    second: Forest-Pixel-Art-Environment-set3-720x480_76
+      213: -3538686094524978841
+    second: Forest-Pixel-Art-Environment-set2-720x480_76
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -323,1618 +323,1623 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_0
+      name: Forest-Pixel-Art-Environment-set2-720x480_0
       rect:
         serializedVersion: 2
         x: 22
         y: 402
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15f45e68312cd61e0800000000000000
-      internalID: -2202891253590962351
+      spriteID: 989dc544a8f2b0a60800000000000000
+      internalID: 7641253463663106441
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_1
+      name: Forest-Pixel-Art-Environment-set2-720x480_1
       rect:
         serializedVersion: 2
         x: 84
         y: 402
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26143029a370869a0800000000000000
-      internalID: -6239729335582637726
+      spriteID: 57d20e7502a1a05f0800000000000000
+      internalID: -789790058434515595
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_2
+      name: Forest-Pixel-Art-Environment-set2-720x480_2
       rect:
         serializedVersion: 2
         x: 146
         y: 402
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 038bc30d765bec890800000000000000
-      internalID: -7435806477262211024
+      spriteID: 161c974253670b9c0800000000000000
+      internalID: -3913498105567657631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_3
+      name: Forest-Pixel-Art-Environment-set2-720x480_3
       rect:
         serializedVersion: 2
         x: 208
         y: 402
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5cde94a0e5fe72c0800000000000000
-      internalID: -4431834638102635427
+      spriteID: 44b0b6a8d53474cb0800000000000000
+      internalID: -4879857602199352508
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_4
+      name: Forest-Pixel-Art-Environment-set2-720x480_4
       rect:
         serializedVersion: 2
         x: 270
         y: 402
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b433868ad1d8014e0800000000000000
-      internalID: -2012953874915642549
+      spriteID: ec438d3fab37a0610800000000000000
+      internalID: 1588209065393665230
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_5
+      name: Forest-Pixel-Art-Environment-set2-720x480_5
       rect:
         serializedVersion: 2
         x: 332
         y: 402
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d382e1095964ba5e0800000000000000
-      internalID: -1897345209824565187
+      spriteID: fed85d60a6f6b9820800000000000000
+      internalID: 2926054884079144431
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_6
+      name: Forest-Pixel-Art-Environment-set2-720x480_6
       rect:
         serializedVersion: 2
         x: 394
         y: 402
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4849b1a680296b90800000000000000
-      internalID: -7248226362665121713
+      spriteID: 4119bf1ebfb570f80800000000000000
+      internalID: -8140436664062602988
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_7
+      name: Forest-Pixel-Art-Environment-set2-720x480_7
       rect:
         serializedVersion: 2
         x: 456
         y: 402
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d09595f41b650ab0800000000000000
-      internalID: -5042506470007664424
+      spriteID: 14801dbde4fcf1e70800000000000000
+      internalID: 9088210510659258433
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_8
+      name: Forest-Pixel-Art-Environment-set2-720x480_8
       rect:
         serializedVersion: 2
         x: 518
         y: 402
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30e6e5c337fb205b0800000000000000
-      internalID: -5403546101236208125
+      spriteID: d88503fc827700e10800000000000000
+      internalID: 2161858838296287373
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_9
+      name: Forest-Pixel-Art-Environment-set2-720x480_9
       rect:
         serializedVersion: 2
         x: 580
         y: 402
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -24.5, y: 24}
+        - {x: -24.5, y: 10}
+        - {x: 8.5, y: -24}
+        - {x: 24.5, y: -24}
+        - {x: 24.5, y: 24}
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8104fb83bdd6fc050800000000000000
-      internalID: 5822993631530663960
+      spriteID: ba35aca0c6fbd3940800000000000000
+      internalID: 5277584809106494379
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_10
+      name: Forest-Pixel-Art-Environment-set2-720x480_10
       rect:
         serializedVersion: 2
         x: 642
         y: 402
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 351b0fe5153200480800000000000000
-      internalID: -8935102828310908589
+      spriteID: d179fd57245b82370800000000000000
+      internalID: 8298081610480195357
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_11
+      name: Forest-Pixel-Art-Environment-set2-720x480_11
       rect:
         serializedVersion: 2
         x: 22
         y: 340
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48b20094345377530800000000000000
-      internalID: 3852606569342577540
+      spriteID: 34f7230a73ace1520800000000000000
+      internalID: 2674797568964329283
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_12
+      name: Forest-Pixel-Art-Environment-set2-720x480_12
       rect:
         serializedVersion: 2
         x: 84
         y: 340
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 283bb17df9f6845a0800000000000000
-      internalID: -6536852126828874878
+      spriteID: d88f0e1e548aef160800000000000000
+      internalID: 7061266283859343501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_13
+      name: Forest-Pixel-Art-Environment-set2-720x480_13
       rect:
         serializedVersion: 2
         x: 146
         y: 340
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 007e2b8f14924eec0800000000000000
-      internalID: -3538658043884280064
+      spriteID: fae43bd59033f8b40800000000000000
+      internalID: 5444626589833973423
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_14
+      name: Forest-Pixel-Art-Environment-set2-720x480_14
       rect:
         serializedVersion: 2
         x: 208
         y: 340
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c42a2b08317ef400800000000000000
-      internalID: 359849505755636928
+      spriteID: fe4cdb3e1167a1e40800000000000000
+      internalID: 5627940503560242415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_15
+      name: Forest-Pixel-Art-Environment-set2-720x480_15
       rect:
         serializedVersion: 2
         x: 270
         y: 340
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed47e94305057bb00800000000000000
-      internalID: 844231760565662942
+      spriteID: 86c5894445bac0c80800000000000000
+      internalID: -8355114830262674328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_16
+      name: Forest-Pixel-Art-Environment-set2-720x480_16
       rect:
         serializedVersion: 2
         x: 332
         y: 340
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a30661c47764c3e0800000000000000
-      internalID: -2034387380506066015
+      spriteID: f52172b37540a9ce0800000000000000
+      internalID: -1397799961644035489
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_17
+      name: Forest-Pixel-Art-Environment-set2-720x480_17
       rect:
         serializedVersion: 2
         x: 394
         y: 340
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fff8785f8f0d59a20800000000000000
-      internalID: 3068588488812630015
+      spriteID: 5b219f491a42e7aa0800000000000000
+      internalID: -6161446963788574027
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_18
+      name: Forest-Pixel-Art-Environment-set2-720x480_18
       rect:
         serializedVersion: 2
         x: 456
         y: 340
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 519039eb587d3d880800000000000000
-      internalID: -8587283095037474539
+      spriteID: 142700976a8c8cd60800000000000000
+      internalID: 7910793362796474945
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_19
+      name: Forest-Pixel-Art-Environment-set2-720x480_19
       rect:
         serializedVersion: 2
         x: 518
         y: 340
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b0672f5126cfebc0800000000000000
-      internalID: -3751562117943697231
+      spriteID: 24c2be7e00978bd70800000000000000
+      internalID: 9059123695253662786
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_20
+      name: Forest-Pixel-Art-Environment-set2-720x480_20
       rect:
         serializedVersion: 2
         x: 580
         y: 340
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70ea50b538d6b1010800000000000000
-      internalID: 1160641739913276935
+      spriteID: 9cdfbf6627e648480800000000000000
+      internalID: -8897865526144139831
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_21
+      name: Forest-Pixel-Art-Environment-set2-720x480_21
       rect:
         serializedVersion: 2
         x: 642
         y: 340
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62d894fbea2cf5a70800000000000000
-      internalID: 8817980651204087078
+      spriteID: 0166f97c15eaa4ac0800000000000000
+      internalID: -3870089263506823664
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_22
+      name: Forest-Pixel-Art-Environment-set2-720x480_22
       rect:
         serializedVersion: 2
         x: 22
         y: 278
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10018a3c76fbbc070800000000000000
-      internalID: 8127800404905299969
+      spriteID: 10b09beafa6702050800000000000000
+      internalID: 5773745219211692801
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_23
+      name: Forest-Pixel-Art-Environment-set2-720x480_23
       rect:
         serializedVersion: 2
         x: 84
         y: 278
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c27c3dfed452c610800000000000000
-      internalID: 1639966531024351945
+      spriteID: 1de6dd0cd529e56b0800000000000000
+      internalID: -5305642379630514479
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_24
+      name: Forest-Pixel-Art-Environment-set2-720x480_24
       rect:
         serializedVersion: 2
         x: 146
         y: 278
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3d0d83b185827e70800000000000000
-      internalID: 9111491788233575743
+      spriteID: 1cd632bf052167cb0800000000000000
+      internalID: -4866682208307155519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_25
+      name: Forest-Pixel-Art-Environment-set2-720x480_25
       rect:
         serializedVersion: 2
         x: 208
         y: 278
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: addd6ebd79eb123c0800000000000000
-      internalID: -4386015002643472934
+      spriteID: 6819e932ad6d2ee40800000000000000
+      internalID: 5684341912083796358
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_26
+      name: Forest-Pixel-Art-Environment-set2-720x480_26
       rect:
         serializedVersion: 2
         x: 270
         y: 278
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2839c81a662d9e870800000000000000
-      internalID: 8712726292363776898
+      spriteID: 7a6ca2203cbb1c1e0800000000000000
+      internalID: -2179254298441234777
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_27
+      name: Forest-Pixel-Art-Environment-set2-720x480_27
       rect:
         serializedVersion: 2
         x: 332
         y: 278
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f7c49ad29d5fa790800000000000000
-      internalID: -7516686367744276495
+      spriteID: e9b629e1c580a0a20800000000000000
+      internalID: 3029242891103005598
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_28
+      name: Forest-Pixel-Art-Environment-set2-720x480_28
       rect:
         serializedVersion: 2
         x: 394
         y: 278
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0167ac573f6ee4900800000000000000
-      internalID: 670727327852426768
+      spriteID: 5d8f22191230d1290800000000000000
+      internalID: -7918169127143671595
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_29
+      name: Forest-Pixel-Art-Environment-set2-720x480_29
       rect:
         serializedVersion: 2
         x: 456
         y: 278
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 590425c3c7d1dd1f0800000000000000
-      internalID: -1018625521290690411
+      spriteID: b8e69836804efbfa0800000000000000
+      internalID: -5782652671839605109
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_30
+      name: Forest-Pixel-Art-Environment-set2-720x480_30
       rect:
         serializedVersion: 2
         x: 518
         y: 278
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 018a6ad1601c819e0800000000000000
-      internalID: -1650357031419860976
+      spriteID: 293fe7ec22ba008b0800000000000000
+      internalID: -5187958604749147246
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_31
+      name: Forest-Pixel-Art-Environment-set2-720x480_31
       rect:
         serializedVersion: 2
         x: 580
         y: 278
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcff995c358656680800000000000000
-      internalID: -8762482790972653617
+      spriteID: b320ea335ffbb0c40800000000000000
+      internalID: 5479684431481274939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_32
+      name: Forest-Pixel-Art-Environment-set2-720x480_32
       rect:
         serializedVersion: 2
         x: 642
         y: 278
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 115cbdcafaff0c840800000000000000
-      internalID: 5242471096243701009
+      spriteID: e5f5d477a87a68de0800000000000000
+      internalID: -1331192426692518050
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_33
+      name: Forest-Pixel-Art-Environment-set2-720x480_33
       rect:
         serializedVersion: 2
         x: 22
         y: 216
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b81620df9a5f55640800000000000000
-      internalID: 5068227066118431115
+      spriteID: f60132250a6bb1d90800000000000000
+      internalID: -7125901185694625681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_34
+      name: Forest-Pixel-Art-Environment-set2-720x480_34
       rect:
         serializedVersion: 2
         x: 84
         y: 216
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a26033fff62ba1e0800000000000000
-      internalID: -2185610313419693405
+      spriteID: 312fbda4efa19ff30800000000000000
+      internalID: 4609745373070357011
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_35
+      name: Forest-Pixel-Art-Environment-set2-720x480_35
       rect:
         serializedVersion: 2
         x: 146
         y: 216
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 863a5c3e06a5f8430800000000000000
-      internalID: 3787345183826617192
+      spriteID: 73bb1fd59d12b7fa0800000000000000
+      internalID: -5802006477469009097
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_36
+      name: Forest-Pixel-Art-Environment-set2-720x480_36
       rect:
         serializedVersion: 2
         x: 208
         y: 216
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5dca2b073d8bdc290800000000000000
-      internalID: -7868429755678020395
+      spriteID: 6833d077899972750800000000000000
+      internalID: 6280157085502878598
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_37
+      name: Forest-Pixel-Art-Environment-set2-720x480_37
       rect:
         serializedVersion: 2
         x: 270
         y: 216
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c27f8cf60e7280e90800000000000000
-      internalID: -7059348571001653460
+      spriteID: 384c2e044b43f4ed0800000000000000
+      internalID: -2427663725342047101
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_38
+      name: Forest-Pixel-Art-Environment-set2-720x480_38
       rect:
         serializedVersion: 2
         x: 332
         y: 216
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66f859024a13fafe0800000000000000
-      internalID: -1175666396729340058
+      spriteID: 9c110c76c8ecc4700800000000000000
+      internalID: 526022358926889417
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_39
+      name: Forest-Pixel-Art-Environment-set2-720x480_39
       rect:
         serializedVersion: 2
         x: 394
         y: 216
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f94f9701899903940800000000000000
-      internalID: 5273884042041357471
+      spriteID: 7518f6fe982309b30800000000000000
+      internalID: 4291986012893053271
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_40
+      name: Forest-Pixel-Art-Environment-set2-720x480_40
       rect:
         serializedVersion: 2
         x: 456
         y: 216
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59992b7b742fbaf40800000000000000
-      internalID: 5740948539852364181
+      spriteID: 3a73db99ee06f7c60800000000000000
+      internalID: 7818074056036267939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_41
+      name: Forest-Pixel-Art-Environment-set2-720x480_41
       rect:
         serializedVersion: 2
         x: 518
         y: 216
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0941449b3d917b2e0800000000000000
-      internalID: -2110189503262747504
+      spriteID: b9a93bf629761d7f0800000000000000
+      internalID: -589576197571896677
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_42
+      name: Forest-Pixel-Art-Environment-set2-720x480_42
       rect:
         serializedVersion: 2
         x: 580
         y: 216
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9fa69d8af1f03fc70800000000000000
-      internalID: 9003556708694977273
+      spriteID: e2cbc128f7af0c1a0800000000000000
+      internalID: -6791152812523996114
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_43
+      name: Forest-Pixel-Art-Environment-set2-720x480_43
       rect:
         serializedVersion: 2
         x: 642
         y: 216
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08bcb43ad72727e60800000000000000
-      internalID: 7958549375453219712
+      spriteID: 2775aa366103393b0800000000000000
+      internalID: -5507005046624462990
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_44
+      name: Forest-Pixel-Art-Environment-set2-720x480_44
       rect:
         serializedVersion: 2
         x: 22
         y: 154
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b45a4ec3b8d41c410800000000000000
-      internalID: 1495561811681125707
+      spriteID: 69d0e4bac27103dc0800000000000000
+      internalID: -3661401016432194154
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_45
+      name: Forest-Pixel-Art-Environment-set2-720x480_45
       rect:
         serializedVersion: 2
         x: 84
         y: 154
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fe4b9cf8f0261670800000000000000
-      internalID: 8509024799725145847
+      spriteID: e92307e0176296d00800000000000000
+      internalID: 966345862063075998
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_46
+      name: Forest-Pixel-Art-Environment-set2-720x480_46
       rect:
         serializedVersion: 2
         x: 146
         y: 154
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e8f215b60cd3f7a0800000000000000
-      internalID: -6344485528669062937
+      spriteID: 3b77c45f22749b880800000000000000
+      internalID: -8594760198389991501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_47
+      name: Forest-Pixel-Art-Environment-set2-720x480_47
       rect:
         serializedVersion: 2
         x: 208
         y: 154
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b41bb601bdf36c80800000000000000
-      internalID: -8330535948941323079
+      spriteID: 3ed2fe9131a9a7ea0800000000000000
+      internalID: -5874213357121229341
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_48
+      name: Forest-Pixel-Art-Environment-set2-720x480_48
       rect:
         serializedVersion: 2
         x: 270
         y: 154
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0977111e17be29270800000000000000
-      internalID: 8255919941263390608
+      spriteID: c261cec6382669ee0800000000000000
+      internalID: -1254707129568455124
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_49
+      name: Forest-Pixel-Art-Environment-set2-720x480_49
       rect:
         serializedVersion: 2
         x: 332
         y: 154
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8984e0ea7a94d78a0800000000000000
-      internalID: -6305802918720288616
+      spriteID: bc9b6bf70ed065630800000000000000
+      internalID: 3915332183911741899
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_50
+      name: Forest-Pixel-Art-Environment-set2-720x480_50
       rect:
         serializedVersion: 2
         x: 394
         y: 154
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df1285c140398ead0800000000000000
-      internalID: -2672724732979699203
+      spriteID: 8adfbce86e66043f0800000000000000
+      internalID: -918621183559336536
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_51
+      name: Forest-Pixel-Art-Environment-set2-720x480_51
       rect:
         serializedVersion: 2
         x: 456
         y: 154
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6adece35bfe8a16d0800000000000000
-      internalID: -3018943390102524506
+      spriteID: a94d0b76529df5ac0800000000000000
+      internalID: -3864131200583936870
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_52
+      name: Forest-Pixel-Art-Environment-set2-720x480_52
       rect:
         serializedVersion: 2
         x: 518
         y: 154
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ea829458be4df940800000000000000
-      internalID: 5331504087476374245
+      spriteID: 8f9fbfbbfa449d0b0800000000000000
+      internalID: -5703451931524204040
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_53
+      name: Forest-Pixel-Art-Environment-set2-720x480_53
       rect:
         serializedVersion: 2
         x: 580
         y: 154
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95a156a0f50d297d0800000000000000
-      internalID: -2913036902340421031
+      spriteID: c478a5c83f7ee00c0800000000000000
+      internalID: -4607490335535626420
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_54
+      name: Forest-Pixel-Art-Environment-set2-720x480_54
       rect:
         serializedVersion: 2
         x: 642
         y: 154
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eba498a0f2aa37fd0800000000000000
-      internalID: -2345343861912941890
+      spriteID: 31648e2c22496b550800000000000000
+      internalID: 6176286816005015059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_55
+      name: Forest-Pixel-Art-Environment-set2-720x480_55
       rect:
         serializedVersion: 2
         x: 22
         y: 92
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0f07c7af81c7b5b0800000000000000
-      internalID: -5352596809367220469
+      spriteID: a39ac2e4dab5f28f0800000000000000
+      internalID: -563130628499003078
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_56
+      name: Forest-Pixel-Art-Environment-set2-720x480_56
       rect:
         serializedVersion: 2
         x: 84
         y: 92
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f36b9d5c7b477f8b0800000000000000
-      internalID: -5118494118836062657
+      spriteID: 36bf8d457ed596700800000000000000
+      internalID: 534061278962449251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_57
+      name: Forest-Pixel-Art-Environment-set2-720x480_57
       rect:
         serializedVersion: 2
         x: 146
         y: 92
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 333b3952dea5ea130800000000000000
-      internalID: 3579898728390308659
+      spriteID: eb1863049a9d42460800000000000000
+      internalID: 7216131823904391614
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_58
+      name: Forest-Pixel-Art-Environment-set2-720x480_58
       rect:
         serializedVersion: 2
         x: 208
         y: 92
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b902c7bf37f46030800000000000000
-      internalID: 3487183864529553845
+      spriteID: 94370d743b792e1f0800000000000000
+      internalID: -1017083769572527287
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_59
+      name: Forest-Pixel-Art-Environment-set2-720x480_59
       rect:
         serializedVersion: 2
         x: 270
         y: 92
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 415769788faf72550800000000000000
-      internalID: 6136148962649208084
+      spriteID: 5c1cc5d829961ff20800000000000000
+      internalID: 3454658467327689157
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_60
+      name: Forest-Pixel-Art-Environment-set2-720x480_60
       rect:
         serializedVersion: 2
         x: 332
         y: 92
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f095e287f0f778cb0800000000000000
-      internalID: -4861777568305620721
+      spriteID: 314634dd93b7080e0800000000000000
+      internalID: -2269678723739196397
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_61
+      name: Forest-Pixel-Art-Environment-set2-720x480_61
       rect:
         serializedVersion: 2
         x: 394
         y: 92
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5eca5f9cfa6a28eb0800000000000000
-      internalID: -4719026185593049883
+      spriteID: f0652d55fdc83dbe0800000000000000
+      internalID: -1453663363865094641
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_62
+      name: Forest-Pixel-Art-Environment-set2-720x480_62
       rect:
         serializedVersion: 2
         x: 456
         y: 92
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aac83b7b9c237fe90800000000000000
-      internalID: -6992064054517592918
+      spriteID: eef6f804633814080800000000000000
+      internalID: -9204931894333968402
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_63
+      name: Forest-Pixel-Art-Environment-set2-720x480_63
       rect:
         serializedVersion: 2
         x: 518
         y: 92
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bef11354aca18180800000000000000
-      internalID: -9114814349052870983
+      spriteID: 0813bb35d0c953bc0800000000000000
+      internalID: -3803962729191231104
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_64
+      name: Forest-Pixel-Art-Environment-set2-720x480_64
       rect:
         serializedVersion: 2
         x: 580
         y: 92
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa00c4bb219719ac0800000000000000
-      internalID: -3850163085066370902
+      spriteID: ba90210015ba02de0800000000000000
+      internalID: -1359898723084006997
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_65
+      name: Forest-Pixel-Art-Environment-set2-720x480_65
       rect:
         serializedVersion: 2
         x: 642
         y: 92
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f748dc249e5c53510800000000000000
-      internalID: 1528345254200968319
+      spriteID: d22c8a781ac081990800000000000000
+      internalID: -7415162898560269779
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_66
+      name: Forest-Pixel-Art-Environment-set2-720x480_66
       rect:
         serializedVersion: 2
         x: 22
         y: 30
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c617638cbc988710800000000000000
-      internalID: 1695777593177347777
+      spriteID: dc173dd2ada959e70800000000000000
+      internalID: 9121366882171187661
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_67
+      name: Forest-Pixel-Art-Environment-set2-720x480_67
       rect:
         serializedVersion: 2
         x: 84
         y: 30
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4e30ff4ef8717860800000000000000
-      internalID: 7525929485970980431
+      spriteID: 6632324b12e45b710800000000000000
+      internalID: 1708357540320060262
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_68
+      name: Forest-Pixel-Art-Environment-set2-720x480_68
       rect:
         serializedVersion: 2
         x: 146
         y: 30
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ada2c3f74915c0ac0800000000000000
-      internalID: -3887642680095921446
+      spriteID: 7c85a183507260290800000000000000
+      internalID: -7924603590942238521
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_69
+      name: Forest-Pixel-Art-Environment-set2-720x480_69
       rect:
         serializedVersion: 2
         x: 208
         y: 30
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43f0b77ab9ebc71f0800000000000000
-      internalID: -1045751437717729484
+      spriteID: c35b3e50e1cad1100800000000000000
+      internalID: 80409613310342460
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_70
+      name: Forest-Pixel-Art-Environment-set2-720x480_70
       rect:
         serializedVersion: 2
         x: 270
         y: 30
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34fb4c86b253758b0800000000000000
-      internalID: -5163599987199393981
+      spriteID: 9278e812791a662c0800000000000000
+      internalID: -4438682712251922647
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_71
+      name: Forest-Pixel-Art-Environment-set2-720x480_71
       rect:
         serializedVersion: 2
         x: 332
         y: 30
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99054e580ca545f30800000000000000
-      internalID: 4563372105359708313
+      spriteID: 204ccfb25939b84e0800000000000000
+      internalID: -1978325342401805310
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_72
+      name: Forest-Pixel-Art-Environment-set2-720x480_72
       rect:
         serializedVersion: 2
         x: 394
         y: 30
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8dc59ecc363e943a0800000000000000
-      internalID: -6680558554448306984
+      spriteID: d8fbf7f80f79928d0800000000000000
+      internalID: -2870596228016521331
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_73
+      name: Forest-Pixel-Art-Environment-set2-720x480_73
       rect:
         serializedVersion: 2
         x: 456
         y: 30
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89f9c2632239b1200800000000000000
-      internalID: 151876787594108824
+      spriteID: ef636e1253a176b80800000000000000
+      internalID: -8401717764332046594
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_74
+      name: Forest-Pixel-Art-Environment-set2-720x480_74
       rect:
         serializedVersion: 2
         x: 518
         y: 30
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54450a34e40df0420800000000000000
-      internalID: 2598524544576672837
+      spriteID: 617fa6e70b324dc60800000000000000
+      internalID: 7841932092101031702
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_75
+      name: Forest-Pixel-Art-Environment-set2-720x480_75
       rect:
         serializedVersion: 2
         x: 580
         y: 30
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2e3aef0cf9256600800000000000000
-      internalID: 460820699450850861
+      spriteID: 8928b093daca9e420800000000000000
+      internalID: 2659846914925363864
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Pixel-Art-Environment-set3-720x480_76
+      name: Forest-Pixel-Art-Environment-set2-720x480_76
       rect:
         serializedVersion: 2
         x: 642
         y: 30
-        width: 50
+        width: 49
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a965c9bdb0888c10800000000000000
-      internalID: 2056034782248528295
+      spriteID: 769693ceebf04eec0800000000000000
+      internalID: -3538686094524978841
       vertices: []
       indices: 
       edges: []
