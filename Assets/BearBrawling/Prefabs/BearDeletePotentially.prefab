@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8751490885895264039}
   m_Layer: 0
-  m_Name: Bear Empty
+  m_Name: BearDeletePotentially
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
