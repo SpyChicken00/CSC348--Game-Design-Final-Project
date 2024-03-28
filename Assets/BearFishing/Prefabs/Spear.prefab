@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 283360861735609099}
   - component: {fileID: -4842967729470834703}
   - component: {fileID: -7469966782532574412}
+  - component: {fileID: -6392832013949543251}
+  - component: {fileID: 7489898701894296548}
   m_Layer: 7
   m_Name: Spear
   m_TagString: Untagged
@@ -81,6 +83,39 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-6392832013949543251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886762557371864976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fffe66e8719c9c4a9fdfa316798fda2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boundsType: 2
+  radius: 1
+  keepOnScreen: 0
+  waterLower: 0
+  waterUpper: 0
+  waterLeft: 0
+  waterRight: 0
+  screenLocs: 0
+  waterfall: {fileID: 953600326714495015, guid: 5ec6ff03b5244534987aa2f161473a1e, type: 3}
+--- !u!114 &7489898701894296548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886762557371864976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccda00dae6e5e064391bcc0c5df80ec0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3546464416680007673
 GameObject:
   m_ObjectHideFlags: 0

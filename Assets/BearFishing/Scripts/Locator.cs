@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +13,8 @@ public class Locator : MonoBehaviour
     private bool isMoving;
     public GameObject spear;
     public float spearSpeed = 1;
+    private int SpearCount;
+    private bool haveSpear;
 
     void Awake()
     {
@@ -25,6 +28,7 @@ public class Locator : MonoBehaviour
         }
 
         isMoving = true;
+        haveSpear = false;
     }
 
     void Update()
@@ -42,31 +46,38 @@ public class Locator : MonoBehaviour
             transform.position = pos;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && !haveSpear)
         {
             isMoving = false;
             ShootHarpoon();
+            haveSpear = true;
         }
+
     }
 
-    public void ShootHarpoon()
+    public GameObject ShootHarpoon()
     {
         GameObject go = Instantiate<GameObject>(spear);
         go.transform.position = new Vector3(0, 3, 0);
         Rigidbody2D rigidB = go.GetComponent<Rigidbody2D>();
         Vector3 dvect = this.transform.position - go.transform.position;
         rigidB.velocity = dvect * spearSpeed;
+        return go;
     }
 
-    void OnCollisionEnter2D(Collision2D other)
+    void OnTriggerExit2D(Collider2D other)
     {
         GameObject otherGO = other.gameObject;                                 
-        if (otherGO.name == "Spear")
+        if (otherGO.name == "Spear(Clone)")
         {                
             Destroy(otherGO);      // Destroy the Spear
             isMoving = true;       // Let the locator move again
+            haveSpear= false;
         }
+    }
 
-        print(otherGO.gameObject.name);
+    public void Destroy()
+    {
+        Destroy(gameObject);
     }
 }
