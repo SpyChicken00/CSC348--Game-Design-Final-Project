@@ -5,8 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Transition : MonoBehaviour
 {
+    static public string[] GameList { get; private set; } = new string[] { "BearTreeScratching", "BearBrawling" };
+
     public Animator animator;
     public float transitionDelayTime = 1.0f;
+
 
     void Awake()
     {

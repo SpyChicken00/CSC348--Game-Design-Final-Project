@@ -180,6 +180,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d563abc6d7744e46a00b501491e45da, type: 3}
+--- !u!1 &768606641 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2761603656066757837, guid: 9d563abc6d7744e46a00b501491e45da, type: 3}
+  m_PrefabInstance: {fileID: 678685809}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &921518846
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,4 +283,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startDelay: 3
   moveDelay: 1
+  LevelManager: {fileID: 768606641}
   movesQuantity: 5

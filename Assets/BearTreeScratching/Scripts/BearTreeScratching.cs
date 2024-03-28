@@ -15,6 +15,8 @@ public class BearTreeScratching : MonoBehaviour
     public float startDelay;
     public float moveDelay;
 
+    public GameObject LevelManager;
+
     // How many moves in the level
     public int movesQuantity;
 
@@ -114,7 +116,12 @@ public class BearTreeScratching : MonoBehaviour
             }
             // if correctly played and all moves played, win
             else if (playerMoveIndex == movesQuantity - 1)
+            {
                 Debug.Log("Win!");
+                // This doesn't work as intended yet
+                // DONT FORGET TO FIX THIS HAYES!!!! - your past self
+                LevelManager.GetComponent<Transition>().LoadLevel(Transition.GameList[Random.Range(0, Transition.GameList.Length)]);
+            }
             // gives player feedback for correct
             else
             {
