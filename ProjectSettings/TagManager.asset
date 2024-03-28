@@ -12,9 +12,9 @@ TagManager:
   - Water
   - UI
   - Fish
-  - 
-  - 
-  - 
+  - Spear
+  - Locator
+  - MainCharacter
   - 
   - 
   - 
@@ -38,6 +38,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Transition
+    uniqueID: 2958992551
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
