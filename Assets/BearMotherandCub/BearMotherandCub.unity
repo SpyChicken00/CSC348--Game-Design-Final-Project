@@ -453,6 +453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2.5
+  startpoint: {fileID: 864807866}
 --- !u!1 &1422471930
 GameObject:
   m_ObjectHideFlags: 0

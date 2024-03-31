@@ -6,17 +6,6 @@ using UnityEngine;
 public class MainCharacter : MonoBehaviour
 {
     public float speed = 2.5f;
-    public GameObject startpoint;
-    // Start is called before the first frame update
-
-    private void Awake()
-    {
-        this.transform.position = startpoint.transform.position;
-    }
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
