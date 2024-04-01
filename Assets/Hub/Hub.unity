@@ -208,8 +208,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1343587123}
         m_TargetAssemblyTypeName: Transition, Assembly-CSharp
-        m_MethodName: LoadLevel
-        m_Mode: 5
+        m_MethodName: LoadRandomGame
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

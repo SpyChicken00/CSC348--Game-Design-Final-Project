@@ -14,6 +14,7 @@ public class BearRockPaperScissors : MonoBehaviour
     public TextMeshProUGUI winCounterText;
     public Difficulty difficulty = Difficulty.Easy;
     public int correctToWin = 3;
+    public GameObject LevelManager;
 
     public AudioClip brawlStartClip;
     public AudioClip  brawlLoopClip120;
@@ -213,7 +214,10 @@ public class BearRockPaperScissors : MonoBehaviour
             stopGame = true;
             playMusic(BrawlMusicClip.brawlVictoryClip);
             //TODO could insert win screen here
-            StartCoroutine(RestartGame(4.5f));
+
+            // Hayes here. I replaced the restart with selecting a random game when you win
+            LevelManager.GetComponent<Transition>().LoadRandomGame();
+            //StartCoroutine(RestartGame(4.5f));
         }
     }
 
