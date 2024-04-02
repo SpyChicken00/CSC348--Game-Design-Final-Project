@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     private GameObject head;
-    private bool keyDown;
+    public bool keyDown;
     private int holdCounter = 0;
     public int holdFrames = 100;
 
@@ -67,8 +67,10 @@ public class Player : MonoBehaviour
     {
         //Debug.Log("Colliding with branch");
         //if(keyDown && collider.compareTag("Branch"))
-        if(keyDown && holdCounter > holdFrames)
+        if (collider.gameObject.tag == "BranchLeft" || collider.gameObject.tag == "BranchRight")
         {
+            if(keyDown && holdCounter > holdFrames)
+            {
             //Debug.Log("Space key pressed");
             //decrease berry durability
             collider.gameObject.GetComponent<Branch>().DecreaseBerryDurability();
@@ -76,7 +78,9 @@ public class Player : MonoBehaviour
             //GetComponent..gameObject.GetComponent<Branch>().DecreaseBerryDurability();
             //StartCoroutine(waitForSeconds(3));
             //TODO how to decrease durabiliy with brief pause but enable holding button to continuously progress
+            }
         }
+        
 
 
 

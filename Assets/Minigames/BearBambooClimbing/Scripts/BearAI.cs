@@ -7,13 +7,16 @@ public class BearAI : MonoBehaviour
     private enum Movement { Up, Down, Wait }
     public enum Side { Left, Right }
     private Movement currentMovement = Movement.Wait;
-    private int timer = 0;
+    private int timeBeforeMove = 0;
+    private bool keyDown;
+
     //private Side defaultSide;
     
     
     [SerializeField]
     public Side currentSide;
     public float movementSpeed = 0.01f;
+    public float timeBeforeAttack = 1;
 
     void Start() {
         //defaultSide = currentSide;
@@ -22,13 +25,13 @@ public class BearAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (timer >= 120) {
+        if (timeBeforeMove >= 120) {
             ChooseRandomMovement();
             ChooseSide();
-            timer = 0;
+            timeBeforeMove = 0;
         }
         else {
-            timer += 1;
+            timeBeforeMove += 1;
         }
 
         switch (currentMovement) {
@@ -41,6 +44,9 @@ public class BearAI : MonoBehaviour
             case Movement.Wait:
                 break;
         }
+
+        keyDown = Input.GetKey(KeyCode.Space);
+       
   }
 
     private void ChooseRandomMovement() {
@@ -84,6 +90,24 @@ public class BearAI : MonoBehaviour
     //TODO check for collision with line of sight and player
     private void enterLineOfSight() {
         //if player is in line of sight, start countdown to attack 
+    }
+
+
+    private void OnTriggerStay2D(Collider2D other) {
+            Debug.Log("Bear sees player");
+            //if player is in line of sight, start countdown to attack 
+            timeBeforeAttack -= 1 * Time.deltaTime;
+            if (timeBeforeAttack <= 0 && keyDown) {
+                //attack player
+                Debug.Log("Bear attacks player");
+            }
+
+    }
+
+    private void OnTriggerExit2D(Collider2D other) {
+            //if player is out of line of sight, stop countdown to attack
+            timeBeforeAttack = 3;
+        
     }
 
     //bears move up and down their trees at random intervals
