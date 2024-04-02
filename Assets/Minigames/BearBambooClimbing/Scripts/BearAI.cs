@@ -8,6 +8,7 @@ public class BearAI : MonoBehaviour
     public enum Side { Left, Right }
     private Movement currentMovement = Movement.Wait;
     private int timeBeforeMove = 0;
+    private int updateTime = 180;
     private bool keyDown;
 
     //private Side defaultSide;
@@ -25,7 +26,7 @@ public class BearAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (timeBeforeMove >= 120) {
+        if (timeBeforeMove >= updateTime) {
             ChooseRandomMovement();
             ChooseSide();
             timeBeforeMove = 0;

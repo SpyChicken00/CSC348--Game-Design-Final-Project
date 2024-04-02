@@ -445,7 +445,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 516321949}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -664,7 +664,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 772898776}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -1107,6 +1107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad7bae0c4302d8645bf6f07465bcc191, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keyDown: 0
   holdFrames: 100
 --- !u!50 &1469788366
 Rigidbody2D:
@@ -1168,6 +1169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentSide: 0
   movementSpeed: 0.01
+  timeBeforeAttack: 3
 --- !u!50 &1705633852
 Rigidbody2D:
   serializedVersion: 4
@@ -1350,6 +1352,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentSide: 1
   movementSpeed: 0.01
+  timeBeforeAttack: 3
 --- !u!50 &2129445665
 Rigidbody2D:
   serializedVersion: 4

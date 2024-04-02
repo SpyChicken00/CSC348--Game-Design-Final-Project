@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: -8897380810331727728}
   m_Layer: 7
   m_Name: BranchLeft
-  m_TagString: Untagged
+  m_TagString: Branch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
