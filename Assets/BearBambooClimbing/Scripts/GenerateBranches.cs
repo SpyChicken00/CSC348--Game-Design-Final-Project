@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class GenerateBranches : MonoBehaviour
 {
+    private const float MAX_HEIGHT = 1.46f;
+    private const float MIN_HEIGHT = -8.2f;
+    private float treeLocation;
+    
     [SerializeField]
     int branchNum = 5;
     public GameObject branchPrefabLeft;
-    public GameObject branchPrefabRight;   
+    public GameObject branchPrefabRight;  
+    
 
-    // Start is called before the first frame update
+    //TODO - check for overlapping branches
     void Start()
     {
+        treeLocation = this.transform.position.x;
         // Instantiate branchNum branches at random positions
         for (int i = 0; i < branchNum; i++)
         {
@@ -19,12 +25,12 @@ public class GenerateBranches : MonoBehaviour
             if (Random.Range(0, 2) == 0)
             {
                 // Instantiate Left at random position and zero rotation.
-                Instantiate(branchPrefabLeft, new Vector3(Random.Range(-0.1f, 0.1f), Random.Range(-5, 5), 0.5f), Quaternion.identity);
+                Instantiate(branchPrefabLeft, new Vector3(Random.Range(treeLocation - 0.1f, treeLocation + 0.1f), Random.Range(MIN_HEIGHT, MAX_HEIGHT), 1), Quaternion.identity);
             }
             else
             {
                 // Instantiate Right at random position and zero rotation.
-                Instantiate(branchPrefabRight, new Vector3(Random.Range(-0.6f, 0), Random.Range(-12, 0), 0.5f), Quaternion.identity);
+                Instantiate(branchPrefabRight, new Vector3(Random.Range(treeLocation -0.6f, treeLocation), Random.Range(MIN_HEIGHT, MAX_HEIGHT), 1), Quaternion.identity);
             }
             
         }
@@ -32,7 +38,7 @@ public class GenerateBranches : MonoBehaviour
     }
 }
 
-//TODO - suitable range relative to tree rather than worldspace
+
 //TODO - check for overlapping branches
 //TODO - check for branches on different y levels
 
