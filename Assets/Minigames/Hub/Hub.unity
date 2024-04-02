@@ -705,9 +705,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelManager
       objectReference: {fileID: 0}
-    - target: {fileID: 3552310248509315280, guid: 9d563abc6d7744e46a00b501491e45da, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d563abc6d7744e46a00b501491e45da, type: 3}

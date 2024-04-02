@@ -216,6 +216,7 @@ public class BearRockPaperScissors : MonoBehaviour
             //TODO could insert win screen here
 
             // Hayes here. I replaced the restart with selecting a random game when you win
+            ScoreCounter.score += 1;
             StartCoroutine(LevelManager.GetComponent<Transition>().DelayLoadRandomGame(4.5f));
             //StartCoroutine(RestartGame(4.5f));
         }
