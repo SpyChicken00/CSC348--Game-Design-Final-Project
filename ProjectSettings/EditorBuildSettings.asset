@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Minigames/BearTreeScratching/BearTreeScratching.unity
     guid: a3f9ad56de5a44026931ad261db8f140
+  - enabled: 1
+    path: Assets/Minigames/BearBambooClimbing/BearBambooClimbing.unity
+    guid: 11e6c619003a14547876eb3e628ee5a5
+  - enabled: 1
+    path: Assets/Minigames/BearFishing/Scenes/BearFishing.unity
+    guid: fc9e4a111103b5f46975c95e4266a455
+  - enabled: 1
+    path: Assets/Minigames/BearMotherandCub/BearMotherandCub.unity
+    guid: c87c424d4928c5a48804e3615be5aa84
   m_configObjects: {}
