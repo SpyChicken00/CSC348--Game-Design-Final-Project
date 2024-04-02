@@ -17,15 +17,22 @@ public class Transition : MonoBehaviour
         animator = GameObject.Find("Transition").GetComponent<Animator>();
     }
 
+    // Loads the input level
     public void LoadLevel(string newLevel)
     {
         StartCoroutine(DelayLoadLevel(newLevel));
     }
 
+    // Loads random game with a delay
+    public IEnumerator DelayLoadRandomGame(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        LoadRandomGame();
+    }
+
+    // Loads a random level from the GameList
     public void LoadRandomGame()
     {
-        Debug.Log(LastGamePlayed);
-
         //select a random game
         int gameIndex = Random.Range(0, Transition.GameList.Length);
 
@@ -38,6 +45,7 @@ public class Transition : MonoBehaviour
         LoadLevel(Transition.GameList[gameIndex]);
     }
 
+    // Loads the level with a delay
     IEnumerator DelayLoadLevel(string newLevel)
     {
         animator.SetTrigger("TriggerTransition");
