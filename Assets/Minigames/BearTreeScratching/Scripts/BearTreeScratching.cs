@@ -118,6 +118,7 @@ public class BearTreeScratching : MonoBehaviour
             else if (playerMoveIndex == movesQuantity - 1)
             {
                 Debug.Log("Win!");
+                ScoreCounter.score += 1;
                 LevelManager.GetComponent<Transition>().LoadRandomGame();
             }
             // gives player feedback for correct
