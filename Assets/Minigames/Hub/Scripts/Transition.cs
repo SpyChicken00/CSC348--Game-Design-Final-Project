@@ -15,6 +15,27 @@ public class Transition : MonoBehaviour
     void Awake()
     {
         animator = GameObject.Find("Transition").GetComponent<Animator>();
+
+        // does not show stats if we are in the hub, resets stats in hub
+        bool isHub = SceneManager.GetActiveScene().name == "Hub";
+        LivesCounter.show = !isHub;
+        ScoreCounter.show = !isHub;
+        HighScore.show = !isHub;
+
+        if (isHub)
+        {
+            LivesCounter.lives = 3;
+            ScoreCounter.score = 0;
+        }
+    }
+
+    public void LoseMiniGame(float delay)
+    {
+        LivesCounter.lives -= 1;
+        if (LivesCounter.lives <= 0)
+            LoadLevel("Hub");
+        else
+            DelayLoadRandomGame(delay);
     }
 
     public void WinMiniGame(float delay)

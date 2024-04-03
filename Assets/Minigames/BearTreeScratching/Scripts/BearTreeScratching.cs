@@ -90,11 +90,12 @@ public class BearTreeScratching : MonoBehaviour
     // Controls player actions
     void Update()
     {
+        // if incorrect key or all moves have been played, do nothing
         if (!Input.GetKeyDown("right") && !Input.GetKeyDown("up") && !Input.GetKeyDown("left") && !Input.GetKeyDown("down") || playerMoveIndex >= movesQuantity)
             return;
 
         // If a player plays while the bear is acting, lose
-        if(Input.anyKeyDown && Time.time - startTime < bearMovesEndTime) { Debug.Log("early press: lose"); }
+        if(Input.anyKeyDown && Time.time - startTime < bearMovesEndTime) { Lose(); return; }
 
         // If a key was hit, player acts
         if (Input.anyKeyDown)
@@ -116,15 +117,13 @@ public class BearTreeScratching : MonoBehaviour
             {
                 Debug.Log("incorrect play: lose");
                 Debug.Log("The correct answer was " + bearMoves[playerMoveIndex]);
+                Lose();
+                return;
             }
             // if correctly played and all moves played, win
             else if (playerMoveIndex == movesQuantity - 1)
             {
-                playerMoveIndex += 1;
-                Debug.Log("Win!");
-                ScoreCounter.score += 1;
-                HighScore.TRY_SET_HIGH_SCORE(ScoreCounter.score);
-                LevelManager.GetComponent<Transition>().LoadRandomGame();
+                Win();
             }
             // gives player feedback for correct
             else
@@ -133,5 +132,22 @@ public class BearTreeScratching : MonoBehaviour
                 Debug.Log("Correct " + playerMoveIndex);
             }
         }
+    }
+
+    public void Lose()
+    {
+        LevelManager.GetComponent<Transition>().LoseMiniGame(0);
+
+        // prevents additional presses for double lives loss
+        playerMoveIndex = movesQuantity;
+    }
+
+    public void Win()
+    {
+        playerMoveIndex += 1;
+        Debug.Log("Win!");
+        ScoreCounter.score += 1;
+        HighScore.TRY_SET_HIGH_SCORE(ScoreCounter.score);
+        LevelManager.GetComponent<Transition>().LoadRandomGame();
     }
 }

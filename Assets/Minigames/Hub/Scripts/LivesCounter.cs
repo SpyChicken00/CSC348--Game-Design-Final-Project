@@ -4,23 +4,24 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class ScoreCounter : MonoBehaviour
+public class LivesCounter : MonoBehaviour
 {
     [Header("Dynamic")]
-    public static int score = 0;
+    public static int lives = 3;
     public TextMeshProUGUI uiText;
-    public static bool show;
+    public static bool show = true;
     // c
 
     void Start()
     {
-        uiText.text = "Score: " + score.ToString("#,0");
+        uiText.text = "Lives: " + lives.ToString("#,0");
+
         uiText.enabled = show;
     }
 
     void Update()
     {
-        uiText.text = "Score: " + score.ToString("#,0");
+        uiText.text = "Lives: " + lives.ToString("#,0");
         uiText.enabled = show;
     }
 }
