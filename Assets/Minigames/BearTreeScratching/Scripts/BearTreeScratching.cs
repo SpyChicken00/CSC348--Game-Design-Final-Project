@@ -90,6 +90,9 @@ public class BearTreeScratching : MonoBehaviour
     // Controls player actions
     void Update()
     {
+        if (!Input.GetKeyDown("right") && !Input.GetKeyDown("up") && !Input.GetKeyDown("left") && !Input.GetKeyDown("down") || playerMoveIndex >= movesQuantity)
+            return;
+
         // If a player plays while the bear is acting, lose
         if(Input.anyKeyDown && Time.time - startTime < bearMovesEndTime) { Debug.Log("early press: lose"); }
 
@@ -117,8 +120,10 @@ public class BearTreeScratching : MonoBehaviour
             // if correctly played and all moves played, win
             else if (playerMoveIndex == movesQuantity - 1)
             {
+                playerMoveIndex += 1;
                 Debug.Log("Win!");
                 ScoreCounter.score += 1;
+                HighScore.TRY_SET_HIGH_SCORE(ScoreCounter.score);
                 LevelManager.GetComponent<Transition>().LoadRandomGame();
             }
             // gives player feedback for correct

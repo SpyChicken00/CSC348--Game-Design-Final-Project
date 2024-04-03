@@ -67,7 +67,7 @@ public class Player : MonoBehaviour
     {
         //Debug.Log("Colliding with branch");
         //if(keyDown && collider.compareTag("Branch"))
-        if (collider.gameObject.tag == "BranchLeft" || collider.gameObject.tag == "BranchRight")
+        if (collider.gameObject.tag == "Branch")
         {
             if(keyDown && holdCounter > holdFrames)
             {
