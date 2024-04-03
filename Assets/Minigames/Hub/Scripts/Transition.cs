@@ -17,14 +17,17 @@ public class Transition : MonoBehaviour
         animator = GameObject.Find("Transition").GetComponent<Animator>();
     }
 
-    // Loads the input level
-    public void LoadLevel(string newLevel)
+    public void WinMiniGame(float delay)
     {
-        StartCoroutine(DelayLoadLevel(newLevel));
+        ScoreCounter.score += 1;
+        DelayLoadRandomGame(delay);
     }
 
+    // Loads random level with a delay
+    public void DelayLoadRandomGame(float delay) { StartCoroutine(_DelayLoadRandomGame(delay)); }
+
     // Loads random game with a delay
-    public IEnumerator DelayLoadRandomGame(float delay)
+    public IEnumerator _DelayLoadRandomGame(float delay)
     {
         yield return new WaitForSeconds(delay);
         LoadRandomGame();
@@ -43,6 +46,12 @@ public class Transition : MonoBehaviour
         //set the last game played to the game that will be played, then play the game
         LastGamePlayed = gameIndex;
         LoadLevel(Transition.GameList[gameIndex]);
+    }
+
+    // Loads the input level
+    public void LoadLevel(string newLevel)
+    {
+        StartCoroutine(DelayLoadLevel(newLevel));
     }
 
     // Loads the level with a delay
