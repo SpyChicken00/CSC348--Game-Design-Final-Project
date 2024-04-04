@@ -202,17 +202,17 @@ GameObject:
   m_Component:
   - component: {fileID: 256850302}
   - component: {fileID: 256850301}
-  - component: {fileID: 256850300}
   - component: {fileID: 256850303}
-  m_Layer: 0
+  - component: {fileID: 256850300}
+  m_Layer: 9
   m_Name: Main Character
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!58 &256850300
-CircleCollider2D:
+--- !u!61 &256850300
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -225,8 +225,18 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.3
+  m_Size: {x: 0.75, y: 0.75}
+  m_EdgeRadius: 0
 --- !u!212 &256850301
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -312,7 +322,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 3
+  m_Constraints: 0
 --- !u!1 &444919738
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,7 +465,8 @@ MonoBehaviour:
   enemySpawnPerSecond: 0.5
   enemyInsetDefault: 1.5
   spear: {fileID: 0}
-  loc: {fileID: 4108086129851512541, guid: 06531bdf27c2dfa498e208d50d44fd2f, type: 3}
+  loc: {fileID: 1748556318}
+  mainCharacter: {fileID: 0}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -733,6 +744,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 636c90d0bdc4b2949be24351fc40c343, type: 3}
+--- !u!1 &1748556318 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4108086129851512541, guid: 06531bdf27c2dfa498e208d50d44fd2f, type: 3}
+  m_PrefabInstance: {fileID: 890636219}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2055855712
 PrefabInstance:
   m_ObjectHideFlags: 0

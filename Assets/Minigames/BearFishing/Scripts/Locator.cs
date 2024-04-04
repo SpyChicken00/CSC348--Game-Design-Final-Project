@@ -76,8 +76,10 @@ public class Locator : MonoBehaviour
         }
     }
 
-    public void Destroy()
+    public void reanimate()
     {
-        Destroy(gameObject);
+        isMoving = true;
+        haveSpear = false;
     }
+
 }

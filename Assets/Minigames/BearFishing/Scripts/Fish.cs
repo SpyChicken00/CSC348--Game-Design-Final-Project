@@ -13,6 +13,7 @@ public class Fish : MonoBehaviour
     public GameObject InterpPoint;
     protected bool isCaught;
     protected bool shouldfall = false;
+    protected bool stopfall = false;
 
 
     void Awake()
@@ -67,17 +68,20 @@ public class Fish : MonoBehaviour
             Destroy(go);
             isCaught = true;
         }
+        
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
         GameObject go = collision.gameObject;
-        if (go.CompareTag("MainCharacter"))
+        if (go.name == "Main Character")
         {
-            //this.transform.position = go.transform.position;
-            //Invoke("WinScreen()", 3);
+            if (Input.GetKeyDown(KeyCode.Space) && shouldfall)
+            {
+                this.transform.position = collision.transform.position;
+                stopfall = true;
+            }
         }
-        print("collide");
     }
 
     private void CaughtMove()
@@ -87,8 +91,8 @@ public class Fish : MonoBehaviour
             Vector3 mvmtVtr = InterpPoint.transform.position - this.transform.position;
             pos += 2* mvmtVtr * Time.deltaTime;
         }
-        else
-        {
+        else if(shouldfall && !stopfall)
+        { 
             pos -= new Vector3(0, 4, 0) * Time.deltaTime;
         }
     }
