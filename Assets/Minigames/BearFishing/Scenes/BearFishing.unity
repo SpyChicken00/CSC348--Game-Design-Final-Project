@@ -460,8 +460,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabFish:
-  - {fileID: 6085708318493675019, guid: f3bb98b5c6206874ba2a86cfb3e99fb5, type: 3}
-  - {fileID: 1997592356888509114, guid: 907539cd4735fa04d91ddbc88379cf03, type: 3}
+  - {fileID: 1905734792953259560, guid: afed25f05e77f114db34680f1b713118, type: 3}
+  - {fileID: 1524997001653095334, guid: 4a4ebb7f2e4987b45b455db132457970, type: 3}
   enemySpawnPerSecond: 0.5
   enemyInsetDefault: 1.5
   spear: {fileID: 0}

@@ -67,7 +67,6 @@ public class Main : MonoBehaviour
         {
             if (obj.GetComponent<WaterCheck>().LocIs(WaterCheck.eScreenLocs.offDown))
             {
-                print("offScreen");
                 Destroy(obj);
                 reanimateLocator();
             }
