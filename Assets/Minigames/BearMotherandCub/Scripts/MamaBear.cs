@@ -6,78 +6,77 @@ using UnityEngine.Scripting.APIUpdating;
 
 public class MamaBear : MonoBehaviour
 {
-    public int numChildren;
-    public GameObject baby;
-    public float radius;
-    public enum Movement{ Left, Right, Up, Down, Stay }
-    public Movement[] mvmtChoices;
-    public float speed;
-    public float _time;
-    public float _interval = 2f;
-    public Movement choice;
+    protected static Vector2[] directions = new Vector2[] {                  // a
+        Vector2.right, Vector2.up, Vector2.left, Vector2.down, Vector2.zero };
+    protected float _time;
+    protected Rigidbody2D rigid;
+    protected BabyBear myBaby;
 
-    public Vector3 pos
-    {                                                       // a
-        get
-        {
-            return this.transform.position;
-        }
-        set
-        {
-            this.transform.position = value;
-        }
+    [Header("Inscribed")]
+    public GameObject babyPrefab;
+    public float speed = 0.5f;
+    public float radius = 10;
+    public float timeThinkMin = 1f;
+    public float timeThinkMax = 4f;
+
+    [Header("Dynamic")]
+    public Vector2 facing;
+    public float timeNextDecision = 0;
+
+    public Vector2 pos
+    {
+        get { return this.transform.position; }
+        set { this.transform.position = value; }
     }
 
-    // Start is called before the first frame update
     void Start()
     {
-        GenerateBaby(numChildren);
-        choice = ChooseDirMove();
+        rigid = GetComponent<Rigidbody2D>();
+        GenerateBaby();
+        DecideDirection();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        _time += Time.deltaTime;
-        while (_time >= _interval)
-        {
-            choice = ChooseDirMove();
-            _time -= _interval;
-        }
+        // if enough time passes, randomize direction
+        if (Time.time >= timeNextDecision)
+            DecideDirection();
 
-        Vector3 tempPos = pos;
-        switch (choice)
-        {
-            case Movement.Left:
-                tempPos.x -= speed * Time.deltaTime;
-                break;
-            case Movement.Right:
-                tempPos.x += speed * Time.deltaTime;
-                break;
-            case Movement.Up:
-                tempPos.y += speed * Time.deltaTime;
-                break;
-            case Movement.Down:
-                tempPos.y -= speed * Time.deltaTime;
-                break;
-            case Movement.Stay:
-                break;
-        }
+        // move in the direction faced
+        rigid.velocity = facing * speed;
+        Vector2 tempPos = pos;
         pos = tempPos;
     }
 
-        private void GenerateBaby(int children)
+    // sets a random direction, or staying stationary
+    void DecideDirection()
     {
-        for(int i = 0; i < numChildren; i++)
+        float sqrdDistance = (pos - myBaby.pos).sqrMagnitude;
+
+        // if twice as far as radius, move towards cub, closer than radius, move away, else move random
+        if (sqrdDistance > Mathf.Pow(radius * 2, 2))
         {
-            GameObject go = Instantiate<GameObject>(baby);
-            go.transform.position = this.transform.position;
+            Debug.Log("GET OVER HERE");
+            facing = (myBaby.pos - pos).normalized;
         }
+        else if (sqrdDistance < Mathf.Pow(radius, 2))
+        {
+            Debug.Log("#NotAHelicopter");
+            facing = -(myBaby.pos - pos).normalized;
+        }
+        else
+        {
+            Debug.Log("What is parenting?");
+            facing = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
+        }
+
+        timeNextDecision = Time.time + Random.Range(timeThinkMin, timeThinkMax);
     }
 
-    private Movement ChooseDirMove()
+    private void GenerateBaby()
     {
-        //Choose a direction to move
-        return mvmtChoices[Random.Range(0, mvmtChoices.Length)];
+        GameObject go = Instantiate<GameObject>(babyPrefab);
+        go.transform.position = this.transform.position;
+        myBaby = go.GetComponent<BabyBear>();
     }
 }

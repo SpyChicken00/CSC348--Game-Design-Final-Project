@@ -18,8 +18,8 @@ public class MainCharacter : MonoBehaviour
     void Update()
     {
             // Pull in information from the Input class
-            float hAxis = Input.GetAxis("Horizontal");                            // d
-            float vAxis = Input.GetAxis("Vertical");                              // d
+            float hAxis = Input.GetAxis("Horizontal");
+            float vAxis = Input.GetAxis("Vertical");
 
             // Change transform.position based on the axes
             Vector3 pos = transform.position;
