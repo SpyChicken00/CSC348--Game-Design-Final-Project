@@ -73,8 +73,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1335974745
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7028616704906629411, guid: 2f5ebf7fe3322425096ed9b73beabd70, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fffe66e8719c9c4a9fdfa316798fda2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boundsType: 0
+  boundsType: 2
   radius: 1
   keepOnScreen: 0
   waterLower: 0
@@ -165,7 +165,7 @@ MonoBehaviour:
   waterLeft: 0
   waterRight: 0
   screenLocs: 0
-  waterfall: {fileID: 953600326714495015, guid: 5ec6ff03b5244534987aa2f161473a1e, type: 3}
+  waterfall: {fileID: 4839901419586385647, guid: 5ec6ff03b5244534987aa2f161473a1e, type: 3}
 --- !u!114 &8052010536430410480
 MonoBehaviour:
   m_ObjectHideFlags: 0
