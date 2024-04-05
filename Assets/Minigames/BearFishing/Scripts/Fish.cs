@@ -76,7 +76,7 @@ public class Fish : MonoBehaviour
         GameObject go = collision.gameObject;
         if (go.name == "Main Character")
         {
-            if (Input.GetKeyDown(KeyCode.Space) && shouldfall)
+            if (Input.GetKey(KeyCode.Space) && shouldfall)
             {
                 this.transform.position = collision.transform.position;
                 stopfall = true;
