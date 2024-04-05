@@ -1500,7 +1500,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.5}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1511,7 +1511,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.75, y: 0.75}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &256850301
 SpriteRenderer:
@@ -2954,7 +2954,11 @@ PrefabInstance:
     - target: {fileID: 4108086129851512512, guid: 06531bdf27c2dfa498e208d50d44fd2f, type: 3}
       propertyPath: spear
       value: 
-      objectReference: {fileID: 1886762557371864976, guid: fc1625997bdc5cc4886a2801a87d0cb7, type: 3}
+      objectReference: {fileID: 5631241477138858235, guid: 496b0f9baa8f805429f3b0649a6d6319, type: 3}
+    - target: {fileID: 4108086129851512513, guid: 06531bdf27c2dfa498e208d50d44fd2f, type: 3}
+      propertyPath: waterfall
+      value: 
+      objectReference: {fileID: 1802974325}
     - target: {fileID: 4108086129851512513, guid: 06531bdf27c2dfa498e208d50d44fd2f, type: 3}
       propertyPath: boundsType
       value: 0
@@ -4322,6 +4326,11 @@ SpriteRenderer:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4108086129851512541, guid: 06531bdf27c2dfa498e208d50d44fd2f, type: 3}
   m_PrefabInstance: {fileID: 890636219}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1802974325 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4839901419586385647, guid: 5ec6ff03b5244534987aa2f161473a1e, type: 3}
+  m_PrefabInstance: {fileID: 4839901419264816912}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1912703643
 GameObject:
