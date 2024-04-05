@@ -1,28 +1,82 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.Scripting.APIUpdating;
 
 public class MamaBear : MonoBehaviour
 {
-    public int numChildren;
-    public GameObject baby;
-    // Start is called before the first frame update
+    protected static Vector2[] directions = new Vector2[] {                  // a
+        Vector2.right, Vector2.up, Vector2.left, Vector2.down, Vector2.zero };
+    protected float _time;
+    protected Rigidbody2D rigid;
+    protected BabyBear myBaby;
+
+    [Header("Inscribed")]
+    public GameObject babyPrefab;
+    public float speed = 0.5f;
+    public float radius = 10;
+    public float timeThinkMin = 1f;
+    public float timeThinkMax = 4f;
+
+    [Header("Dynamic")]
+    public Vector2 facing;
+    public float timeNextDecision = 0;
+
+    public Vector2 pos
+    {
+        get { return this.transform.position; }
+        set { this.transform.position = value; }
+    }
+
     void Start()
     {
-        GenerateBaby(numChildren);
+        rigid = GetComponent<Rigidbody2D>();
+        GenerateBaby();
+        DecideDirection();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        // if enough time passes, randomize direction
+        if (Time.time >= timeNextDecision)
+            DecideDirection();
+
+        // move in the direction faced
+        rigid.velocity = facing * speed;
+        Vector2 tempPos = pos;
+        pos = tempPos;
     }
 
-    private void GenerateBaby(int children)
+    // sets a random direction, or staying stationary
+    void DecideDirection()
     {
-        for(int i = 0; i < numChildren; i++)
+        float sqrdDistance = (pos - myBaby.pos).sqrMagnitude;
+
+        // if twice as far as radius, move towards cub, closer than radius, move away, else move random
+        if (sqrdDistance > Mathf.Pow(radius * 2, 2))
         {
-            Instantiate<GameObject>(baby);
+            Debug.Log("GET OVER HERE");
+            facing = (myBaby.pos - pos).normalized;
         }
+        else if (sqrdDistance < Mathf.Pow(radius, 2))
+        {
+            Debug.Log("#NotAHelicopter");
+            facing = -(myBaby.pos - pos).normalized;
+        }
+        else
+        {
+            Debug.Log("What is parenting?");
+            facing = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
+        }
+
+        timeNextDecision = Time.time + Random.Range(timeThinkMin, timeThinkMax);
+    }
+
+    private void GenerateBaby()
+    {
+        GameObject go = Instantiate<GameObject>(babyPrefab);
+        go.transform.position = this.transform.position;
+        myBaby = go.GetComponent<BabyBear>();
     }
 }

@@ -206,6 +206,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5083090228887455887}
   - component: {fileID: -7646618919028676321}
+  - component: {fileID: -5592099048574610887}
   m_Layer: 0
   m_Name: Mama Bear
   m_TagString: Untagged
@@ -245,8 +246,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da8b3d379595ae94090d277f83eb9f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numChildren: 0
-  baby: {fileID: 0}
+  babyPrefab: {fileID: 5083090228887455886, guid: 34ebc517f66176b419888ae4ab31a39d, type: 3}
+  speed: 1
+  radius: 5
+  timeThinkMin: 1
+  timeThinkMax: 4
+  facing: {x: 0, y: 0}
+  timeNextDecision: 0
+--- !u!50 &-5592099048574610887
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5083090228887455886}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &5083090228899797577
 GameObject:
   m_ObjectHideFlags: 0

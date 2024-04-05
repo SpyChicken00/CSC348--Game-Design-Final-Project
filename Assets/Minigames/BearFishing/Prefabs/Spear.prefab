@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1886762557371864976}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 0, y: 3, z: 0.1}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 2505990931443702161}
@@ -103,7 +103,7 @@ MonoBehaviour:
   waterLeft: 0
   waterRight: 0
   screenLocs: 0
-  waterfall: {fileID: 953600326714495015, guid: 5ec6ff03b5244534987aa2f161473a1e, type: 3}
+  waterfall: {fileID: 4839901419586385647, guid: 5ec6ff03b5244534987aa2f161473a1e, type: 3}
 --- !u!114 &7489898701894296548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,11 +184,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1335974745
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 3625043607559282579, guid: 045b15ec09bba42448d89db77fa6f20a, type: 3}
-  m_Color: {r: 0.3773585, g: 0.37166253, b: 0.3727928, a: 1}
+  m_Color: {r: 0.4528302, g: 0.43317908, b: 0.43317908, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -266,8 +266,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1335974745
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 0.509434, g: 0.2547553, b: 0.05478815, a: 1}

@@ -17,7 +17,7 @@ public class WaterCheck : MonoBehaviour
 
     [Header("Inscribed")]
     public eType boundsType = eType.center;                                   // a
-    public float radius = 1f;
+    public float radius = 3f;
     public bool keepOnScreen = true;
     public float waterLower;
     public float waterUpper;
@@ -33,8 +33,8 @@ public class WaterCheck : MonoBehaviour
     {
         waterLower = Camera.main.ScreenToWorldPoint(Vector3.zero).y;
         waterUpper = waterfall.transform.position.y;
-        waterLeft = Camera.main.ScreenToWorldPoint(Vector3.zero).x;
-        waterRight = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0)).x;                         // c
+        waterLeft = Camera.main.ScreenToWorldPoint(Vector3.zero).x + 2;
+        waterRight = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0)).x - 2;                         // c
     }
 
     void LateUpdate()
@@ -47,7 +47,7 @@ public class WaterCheck : MonoBehaviour
         Vector3 pos = transform.position;
         screenLocs = eScreenLocs.onScreen;
 
-        // Restrict the X position to camWidth
+        // Restrict the X position to waterWidth
         if (pos.x > waterRight + checkRadius)
         {                                  // c
             pos.x = waterRight + checkRadius;

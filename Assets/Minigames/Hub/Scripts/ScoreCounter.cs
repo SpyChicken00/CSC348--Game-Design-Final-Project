@@ -9,15 +9,18 @@ public class ScoreCounter : MonoBehaviour
     [Header("Dynamic")]
     public static int score = 0;
     public TextMeshProUGUI uiText;
+    public static bool show;
     // c
 
     void Start()
     {
-        uiText.text = score.ToString("#,0");
+        uiText.text = "Score: " + score.ToString("#,0");
+        uiText.enabled = show;
     }
 
     void Update()
     {
-        uiText.text = score.ToString("#,0");
+        uiText.text = "Score: " + score.ToString("#,0");
+        uiText.enabled = show;
     }
 }

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class Locator : MonoBehaviour
 {
@@ -59,25 +60,41 @@ public class Locator : MonoBehaviour
     {
         GameObject go = Instantiate<GameObject>(spear);
         go.transform.position = new Vector3(0, 3, 0);
-        Rigidbody2D rigidB = go.GetComponent<Rigidbody2D>();
         Vector3 dvect = this.transform.position - go.transform.position;
+        go.transform.rotation = Quaternion.LookRotation(
+                       Vector3.forward, // Keep z+ pointing straight into the screen.
+                       -dvect           // Point y+ toward the target.
+                     );
+        Rigidbody2D rigidB = go.GetComponent<Rigidbody2D>();
         rigidB.velocity = dvect * spearSpeed;
         return go;
+
+
+
+
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
-        GameObject otherGO = other.gameObject;                                 
+        GameObject otherGO = other.gameObject;
         if (otherGO.name == "Spear(Clone)")
-        {                
+        {
             Destroy(otherGO);      // Destroy the Spear
             isMoving = true;       // Let the locator move again
-            haveSpear= false;
+            haveSpear = false;
         }
     }
 
-    public void Destroy()
+    public void reanimate()
     {
-        Destroy(gameObject);
+        isMoving = true;
+        haveSpear = false;
+    }
+
+    public Vector3 setRotation(Vector3 shotAngle)
+    {
+        float angle = Mathf.Acos((shotAngle.y * -1) / Mathf.Sqrt(Mathf.Pow(shotAngle.x, 2) + Mathf.Pow(shotAngle.y, 2)));
+        return new Vector3(0.0f, 0.0f, angle);
     }
 }
+

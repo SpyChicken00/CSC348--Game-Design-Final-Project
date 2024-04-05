@@ -51,6 +51,23 @@ public class BearRockPaperScissors : MonoBehaviour
                 break;
         }
     }
+
+    public void Update() {
+        //get keyboard input for rock paper scissors (left, down, right) / (a, s, d)
+        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A)) {
+            PlayerMove = BrawlChoice.Rock;
+            Debug.Log("Player: Rock");
+        } else if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S)) {
+            PlayerMove = BrawlChoice.Paper;
+            Debug.Log("Player: Paper");
+        } else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D)) {
+            PlayerMove = BrawlChoice.Scissors;
+            Debug.Log("Player: Scissors");
+        } //else {
+            //PlayerMove = BrawlChoice.nullChoice;
+        //}
+    }
+
     //Scene Startup - Load Game Music
     void Start() {
         StartCoroutine(StartMusicWait());
@@ -83,18 +100,18 @@ public class BearRockPaperScissors : MonoBehaviour
         BrawlChoice randomChoice = Choices[Random.Range(0, Choices.Length)]; 
         switch (randomChoice) {
             case BrawlChoice.Rock:
-                Debug.Log("Rock");
+                Debug.Log("Bear: Rock");
                 Result.text = "Rock";
                 AIChoice.sprite = Rock;
                 break;
             case BrawlChoice.Paper:
                 Result.text = "Paper";
-                Debug.Log("Paper");
+                Debug.Log("Bear: Paper");
                 AIChoice.sprite = Paper;
                 break;
             case BrawlChoice.Scissors:
                 Result.text = "Scissors";
-                Debug.Log("Scissors");
+                Debug.Log("Bear: Scissors");
                 AIChoice.sprite = Scissors;
                 break;
         }
@@ -234,7 +251,7 @@ public class BearRockPaperScissors : MonoBehaviour
         stopGame = true;
         Debug.Log("You've been Discovered!");
         StartCoroutine(Discovered());
-        
+        LevelManager.GetComponent<Transition>().LoseMiniGame(1f);
     }
 
     //play discovered music and then restart game

@@ -16,6 +16,7 @@ public class Main : MonoBehaviour
     private WaterCheck wtrCheck;
     public GameObject spear;
     public GameObject loc;
+    public GameObject mainCharacter;
 
     void Awake()
     {
@@ -23,8 +24,6 @@ public class Main : MonoBehaviour
         // Set wtrCheck to reference the WaterCheck component on this 
         // GameObject
         wtrCheck = GetComponent<WaterCheck>();
-        //loc.transform.position = Vector3.zero;
-        //loc.SetActive(true);
 
         // Invoke SpawnFish() once (in 2 seconds, based on default values)
         Invoke(nameof(SpawnFish), 1f / enemySpawnPerSecond);                
@@ -61,6 +60,23 @@ public class Main : MonoBehaviour
         Invoke(nameof(SpawnFish), 1f / enemySpawnPerSecond);               
     }
 
+    private void FixedUpdate()
+    {
+        var objects = GameObject.FindGameObjectsWithTag("Fish");
+        foreach (GameObject obj in objects)
+        {
+            if (obj.GetComponent<WaterCheck>().LocIs(WaterCheck.eScreenLocs.offDown))
+            {
+                Destroy(obj);
+                reanimateLocator();
+            }
+        }
+    }
+
+    public void reanimateLocator()
+    {
+        loc.GetComponent<Locator>().reanimate();
+    }
 
 }
 

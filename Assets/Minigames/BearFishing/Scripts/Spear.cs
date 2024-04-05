@@ -15,7 +15,7 @@ public class Spear : MonoBehaviour
     void Update()
     {
         if (wtrCheck.LocIs(WaterCheck.eScreenLocs.offDown))
-        {          
+        {
             Destroy(gameObject);
         }
     }

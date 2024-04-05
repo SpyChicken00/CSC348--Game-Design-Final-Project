@@ -8,6 +8,7 @@ public class HighScore : MonoBehaviour
 {
     public TextMeshProUGUI _UI_TEXT;
     static private int _SCORE = 5;
+    static public bool show;
 
     void Awake()
     {
@@ -40,6 +41,8 @@ public class HighScore : MonoBehaviour
     {
         if (_UI_TEXT != null)
             _UI_TEXT.text = "High Score: " + _SCORE.ToString("#,0");
+
+        _UI_TEXT.enabled = show;
     }
 
     // The following code allows you to easily reset the PlayerPrefs HighScore
