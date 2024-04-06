@@ -3003,6 +3003,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Locator
       objectReference: {fileID: 0}
+    - target: {fileID: 4108086129851512541, guid: 06531bdf27c2dfa498e208d50d44fd2f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108086129851512542, guid: 06531bdf27c2dfa498e208d50d44fd2f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4108086129851512543, guid: 06531bdf27c2dfa498e208d50d44fd2f, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -4816,6 +4824,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4377511118826861589, guid: 928171065e88b784fb07378f56720dad, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4377511118826861590, guid: 928171065e88b784fb07378f56720dad, type: 3}
       propertyPath: m_Name
       value: InterpPoint
@@ -4829,6 +4841,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4839901419586385168, guid: 5ec6ff03b5244534987aa2f161473a1e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4839901419586385169, guid: 5ec6ff03b5244534987aa2f161473a1e, type: 3}
       propertyPath: m_RootOrder
       value: 8
