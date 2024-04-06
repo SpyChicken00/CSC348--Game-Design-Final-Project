@@ -1,0 +1,2853 @@
+fileFormatVersion: 2
+guid: 08598066eb7f043968bfdcc8793b1935
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7020274847646085871
+    second: Frozen_environment_props_watermarks_9
+  - first:
+      213: -3011339872319169836
+    second: Frozen_environment_props_watermarks_10
+  - first:
+      213: -270644796207188814
+    second: Frozen_environment_props_watermarks_11
+  - first:
+      213: 6786115311437410904
+    second: Frozen_environment_props_watermarks_12
+  - first:
+      213: 3277390666879669284
+    second: Frozen_environment_props_watermarks_13
+  - first:
+      213: 1215311997405555686
+    second: Frozen_environment_props_watermarks_14
+  - first:
+      213: 351556265014337488
+    second: Frozen_environment_props_watermarks_15
+  - first:
+      213: -3189698404430659948
+    second: Frozen_environment_props_watermarks_16
+  - first:
+      213: 1673551454820721934
+    second: Frozen_environment_props_watermarks_17
+  - first:
+      213: -4605417112788434322
+    second: Frozen_environment_props_watermarks_18
+  - first:
+      213: 8139099663455949969
+    second: Frozen_environment_props_watermarks_19
+  - first:
+      213: 1283739302775140857
+    second: Frozen_environment_props_watermarks_20
+  - first:
+      213: 494551800455772379
+    second: Frozen_environment_props_watermarks_21
+  - first:
+      213: 9148157801356945922
+    second: Frozen_environment_props_watermarks_22
+  - first:
+      213: -2528214199359173430
+    second: Frozen_environment_props_watermarks_23
+  - first:
+      213: 7030883717368546742
+    second: Frozen_environment_props_watermarks_24
+  - first:
+      213: 1130763996355432111
+    second: Frozen_environment_props_watermarks_25
+  - first:
+      213: 8114657059453492737
+    second: Frozen_environment_props_watermarks_26
+  - first:
+      213: 7812767888922763555
+    second: Frozen_environment_props_watermarks_27
+  - first:
+      213: -9151077058846659656
+    second: Frozen_environment_props_watermarks_28
+  - first:
+      213: 3461270616563159090
+    second: Frozen_environment_props_watermarks_29
+  - first:
+      213: 6006304501015087610
+    second: Frozen_environment_props_watermarks_30
+  - first:
+      213: -7555582820404511352
+    second: Frozen_environment_props_watermarks_31
+  - first:
+      213: -6672358080921133165
+    second: Frozen_environment_props_watermarks_32
+  - first:
+      213: -3170191037189941119
+    second: Frozen_environment_props_watermarks_33
+  - first:
+      213: -8390773628142787477
+    second: Frozen_environment_props_watermarks_34
+  - first:
+      213: 2069673252286510052
+    second: Frozen_environment_props_watermarks_35
+  - first:
+      213: 1175448069405539810
+    second: Frozen_environment_props_watermarks_36
+  - first:
+      213: 8569205571380869254
+    second: Frozen_environment_props_watermarks_37
+  - first:
+      213: -372599876908457914
+    second: Frozen_environment_props_watermarks_38
+  - first:
+      213: 6469528707264679263
+    second: Frozen_environment_props_watermarks_39
+  - first:
+      213: -2368819042940525726
+    second: Frozen_environment_props_watermarks_40
+  - first:
+      213: -5180326059429001073
+    second: Frozen_environment_props_watermarks_41
+  - first:
+      213: -6126120916283625793
+    second: Frozen_environment_props_watermarks_42
+  - first:
+      213: 857927847563986095
+    second: Frozen_environment_props_watermarks_43
+  - first:
+      213: -172084477381673897
+    second: Frozen_environment_props_watermarks_44
+  - first:
+      213: 4414802320914084736
+    second: Frozen_environment_props_watermarks_45
+  - first:
+      213: 2950413564125134460
+    second: Frozen_environment_props_watermarks_46
+  - first:
+      213: 5683186513376543736
+    second: Frozen_environment_props_watermarks_47
+  - first:
+      213: -6449747469303375986
+    second: Frozen_environment_props_watermarks_48
+  - first:
+      213: -991865530117656414
+    second: Frozen_environment_props_watermarks_49
+  - first:
+      213: -2452878301301486940
+    second: Frozen_environment_props_watermarks_50
+  - first:
+      213: 1662676102172116476
+    second: Frozen_environment_props_watermarks_51
+  - first:
+      213: -1636419693899564274
+    second: Frozen_environment_props_watermarks_52
+  - first:
+      213: -1232772375613105755
+    second: Frozen_environment_props_watermarks_53
+  - first:
+      213: -5467059434347975427
+    second: Frozen_environment_props_watermarks_54
+  - first:
+      213: 7671558745458792076
+    second: Frozen_environment_props_watermarks_55
+  - first:
+      213: -4916063531165519871
+    second: Frozen_environment_props_watermarks_56
+  - first:
+      213: 4000770327422529757
+    second: Frozen_environment_props_watermarks_57
+  - first:
+      213: 3382709666596719476
+    second: Frozen_environment_props_watermarks_58
+  - first:
+      213: 1338416793274197823
+    second: Frozen_environment_props_watermarks_59
+  - first:
+      213: 1146693180999432526
+    second: Frozen_environment_props_watermarks_60
+  - first:
+      213: 6835006748309766902
+    second: Frozen_environment_props_watermarks_61
+  - first:
+      213: 7018191526039878983
+    second: Frozen_environment_props_watermarks_62
+  - first:
+      213: 376284226897121327
+    second: Frozen_environment_props_watermarks_63
+  - first:
+      213: -4779429129701757198
+    second: Frozen_environment_props_watermarks_64
+  - first:
+      213: -4341218475465552567
+    second: Frozen_environment_props_watermarks_65
+  - first:
+      213: -7048479480447965962
+    second: Frozen_environment_props_watermarks_66
+  - first:
+      213: -7143437938398542966
+    second: Frozen_environment_props_watermarks_67
+  - first:
+      213: 5765347573995861555
+    second: Frozen_environment_props_watermarks_68
+  - first:
+      213: 3758967293541458135
+    second: Frozen_environment_props_watermarks_69
+  - first:
+      213: -8665127657522552901
+    second: Frozen_environment_props_watermarks_70
+  - first:
+      213: 2161480363214291768
+    second: Frozen_environment_props_watermarks_71
+  - first:
+      213: 6838009324206853001
+    second: Frozen_environment_props_watermarks_72
+  - first:
+      213: -4751823897907794975
+    second: Frozen_environment_props_watermarks_73
+  - first:
+      213: 8153845100195351300
+    second: Frozen_environment_props_watermarks_74
+  - first:
+      213: -5759480711470897400
+    second: Frozen_environment_props_watermarks_75
+  - first:
+      213: -6908273163263604485
+    second: Frozen_environment_props_watermarks_76
+  - first:
+      213: -6041559545401199080
+    second: Frozen_environment_props_watermarks_77
+  - first:
+      213: -3873563760070627473
+    second: Frozen_environment_props_watermarks_78
+  - first:
+      213: -8013634750232902495
+    second: Frozen_environment_props_watermarks_79
+  - first:
+      213: -2706371201567325919
+    second: Frozen_environment_props_watermarks_80
+  - first:
+      213: -5937850837143336537
+    second: Frozen_environment_props_watermarks_81
+  - first:
+      213: 914984883906429118
+    second: Frozen_environment_props_watermarks_82
+  - first:
+      213: -94607328947376471
+    second: Frozen_environment_props_watermarks_83
+  - first:
+      213: -8026098320742298302
+    second: Frozen_environment_props_watermarks_84
+  - first:
+      213: 1085219867094816022
+    second: Frozen_environment_props_watermarks_85
+  - first:
+      213: -3814439994293186401
+    second: Frozen_environment_props_watermarks_86
+  - first:
+      213: 686475200175650263
+    second: Frozen_environment_props_watermarks_87
+  - first:
+      213: 6774860474420365428
+    second: Frozen_environment_props_watermarks_88
+  - first:
+      213: -7467601088853226895
+    second: Frozen_environment_props_watermarks_89
+  - first:
+      213: -2836119911847718593
+    second: Frozen_environment_props_watermarks_90
+  - first:
+      213: -7778507875959621431
+    second: Frozen_environment_props_watermarks_91
+  - first:
+      213: -8598903797194473075
+    second: Frozen_environment_props_watermarks_92
+  - first:
+      213: -7357218414841579188
+    second: Frozen_environment_props_watermarks_93
+  - first:
+      213: -2064584068429784878
+    second: Frozen_environment_props_watermarks_94
+  - first:
+      213: -1871573366398463934
+    second: Frozen_environment_props_watermarks_95
+  - first:
+      213: -4406540564853570252
+    second: Frozen_environment_props_watermarks_96
+  - first:
+      213: 3163215044611804319
+    second: Frozen_environment_props_watermarks_97
+  - first:
+      213: 4233557781058966056
+    second: Frozen_environment_props_watermarks_98
+  - first:
+      213: 4472436366573140610
+    second: Frozen_environment_props_watermarks_99
+  - first:
+      213: 3722469726870948521
+    second: Frozen_environment_props_watermarks_100
+  - first:
+      213: 5198142979950376858
+    second: Frozen_environment_props_watermarks_101
+  - first:
+      213: 6902158817849919033
+    second: Frozen_environment_props_watermarks_102
+  - first:
+      213: -2874082219694671668
+    second: Frozen_environment_props_watermarks_103
+  - first:
+      213: -2030243035414024048
+    second: Frozen_environment_props_watermarks_104
+  - first:
+      213: -9140877003048893322
+    second: Frozen_environment_props_watermarks_105
+  - first:
+      213: -2709166615734135109
+    second: Frozen_environment_props_watermarks_106
+  - first:
+      213: 3583120512592723607
+    second: Frozen_environment_props_watermarks_107
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 658
+        width: 97
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 47.5, y: 16}
+        - {x: 43.5, y: 20}
+        - {x: 43.5, y: 21}
+        - {x: 40.5, y: 24}
+        - {x: 40.5, y: 25}
+        - {x: 31.5, y: 34}
+        - {x: 30.5, y: 34}
+        - {x: 24.5, y: 39}
+        - {x: 22.5, y: 39}
+        - {x: 21.5, y: 40}
+        - {x: 13.5, y: 40}
+        - {x: 8.5, y: 38}
+        - {x: 4.5, y: 33}
+        - {x: 3.5, y: 33}
+        - {x: -0.5, y: 29}
+        - {x: -0.5, y: 28}
+        - {x: -4.5, y: 24}
+        - {x: -6.5, y: 24}
+        - {x: -7.5, y: 23}
+        - {x: -11.5, y: 22}
+        - {x: -14.5, y: 20}
+        - {x: -19.5, y: 15}
+        - {x: -23.5, y: 14}
+        - {x: -24.5, y: 15}
+        - {x: -32.5, y: 15}
+        - {x: -36.5, y: 12}
+        - {x: -37.5, y: 12}
+        - {x: -40.5, y: 9}
+        - {x: -41.5, y: 9}
+        - {x: -48.5, y: 2}
+        - {x: -48.5, y: -31}
+        - {x: -45.5, y: -34}
+        - {x: -41.5, y: -35}
+        - {x: -40.5, y: -36}
+        - {x: 43.5, y: -36}
+        - {x: 44.5, y: -35}
+        - {x: 48.5, y: -34}
+        - {x: 48.5, y: 13}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 9e4b5b571c12a8ec0800000000000000
+      internalID: -3563999040323078935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_1
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 656
+        width: 49
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24.5, y: 28.5}
+        - {x: 23.5, y: 31.5}
+        - {x: 11.5, y: 43.5}
+        - {x: 4.5, y: 46.5}
+        - {x: -0.5, y: 46.5}
+        - {x: -3.5, y: 45.5}
+        - {x: -13.5, y: 34.5}
+        - {x: -14.5, y: 30.5}
+        - {x: -15.5, y: 29.5}
+        - {x: -15.5, y: 24.5}
+        - {x: -16.5, y: 23.5}
+        - {x: -16.5, y: 7.5}
+        - {x: -19.5, y: 2.5}
+        - {x: -24.5, y: -3.5}
+        - {x: -24.5, y: -38.5}
+        - {x: -20.5, y: -40.5}
+        - {x: 15.5, y: -40.5}
+        - {x: 16.5, y: -39.5}
+        - {x: 19.5, y: -39.5}
+        - {x: 24.5, y: -35.5}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 286f13d43b70b0050800000000000000
+      internalID: 5767712214453712514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_2
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 664
+        width: 81
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30.5, y: 16}
+        - {x: 29.5, y: 16}
+        - {x: 18.5, y: 27}
+        - {x: 17.5, y: 27}
+        - {x: 15.5, y: 30}
+        - {x: 12.5, y: 31}
+        - {x: -14.5, y: 31}
+        - {x: -18.5, y: 26}
+        - {x: -19.5, y: 26}
+        - {x: -23.5, y: 22}
+        - {x: -23.5, y: 21}
+        - {x: -29.5, y: 15}
+        - {x: -31.5, y: 10}
+        - {x: -40.5, y: 0}
+        - {x: -40.5, y: -25}
+        - {x: -37.5, y: -28}
+        - {x: -33.5, y: -29}
+        - {x: -32.5, y: -30}
+        - {x: 30.5, y: -30}
+        - {x: 37.5, y: -27}
+        - {x: 40.5, y: -23}
+        - {x: 40.5, y: 6}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 0813eadb702380c10800000000000000
+      internalID: 2019919441704137088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_3
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 664
+        width: 55
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26.5, y: 27}
+        - {x: 23.5, y: 31}
+        - {x: 18.5, y: 33}
+        - {x: 15.5, y: 33}
+        - {x: 14.5, y: 34}
+        - {x: 9.5, y: 34}
+        - {x: 8.5, y: 33}
+        - {x: 4.5, y: 32}
+        - {x: 1.5, y: 29}
+        - {x: 0.5, y: 29}
+        - {x: -5.5, y: 23}
+        - {x: -5.5, y: 22}
+        - {x: -12.5, y: 16}
+        - {x: -17.5, y: 14}
+        - {x: -19.5, y: 11}
+        - {x: -20.5, y: 11}
+        - {x: -26.5, y: 5}
+        - {x: -26.5, y: 4}
+        - {x: -27.5, y: 3}
+        - {x: -27.5, y: -26}
+        - {x: -22.5, y: -32}
+        - {x: -15.5, y: -35}
+        - {x: 19.5, y: -35}
+        - {x: 22.5, y: -34}
+        - {x: 27.5, y: -30}
+        - {x: 27.5, y: 27}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 1105ac60b6c29c370800000000000000
+      internalID: 8343248622867599377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_4
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 668
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3.5, y: 14}
+        - {x: -5.5, y: 14}
+        - {x: -8.5, y: 13}
+        - {x: -12.5, y: 11}
+        - {x: -12.5, y: -16}
+        - {x: 11.5, y: -16}
+        - {x: 12.5, y: -15}
+        - {x: 12.5, y: 9}
+        - {x: 7.5, y: 11}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: c607c14d170d2a690800000000000000
+      internalID: -7592276834484719508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_5
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 668
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: 8}
+        - {x: 16, y: 10}
+        - {x: 7, y: 17}
+        - {x: 6, y: 17}
+        - {x: 2, y: 20}
+        - {x: -6, y: 20}
+        - {x: -11, y: 18}
+        - {x: -24, y: 5}
+        - {x: -24, y: -21}
+        - {x: -20, y: -23}
+        - {x: 21, y: -23}
+        - {x: 22, y: -22}
+        - {x: 24, y: -22}
+        - {x: 24, y: 3}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 97fae93a9457dfab0800000000000000
+      internalID: -4972689454409011335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_6
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 670
+        width: 43
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20.5, y: 11}
+        - {x: 18.5, y: 14}
+        - {x: 16.5, y: 18}
+        - {x: 11.5, y: 22}
+        - {x: -13.5, y: 22}
+        - {x: -16.5, y: 19}
+        - {x: -18.5, y: 16}
+        - {x: -19.5, y: 11}
+        - {x: -21.5, y: 8}
+        - {x: -21.5, y: -22}
+        - {x: 19.5, y: -22}
+        - {x: 21.5, y: -20}
+        - {x: 21.5, y: 9}
+        - {x: 20.5, y: 10}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 2286a671d88b32840800000000000000
+      internalID: 5198201311038433314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_7
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 670
+        width: 68
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31, y: -4.5}
+        - {x: 31, y: -0.5}
+        - {x: 30, y: 0.5}
+        - {x: 30, y: 5.5}
+        - {x: 29, y: 6.5}
+        - {x: 28, y: 14.5}
+        - {x: 26, y: 19.5}
+        - {x: 15, y: 29.5}
+        - {x: 11, y: 30.5}
+        - {x: 10, y: 31.5}
+        - {x: -3, y: 31.5}
+        - {x: -8, y: 29.5}
+        - {x: -9, y: 27.5}
+        - {x: -10, y: 27.5}
+        - {x: -17, y: 20.5}
+        - {x: -17, y: 19.5}
+        - {x: -20, y: 16.5}
+        - {x: -20, y: 15.5}
+        - {x: -34, y: 1.5}
+        - {x: -34, y: -28.5}
+        - {x: -32, y: -31.5}
+        - {x: 34, y: -31.5}
+        - {x: 34, y: -6.5}
+        - {x: 32, y: -6.5}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 0c89085cc8cd996f0800000000000000
+      internalID: -677267771775477568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_8
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 670
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26, y: 25}
+        - {x: 24, y: 27}
+        - {x: 23, y: 27}
+        - {x: 20, y: 30}
+        - {x: -2, y: 30}
+        - {x: -9, y: 23}
+        - {x: -9, y: 22}
+        - {x: -16, y: 16}
+        - {x: -21, y: 14}
+        - {x: -26, y: 9}
+        - {x: -26, y: -30}
+        - {x: 26, y: -30}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 86fa3d76f9f3bdf10800000000000000
+      internalID: 2295498388949675880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_9
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 669
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d02789839f29e90800000000000000
+      internalID: -7020274847646085871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_10
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 671
+        width: 48
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4da127447529536d0800000000000000
+      internalID: -3011339872319169836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_11
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 673
+        width: 45
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b433c5edf97e3cf0800000000000000
+      internalID: -270644796207188814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_12
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 666
+        width: 74
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 852f01fdbef1d2e50800000000000000
+      internalID: 6786115311437410904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_13
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 590
+        width: 123
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4241b897271ab7d20800000000000000
+      internalID: 3277390666879669284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_14
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 600
+        width: 87
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ebe0a892d7add010800000000000000
+      internalID: 1215311997405555686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_15
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 599
+        width: 73
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df1eb67f8af0e400800000000000000
+      internalID: 351556265014337488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_16
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 598
+        width: 158
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49eb74f633aebb3d0800000000000000
+      internalID: -3189698404430659948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_17
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 599
+        width: 45
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e056de96e26a93710800000000000000
+      internalID: 1673551454820721934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_18
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 599
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e628db559854610c0800000000000000
+      internalID: -4605417112788434322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_19
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 600
+        width: 39
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1941bc76504e3f070800000000000000
+      internalID: 8139099663455949969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_20
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 600
+        width: 53
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f1be162812c0d110800000000000000
+      internalID: 1283739302775140857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_21
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 600
+        width: 70
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd832350e300dd600800000000000000
+      internalID: 494551800455772379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_22
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 600
+        width: 70
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20a69132d09c4fe70800000000000000
+      internalID: 9148157801356945922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_23
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 589
+        width: 62
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acc091ba49af9ecd0800000000000000
+      internalID: -2528214199359173430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_24
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 590
+        width: 66
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b584de5d77b29160800000000000000
+      internalID: 7030883717368546742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_25
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 593
+        width: 71
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fae01971dd741bf00800000000000000
+      internalID: 1130763996355432111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_26
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 606
+        width: 59
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e57de2a9d0d9070800000000000000
+      internalID: 8114657059453492737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_27
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 595
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 321e1db40078c6c60800000000000000
+      internalID: 7812767888922763555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_28
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 528
+        width: 67
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bbe73346e7d00180800000000000000
+      internalID: -9151077058846659656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_29
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 523
+        width: 37
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2309eb38947e80030800000000000000
+      internalID: 3461270616563159090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_30
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 520
+        width: 50
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af985d3fe1eaa5350800000000000000
+      internalID: 6006304501015087610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_31
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 522
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88dbebeb47d252790800000000000000
+      internalID: -7555582820404511352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_32
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 522
+        width: 67
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39f1d745da50763a0800000000000000
+      internalID: -6672358080921133165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_33
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 520
+        width: 110
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1889a2e4c083104d0800000000000000
+      internalID: -3170191037189941119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_34
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 523
+        width: 58
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6465d767dbfd8b80800000000000000
+      internalID: -8390773628142787477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_35
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 524
+        width: 90
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e33aab7bd4f8bc10800000000000000
+      internalID: 2069673252286510052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_36
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 504
+        width: 66
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2edf5d49ac7005010800000000000000
+      internalID: 1175448069405539810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_37
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 505
+        width: 61
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6887479c01febe670800000000000000
+      internalID: 8569205571380869254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_38
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 505
+        width: 66
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6406485d26244daf0800000000000000
+      internalID: -372599876908457914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_39
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 508
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d04bc051268c950800000000000000
+      internalID: 6469528707264679263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_40
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 502
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 263695881a3402fd0800000000000000
+      internalID: -2368819042940525726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_41
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 504
+        width: 77
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f88090f35e8cb18b0800000000000000
+      internalID: -5180326059429001073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_42
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 429
+        width: 110
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbee2d5fb75abfaa0800000000000000
+      internalID: -6126120916283625793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_43
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 427
+        width: 57
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa487f4f4d8f7eb00800000000000000
+      internalID: 857927847563986095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_44
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 428
+        width: 96
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c7e4e5412ac9df0800000000000000
+      internalID: -172084477381673897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_45
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 427
+        width: 166
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08377abf157844d30800000000000000
+      internalID: 4414802320914084736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_46
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 430
+        width: 128
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e3c2e2189f1f820800000000000000
+      internalID: 2950413564125134460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_47
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 428
+        width: 129
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f3891ae50cbede40800000000000000
+      internalID: 5683186513376543736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_48
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 448
+        width: 48
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e87923159d4ed76a0800000000000000
+      internalID: -6449747469303375986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_49
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 450
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a0f1643e8f2c32f0800000000000000
+      internalID: -991865530117656414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_50
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 454
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa49ad4e20a5fdd0800000000000000
+      internalID: -2452878301301486940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_51
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 449
+        width: 41
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf5008e0b13031710800000000000000
+      internalID: 1662676102172116476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_52
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 452
+        width: 40
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0bb9a165f44a49e0800000000000000
+      internalID: -1636419693899564274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_53
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 449
+        width: 70
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a99aae4e0054eee0800000000000000
+      internalID: -1232772375613105755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_54
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 448
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfcadb1096a1124b0800000000000000
+      internalID: -5467059434347975427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_55
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 449
+        width: 40
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c86dc98880ad67a60800000000000000
+      internalID: 7671558745458792076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_56
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 449
+        width: 55
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10070abc342a6cbb0800000000000000
+      internalID: -4916063531165519871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_57
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 475
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd071f17a67958730800000000000000
+      internalID: 4000770327422529757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_58
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 474
+        width: 61
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b07c7f48cc1fe20800000000000000
+      internalID: 3382709666596719476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_59
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 313
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37a6847bf2039210800000000000000
+      internalID: 1338416793274197823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_60
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 317
+        width: 124
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4975d76f5fd9ef00800000000000000
+      internalID: 1146693180999432526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_61
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 319
+        width: 40
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f2c6669c62dade50800000000000000
+      internalID: 6835006748309766902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_62
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 317
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d734b4200a56160800000000000000
+      internalID: 7018191526039878983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_63
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 316
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2019ceb284d83500800000000000000
+      internalID: 376284226897121327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_64
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 316
+        width: 53
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fee8fe678e0cadb0800000000000000
+      internalID: -4779429129701757198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_65
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 317
+        width: 91
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d438d1cc4e0c3c0800000000000000
+      internalID: -4341218475465552567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_66
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 318
+        width: 46
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f4e449c145ce2e90800000000000000
+      internalID: -7048479480447965962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_67
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 311
+        width: 65
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a83c4b6ea096ddc90800000000000000
+      internalID: -7143437938398542966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_68
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 313
+        width: 63
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 336feaa8211a20050800000000000000
+      internalID: 5765347573995861555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_69
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 313
+        width: 69
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0a9dd66d88a2430800000000000000
+      internalID: 3758967293541458135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_70
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 311
+        width: 91
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf94f72e484fb780800000000000000
+      internalID: -8665127657522552901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_71
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 209
+        width: 90
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 833ce5630fe1ffd10800000000000000
+      internalID: 2161480363214291768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_72
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 213
+        width: 109
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b8824404d75ee50800000000000000
+      internalID: 6838009324206853001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_73
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 204
+        width: 145
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb6ef157512e0eb0800000000000000
+      internalID: -4751823897907794975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_74
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 209
+        width: 108
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b04beeae6482170800000000000000
+      internalID: 8153845100195351300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_75
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 212
+        width: 121
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8072016dec63210b0800000000000000
+      internalID: -5759480711470897400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_76
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 213
+        width: 65
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf80f4cd822e020a0800000000000000
+      internalID: -6908273163263604485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_77
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 209
+        width: 86
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 816bdfe5a91182ca0800000000000000
+      internalID: -6041559545401199080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_78
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 208
+        width: 134
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6fe92288465e3ac0800000000000000
+      internalID: -3873563760070627473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_79
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 212
+        width: 117
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a444a817a9d9c090800000000000000
+      internalID: -8013634750232902495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_80
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 209
+        width: 136
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1218b3c2bb9017ad0800000000000000
+      internalID: -2706371201567325919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_81
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 214
+        width: 138
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a9c0daaf14889da0800000000000000
+      internalID: -5937850837143336537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_82
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 52
+        width: 59
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb0481477eda2bc00800000000000000
+      internalID: 914984883906429118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_83
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 51
+        width: 141
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ae61f4b223efaef0800000000000000
+      internalID: -94607328947376471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_84
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 53
+        width: 85
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24dcbc3f9129d9090800000000000000
+      internalID: -8026098320742298302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_85
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 53
+        width: 55
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 615126928b97f0f00800000000000000
+      internalID: 1085219867094816022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_86
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 52
+        width: 65
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f909c13f803601bc0800000000000000
+      internalID: -3814439994293186401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_87
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 52
+        width: 108
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5b595be89d68900800000000000000
+      internalID: 686475200175650263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_88
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 53
+        width: 160
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47809ace4b3250e50800000000000000
+      internalID: 6774860474420365428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_89
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 53
+        width: 85
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a459eef50cd5890800000000000000
+      internalID: -7467601088853226895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_90
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 52
+        width: 106
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3197e177f314a8d0800000000000000
+      internalID: -2836119911847718593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_91
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 61
+        width: 73
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c839d29c403d0490800000000000000
+      internalID: -7778507875959621431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_92
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 65
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d81477e2e8e8aa880800000000000000
+      internalID: -8598903797194473075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_93
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 55
+        width: 61
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c49b768f4d8e5e990800000000000000
+      internalID: -7357218414841579188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_94
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 57
+        width: 69
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8df487abf1953e0800000000000000
+      internalID: -2064584068429784878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_95
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 122
+        width: 91
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 240dcb470f5d606e0800000000000000
+      internalID: -1871573366398463934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_96
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 122
+        width: 80
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 435cd8ff3b2d8d2c0800000000000000
+      internalID: -4406540564853570252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_97
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 56
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9c024ad25ff5eb20800000000000000
+      internalID: 3163215044611804319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_98
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 60
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8225c1c1f5e90ca30800000000000000
+      internalID: 4233557781058966056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_99
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 57
+        width: 52
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28a712eed29411e30800000000000000
+      internalID: 4472436366573140610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_100
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 58
+        width: 100
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aac94d7e7ed8a330800000000000000
+      internalID: 3722469726870948521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_101
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 58
+        width: 57
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a97f1a3df73832840800000000000000
+      internalID: 5198142979950376858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_102
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 138
+        width: 197
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 936464920e469cf50800000000000000
+      internalID: 6902158817849919033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_103
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 131
+        width: 145
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc835dfd2753d18d0800000000000000
+      internalID: -2874082219694671668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_104
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 133
+        width: 146
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 090bf6a47b023d3e0800000000000000
+      internalID: -2030243035414024048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_105
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 133
+        width: 99
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 674cbb1dbc4152180800000000000000
+      internalID: -9140877003048893322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_106
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 128
+        width: 130
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb6d1d7115b176ad0800000000000000
+      internalID: -2709166615734135109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_watermarks_107
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 127
+        width: 107
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e318c3f1dc9b130800000000000000
+      internalID: 3583120512592723607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -63,8 +63,8 @@ public class Locator : MonoBehaviour
         Vector3 dvect = this.transform.position - go.transform.position;
         go.transform.rotation = Quaternion.LookRotation(
                        Vector3.forward, // Keep z+ pointing straight into the screen.
-                       -dvect           // Point y+ toward the target.
-                     );
+                       -dvect        // Point y+ toward the target.
+                     ) * Quaternion.Euler(0, 0, -90);
         Rigidbody2D rigidB = go.GetComponent<Rigidbody2D>();
         rigidB.velocity = dvect * spearSpeed;
         return go;
