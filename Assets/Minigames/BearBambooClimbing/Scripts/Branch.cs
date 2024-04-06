@@ -8,21 +8,16 @@ public class Branch : MonoBehaviour
     public GameObject berries;
     public int berryDurability = 3;
     public AudioClip berryEatSound;
+    public Player playerObj;
+ 
 
 
-    void Start()
-    {
+    void Start() {
         berries = GameObject.Find("Berries");
+        gameObject.SetActive(true);
     }
 
-    // Update is called once per frame
-    //void Update()
-    //{
-    //}
-
-    public void DecreaseBerryDurability()
-    {
-        
+    public void DecreaseBerryDurability() {   
         StartCoroutine(waitForSeconds(0.5f));
     }
 
@@ -35,20 +30,13 @@ public class Branch : MonoBehaviour
         Debug.Log("Berry Durability: " + berryDurability + "/3");
         if (berryDurability <= 0)
         {
-            //GetComponent<AudioSource>().clip = berryEatSound;
-            //GetComponent<AudioSource>().Play();
-            //yield return new WaitForSeconds(seconds);
             this.gameObject.SetActive(false);
             Debug.Log("Branch has been eaten");
+            playerObj.BranchesLeft();
 
         }
         
     }
-    
-
-//TODO - decrease lives when bear sees player eating branch 
-//TODO - decrease branch counter when branch is eaten
-//TODO - change avatar when "eating" branch - 
 
     
 }

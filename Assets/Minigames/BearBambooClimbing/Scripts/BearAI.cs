@@ -10,21 +10,17 @@ public class BearAI : MonoBehaviour
     private int timeBeforeMove = 0;
     private int updateTime = 180;
     private bool keyDown;
-    // Assign by dragging the GameObject with ScriptA into the inspector before running the game.
+    private bool lostGame = false;
     public Player playerObj;
-    //private Side defaultSide;
-    
-    
+
     [SerializeField]
     public Side currentSide;
     public float movementSpeed = 0.01f;
     public float timeBeforeAttack = 0.5f;
 
-    void Start() {
-        //defaultSide = currentSide;
-    }
 
-    // Update is called once per frame
+
+
     void Update()
     {
         if (timeBeforeMove >= updateTime) {
@@ -46,7 +42,6 @@ public class BearAI : MonoBehaviour
             case Movement.Wait:
                 break;
         }
-
         keyDown = Input.GetKey(KeyCode.Space);
        
   }
@@ -84,24 +79,19 @@ public class BearAI : MonoBehaviour
                 }
                 break;
             default:
-                //currentSide = defaultSide;
                 break;
         }
     
     }
-    //TODO check for collision with line of sight and player
-    private void enterLineOfSight() {
-        //if player is in line of sight, start countdown to attack 
-    }
-
+   
 
     private void OnTriggerStay2D(Collider2D other) {
             Debug.Log("Bear sees player");
             //if player is in line of sight, start countdown to attack 
             timeBeforeAttack -= 1 * Time.deltaTime;
-            if (timeBeforeAttack <= 0 && keyDown) {
-                //attack player
-                Debug.Log("Bear attacks player");
+            if (timeBeforeAttack <= 0 && keyDown && !lostGame) {
+                Debug.Log("Bear sees player eating branch; Bear Attacks!");
+                lostGame = true;
                 playerObj.Lose();
             }
 
@@ -113,8 +103,4 @@ public class BearAI : MonoBehaviour
         
     }
 
-    //bears move up and down their trees at random intervals
-    //be able to adjust speed and frequency of movement for difficulty 
-    //bears can switch sides of tree?
-    //bears can eat berries?
 }

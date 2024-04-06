@@ -1,24 +1,43 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+
+
+//4-6-24 TODO task
+//TODO - change avatar when "eating" branch -
+//TODO - check for overlapping branches
+//TODO - add sound effects and music
+
+//Bears switching sides should also switch vision or no? 
+//bears have more advanced ai for movement?
+//maybe more bears?
+//allow bears to see whole player body, but player can only use head to eat branches?
 
 public class Player : MonoBehaviour
 {
     private GameObject head;
     public bool keyDown;
-    private int holdCounter = 0;
-    public int holdFrames = 100;
-    public int branchCounter = GenerateBranches.branchNum;
-    public GameObject LevelManager;
+    private float timeElapsed = 0;
+    private bool gameOver = false;
 
-    // Start is called before the first frame update
+    public GameObject LevelManager;
+    [SerializeField]
+    public int gameTimer = 30;
+    public TextMeshProUGUI timerText;
+    public float branchEatingTime = 0.4f;
+    public int numOfBranches = 5;
+
+    
     void Start()
     {
         GameObject player = GameObject.Find("Player");
         head = player.transform.GetChild(0).gameObject;
+        timerText.text = gameTimer.ToString();
+        StartCoroutine(UpdateTimer());
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         //get player input from keyboard
@@ -49,78 +68,60 @@ public class Player : MonoBehaviour
 
         keyDown = Input.GetKey(KeyCode.Space);
 
-        if (keyDown) {holdCounter++;}
+        if (keyDown) {timeElapsed += Time.deltaTime;}
         if (Input.GetKeyUp(KeyCode.Space))
         {
-            holdCounter = 0;
+            timeElapsed = 0;        //time based
         }
         
-            //TODO how to decrease durabiliy with brief pause but enable holding button to continuously progress
-        
-
-        //check for branch collision and space keydown
-        //if so, decrease berry durability, play sound
+        //if all branches have been eaten, player wins
+        if (numOfBranches <= 0 && !gameOver)
+            {
+                gameOver = true;
+                Win();
+            }
     }
 
-    
-    
+    private IEnumerator UpdateTimer()
+    {
+        while(gameTimer > 0)
+        {
+            yield return new WaitForSeconds(1);
+            gameTimer -= 1;
+            timerText.text = gameTimer.ToString();
+            if (gameTimer <= 0)
+            {
+                Debug.Log("Time's up!");
+                Lose();
+            }
+        }
+    }
 
     void OnTriggerStay2D(Collider2D collider)
     {
-        //Debug.Log("Colliding with branch");
-        //if(keyDown && collider.compareTag("Branch"))
         if (collider.gameObject.tag == "Branch")
         {
-            if(keyDown && holdCounter > holdFrames)
-            {
-            //Debug.Log("Space key pressed");
+            if (keyDown && timeElapsed > branchEatingTime) {               //TIME BASED  
             //decrease berry durability
             collider.gameObject.GetComponent<Branch>().DecreaseBerryDurability();
-            holdCounter = 0;
-            branchCounter--;
-            if (branchCounter <= 0)
-            {
-                Win();
-                //Debug.Log("All branches have been eaten");
-                //LevelManager.GetComponent<Transition>().WinMiniGame(4.5f);
-                //Win animation / transition
-            }
-            //GetComponent..gameObject.GetComponent<Branch>().DecreaseBerryDurability();
-            //StartCoroutine(waitForSeconds(3));
-            //TODO how to decrease durabiliy with brief pause but enable holding button to continuously progress
+            //holdCounter = 0;
+            timeElapsed = 0;
             }
         }
-
-
-        //allow player to pass through branch
-        //Physics2D.IgnoreCollision(collider, GetComponent<Collider2D>());
-        //if (collider.gameObject.tag == "Branch")
-        //{
-            //Debug.Log("Colliding with branch");
-            //head.GetComponent<Head>().isColliding = true;
-            //head.GetComponent<Head>().collidingBranch = collider.gameObject;
-        //
     }
 
     public void Win() {
         Debug.Log("All branches have been eaten");
-        LevelManager.GetComponent<Transition>().WinMiniGame(4.5f);
+        LevelManager.GetComponent<Transition>().WinMiniGame(2.0f);
     }
 
     public void Lose() {
-        Debug.Log("Bear sees player eating branch");
-        LevelManager.GetComponent<Transition>().LoseMiniGame(4.5f);
+        Debug.Log("Player loses");
+        LevelManager.GetComponent<Transition>().LoseMiniGame(2.0f);
     }
 
-
-
-
-
-
-
-
+    public void BranchesLeft() {
+        numOfBranches -= 1;
+        Debug.Log("Branches left: " + numOfBranches);
+    }
 }
-    
-
-
-

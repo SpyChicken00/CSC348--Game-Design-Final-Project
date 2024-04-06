@@ -33,7 +33,8 @@ public class Transition : MonoBehaviour
     {
         LivesCounter.lives -= 1;
         if (LivesCounter.lives <= 0)
-            LoadLevel("Hub");
+            SceneManager.LoadScene("Discovered");
+            //LoadLevel("Hub");
         else
             DelayLoadRandomGame(delay);
     }

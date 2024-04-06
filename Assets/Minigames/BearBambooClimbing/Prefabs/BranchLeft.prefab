@@ -298,6 +298,7 @@ MonoBehaviour:
   berries: {fileID: 0}
   berryDurability: 3
   berryEatSound: {fileID: 8300000, guid: e2b89886364fa0f49ab2f7a11d216c9d, type: 3}
+  playerObj: {fileID: 0}
 --- !u!61 &8221754767162049464
 BoxCollider2D:
   m_ObjectHideFlags: 0

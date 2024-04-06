@@ -5,11 +5,12 @@ using UnityEngine;
 public class GenerateBranches : MonoBehaviour
 {
     private const float MAX_HEIGHT = 1.46f;
-    private const float MIN_HEIGHT = -8.2f;
+    private const float MIN_HEIGHT = -7.2f;
     private float treeLocation;
     
     [SerializeField]
-    public const int branchNum = 5;
+    //public int numOfBranches = 5;
+    public int branchNum = 5;
     public GameObject branchPrefabLeft;
     public GameObject branchPrefabRight;  
     
@@ -17,6 +18,7 @@ public class GenerateBranches : MonoBehaviour
     //TODO - check for overlapping branches
     void Start()
     {
+        //branchNum = numOfBranches;
         treeLocation = this.transform.position.x;
         // Instantiate branchNum branches at random positions
         for (int i = 0; i < branchNum; i++)
@@ -39,15 +41,5 @@ public class GenerateBranches : MonoBehaviour
 }
 
 
-//TODO - check for overlapping branches
-//TODO - check for branches on different y levels
-
-//TODO - separate script for each branch - berry interaction
-
-//need to take branch prefab and randomly generate n number of branches on a single tree that
-    //are within bounds of screen
-    //are not overlapping
-    //are on different y levels 
-    //are on different sides of the tree (left or right)
 
 
