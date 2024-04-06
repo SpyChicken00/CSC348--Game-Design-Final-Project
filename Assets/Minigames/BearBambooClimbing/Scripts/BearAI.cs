@@ -10,14 +10,15 @@ public class BearAI : MonoBehaviour
     private int timeBeforeMove = 0;
     private int updateTime = 180;
     private bool keyDown;
-
+    // Assign by dragging the GameObject with ScriptA into the inspector before running the game.
+    public Player playerObj;
     //private Side defaultSide;
     
     
     [SerializeField]
     public Side currentSide;
     public float movementSpeed = 0.01f;
-    public float timeBeforeAttack = 1;
+    public float timeBeforeAttack = 0.5f;
 
     void Start() {
         //defaultSide = currentSide;
@@ -101,13 +102,14 @@ public class BearAI : MonoBehaviour
             if (timeBeforeAttack <= 0 && keyDown) {
                 //attack player
                 Debug.Log("Bear attacks player");
+                playerObj.Lose();
             }
 
     }
 
     private void OnTriggerExit2D(Collider2D other) {
             //if player is out of line of sight, stop countdown to attack
-            timeBeforeAttack = 3;
+            timeBeforeAttack = 0.5f;
         
     }
 

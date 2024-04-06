@@ -8,6 +8,8 @@ public class Player : MonoBehaviour
     public bool keyDown;
     private int holdCounter = 0;
     public int holdFrames = 100;
+    public int branchCounter = GenerateBranches.branchNum;
+    public GameObject LevelManager;
 
     // Start is called before the first frame update
     void Start()
@@ -75,16 +77,19 @@ public class Player : MonoBehaviour
             //decrease berry durability
             collider.gameObject.GetComponent<Branch>().DecreaseBerryDurability();
             holdCounter = 0;
+            branchCounter--;
+            if (branchCounter <= 0)
+            {
+                Win();
+                //Debug.Log("All branches have been eaten");
+                //LevelManager.GetComponent<Transition>().WinMiniGame(4.5f);
+                //Win animation / transition
+            }
             //GetComponent..gameObject.GetComponent<Branch>().DecreaseBerryDurability();
             //StartCoroutine(waitForSeconds(3));
             //TODO how to decrease durabiliy with brief pause but enable holding button to continuously progress
             }
         }
-        
-
-
-
-
 
 
         //allow player to pass through branch
@@ -96,6 +101,17 @@ public class Player : MonoBehaviour
             //head.GetComponent<Head>().collidingBranch = collider.gameObject;
         //
     }
+
+    public void Win() {
+        Debug.Log("All branches have been eaten");
+        LevelManager.GetComponent<Transition>().WinMiniGame(4.5f);
+    }
+
+    public void Lose() {
+        Debug.Log("Bear sees player eating branch");
+        LevelManager.GetComponent<Transition>().LoseMiniGame(4.5f);
+    }
+
 
 
 

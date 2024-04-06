@@ -9,7 +9,7 @@ public class GenerateBranches : MonoBehaviour
     private float treeLocation;
     
     [SerializeField]
-    int branchNum = 5;
+    public const int branchNum = 5;
     public GameObject branchPrefabLeft;
     public GameObject branchPrefabRight;  
     

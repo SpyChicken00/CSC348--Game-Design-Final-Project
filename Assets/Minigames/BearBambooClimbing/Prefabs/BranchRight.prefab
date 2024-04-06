@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2255992652902564582}
   - component: {fileID: 8079278993592552733}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Leaves
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9076198599168725906}
   - component: {fileID: 1679629602587709712}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Leaves (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3425110619518564250}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BranchRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -208,9 +208,11 @@ GameObject:
   m_Component:
   - component: {fileID: 7986642788765817380}
   - component: {fileID: -1427951441593648310}
-  m_Layer: 0
+  - component: {fileID: -1259616698261064851}
+  - component: {fileID: 731079637161488790}
+  m_Layer: 7
   m_Name: BranchRight
-  m_TagString: Untagged
+  m_TagString: Branch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -242,6 +244,131 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd0b9208257f7204dab421862a14318b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  berries: {fileID: 0}
+  berryDurability: 3
+  berryEatSound: {fileID: 8300000, guid: e2b89886364fa0f49ab2f7a11d216c9d, type: 3}
+--- !u!82 &-1259616698261064851
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6028871255954375194}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: e2b89886364fa0f49ab2f7a11d216c9d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!61 &731079637161488790
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6028871255954375194}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.5, y: 3.3}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 0.6}
+  m_EdgeRadius: 0
 --- !u!1 &8427036611072595073
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,7 +379,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5327183858020347308}
   - component: {fileID: 3601247139797423266}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Branch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -331,6 +458,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3425110619518564250}
     m_Modifications:
+    - target: {fileID: 2200532181061205652, guid: ea6ddc3c135f3ae459e91226d9b0ea49, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2415763327265563879, guid: ea6ddc3c135f3ae459e91226d9b0ea49, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -387,9 +518,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -237.44
       objectReference: {fileID: 0}
+    - target: {fileID: 5303925065494311723, guid: ea6ddc3c135f3ae459e91226d9b0ea49, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6423285397965658432, guid: ea6ddc3c135f3ae459e91226d9b0ea49, type: 3}
       propertyPath: m_Name
       value: Berries
+      objectReference: {fileID: 0}
+    - target: {fileID: 6423285397965658432, guid: ea6ddc3c135f3ae459e91226d9b0ea49, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7531550560691640922, guid: ea6ddc3c135f3ae459e91226d9b0ea49, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea6ddc3c135f3ae459e91226d9b0ea49, type: 3}
