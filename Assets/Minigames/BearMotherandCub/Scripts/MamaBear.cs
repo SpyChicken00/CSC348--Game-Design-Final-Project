@@ -11,6 +11,7 @@ public class MamaBear : MonoBehaviour
     protected float _time;
     protected Rigidbody2D rigid;
     protected BabyBear myBaby;
+    protected LineRenderer line;
 
     [Header("Inscribed")]
     public GameObject babyPrefab;
@@ -32,6 +33,7 @@ public class MamaBear : MonoBehaviour
     void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
+        line = GetComponent<LineRenderer>();
         GenerateBaby();
         DecideDirection();
     }
@@ -46,7 +48,11 @@ public class MamaBear : MonoBehaviour
         rigid.velocity = facing * speed;
         Vector2 tempPos = pos;
         pos = tempPos;
+
+        line.SetPosition(0, transform.position);
+        line.SetPosition(1, myBaby.transform.position);
     }
+
 
     // sets a random direction, or staying stationary
     void DecideDirection()
@@ -56,27 +62,34 @@ public class MamaBear : MonoBehaviour
         // if twice as far as radius, move towards cub, closer than radius, move away, else move random
         if (sqrdDistance > Mathf.Pow(radius * 2, 2))
         {
-            Debug.Log("GET OVER HERE");
+            //Debug.Log("GET OVER HERE");
             facing = (myBaby.pos - pos).normalized;
         }
         else if (sqrdDistance < Mathf.Pow(radius, 2))
         {
-            Debug.Log("#NotAHelicopter");
+            //Debug.Log("#NotAHelicopter");
             facing = -(myBaby.pos - pos).normalized;
         }
         else
         {
-            Debug.Log("What is parenting?");
+            //Debug.Log("What is parenting?");
             facing = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
         }
 
         timeNextDecision = Time.time + Random.Range(timeThinkMin, timeThinkMax);
     }
 
+    // creates a child that is linked to the mom, 1 radius distance away
     private void GenerateBaby()
     {
+        // instantiates baby
         GameObject go = Instantiate<GameObject>(babyPrefab);
-        go.transform.position = this.transform.position;
         myBaby = go.GetComponent<BabyBear>();
+
+        // sets position 1 radius away
+        myBaby.DecideDirection();
+        float goX = this.transform.position.x + (radius * myBaby.facing.x);
+        float goY = this.transform.position.y + (radius * myBaby.facing.y);
+        myBaby.transform.position = new Vector3(goX, goY, this.transform.position.z);
     }
 }
