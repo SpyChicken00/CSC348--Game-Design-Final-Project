@@ -208,6 +208,7 @@ GameObject:
   - component: {fileID: -7646618919028676321}
   - component: {fileID: -5592099048574610887}
   - component: {fileID: 5934433921538234672}
+  - component: {fileID: -8935237265223581286}
   m_Layer: 0
   m_Name: Mama Bear
   m_TagString: Untagged
@@ -373,6 +374,28 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!68 &-8935237265223581286
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5083090228887455886}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -18, y: 0}
+  - {x: -14, y: 0}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &5083090228899797577
 GameObject:
   m_ObjectHideFlags: 0

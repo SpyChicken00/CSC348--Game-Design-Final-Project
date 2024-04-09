@@ -6,12 +6,10 @@ using UnityEngine.Scripting.APIUpdating;
 
 public class MamaBear : MonoBehaviour
 {
-    protected static Vector2[] directions = new Vector2[] {                  // a
-        Vector2.right, Vector2.up, Vector2.left, Vector2.down, Vector2.zero };
-    protected float _time;
     protected Rigidbody2D rigid;
     protected BabyBear myBaby;
     protected LineRenderer line;
+    protected EdgeCollider2D lineColl;
 
     [Header("Inscribed")]
     public GameObject babyPrefab;
@@ -34,6 +32,7 @@ public class MamaBear : MonoBehaviour
     {
         rigid = GetComponent<Rigidbody2D>();
         line = GetComponent<LineRenderer>();
+        lineColl = GetComponent<EdgeCollider2D>();
         GenerateBaby();
         DecideDirection();
     }
@@ -51,6 +50,10 @@ public class MamaBear : MonoBehaviour
 
         line.SetPosition(0, transform.position);
         line.SetPosition(1, myBaby.transform.position);
+        List<Vector2> collPoints = new List<Vector2>();
+        collPoints.Add(pos);
+        collPoints.Add(myBaby.pos);
+        lineColl.SetPoints(collPoints);
     }
 
 
