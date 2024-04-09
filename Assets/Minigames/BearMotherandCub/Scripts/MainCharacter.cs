@@ -32,4 +32,9 @@ public class MainCharacter : MonoBehaviour
     {
         this.transform.position = startPnt.transform.position;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("AHHHHHH");
+    }
 }
