@@ -42,7 +42,7 @@ public class BabyBear : MonoBehaviour
     }
 
     // sets a random direction, or staying stationary
-    void DecideDirection()
+    public void DecideDirection()
     {
         facing = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
         timeNextDecision = Time.time + Random.Range(timeThinkMin, timeThinkMax);
