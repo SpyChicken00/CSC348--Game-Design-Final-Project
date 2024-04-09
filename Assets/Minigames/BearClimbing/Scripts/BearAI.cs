@@ -153,6 +153,7 @@ public class BearAI : MonoBehaviour
             // Debug.Log("Bear sees player");
             // //if player is in line of sight, start countdown to attack 
             timeBeforeAttack -= 1 * Time.deltaTime;
+            //Debug.Log(timeBeforeAttack);
             // if (timeBeforeAttack <= 0 && keyDown && !lostGame) {
             //     Debug.Log("Bear sees player eating branch; Bear Attacks!");
             //     lostGame = true;
