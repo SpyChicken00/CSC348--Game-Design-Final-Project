@@ -7,14 +7,12 @@ public class BearAI : MonoBehaviour
     private enum Movement { Up, Down, Wait }
     public enum Side { Left, Right }
     private Movement currentMovement = Movement.Wait;
-    private int timeBeforeMove = 0;
-    private int updateTime = 180;
-    private bool keyDown;
-    private bool lostGame = false;
+    private float timeBeforeMove = 0;
     public Player playerObj;
 
     [SerializeField]
     public Side currentSide;
+    public int updateTime = 2;       //in seconds
     public float movementSpeed = 0.01f;
     public float timeBeforeAttack = 0.5f;
 
@@ -29,7 +27,7 @@ public class BearAI : MonoBehaviour
             timeBeforeMove = 0;
         }
         else {
-            timeBeforeMove += 1;
+            timeBeforeMove += 1 * Time.deltaTime;
         }
 
         switch (currentMovement) {
@@ -42,7 +40,6 @@ public class BearAI : MonoBehaviour
             case Movement.Wait:
                 break;
         }
-        keyDown = Input.GetKey(KeyCode.Space);
        
   }
 
@@ -86,14 +83,16 @@ public class BearAI : MonoBehaviour
    
 
     private void OnTriggerStay2D(Collider2D other) {
-            Debug.Log("Bear sees player");
-            //if player is in line of sight, start countdown to attack 
+            // Debug.Log("Bear sees player");
+            // //if player is in line of sight, start countdown to attack 
             timeBeforeAttack -= 1 * Time.deltaTime;
-            if (timeBeforeAttack <= 0 && keyDown && !lostGame) {
-                Debug.Log("Bear sees player eating branch; Bear Attacks!");
-                lostGame = true;
-                playerObj.Lose();
-            }
+            // if (timeBeforeAttack <= 0 && keyDown && !lostGame) {
+            //     Debug.Log("Bear sees player eating branch; Bear Attacks!");
+            //     lostGame = true;
+            //     playerObj.stopTimer();
+            //     playerObj.Lose();
+            // }
+            playerObj.BearAttack(timeBeforeAttack);
 
     }
 

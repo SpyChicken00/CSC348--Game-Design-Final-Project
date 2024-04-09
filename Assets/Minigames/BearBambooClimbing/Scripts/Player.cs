@@ -78,12 +78,29 @@ public class Player : MonoBehaviour
         if (numOfBranches <= 0 && !gameOver)
             {
                 gameOver = true;
+                gameTimer = 0;
+                timerText.text = "0";
+                timerText.enabled = false;
+                stopTimer();
                 Win();
             }
     }
 
+    public void stopTimer() {
+        StopCoroutine(UpdateTimer());
+        timerText.text = "0";
+        timerText.enabled = false;
+        //TODO HOW TO DISABLE TEXT FROM UPDATING?
+        
+    }
+
     private IEnumerator UpdateTimer()
     {
+        if (gameOver){
+            gameTimer = 0;
+            timerText.text = "0";
+            yield break;
+            }
         while(gameTimer > 0)
         {
             yield return new WaitForSeconds(1);
@@ -94,8 +111,22 @@ public class Player : MonoBehaviour
                 Debug.Log("Time's up!");
                 Lose();
             }
+            
         }
     }
+
+    public void BearAttack(float timeBeforeAttack) {
+            Debug.Log("Bear sees player");
+            //if player is in line of sight, start countdown to attack 
+            //timeBeforeAttack -= 1 * Time.deltaTime;
+            if (timeBeforeAttack <= 0 && keyDown && !gameOver) {
+                Debug.Log("Bear sees player eating branch; Bear Attacks!");
+                gameOver = true;
+                stopTimer();
+                Lose();
+            }
+    }
+        
 
     void OnTriggerStay2D(Collider2D collider)
     {
