@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
 
     public GameObject LevelManager;
     public int numOfBranches = 3;
-    private int eatenBranches = 0;
+    private bool movementDisabled;
     [SerializeField]
     public int gameTimer = 30;
     public TextMeshProUGUI timerText;
@@ -42,6 +42,16 @@ public class Player : MonoBehaviour
         //GameObject player = GameObject.Find("Player");
         //head = player.transform.GetChild(0).gameObject;
         //numOfBranches = 3;
+        movementDisabled = true;
+        StartCoroutine(waitForSeconds(2.0f));
+        
+    }
+
+    IEnumerator waitForSeconds(float seconds) {
+        yield return new WaitForSeconds(seconds); 
+        movementDisabled = false;
+        gameTimer = 30;
+        timerText.enabled = true;
         timerText.text = gameTimer.ToString();
         StartCoroutine(UpdateTimer());
     }
@@ -49,6 +59,7 @@ public class Player : MonoBehaviour
     
     public void Update()
     {
+        if (movementDisabled) {return;}
         //get player input from keyboard
         if(Input.GetKey(KeyCode.W))
         {
@@ -165,7 +176,6 @@ public class Player : MonoBehaviour
 
     public void BranchesLeft() {
         numOfBranches -= 1;
-        eatenBranches += 1;
         Debug.Log("Branches left: " + numOfBranches);
     }
 }

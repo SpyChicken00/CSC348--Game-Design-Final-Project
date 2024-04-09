@@ -11,14 +11,30 @@ public class BearTreeScratching : MonoBehaviour
     //public GameObject bear;
     //public GameObject player;
 
+    public SpriteRenderer bearRenderer;
+    public Sprite bearUpSprite;
+    public Sprite bearDownSprite;
+    public Sprite bearLeftSprite;
+    public Sprite bearRightSprite;
+
     // Controls delay between start of game, between bear moves
     public float startDelay;
     public float moveDelay;
+
+    
 
     public GameObject LevelManager;
 
     // How many moves in the level
     public int movesQuantity;
+    public int roundsToWin = 3 ;
+
+
+    //TODO take 3 rounds to win game, each round repeat # goes up by 1
+    //TODO sync animations with bear moves
+
+
+
 
     // stores bear moves, counts how many times a player has moved, stores player input
     // stores start time, stores when the bear finishes moving
@@ -27,6 +43,8 @@ public class BearTreeScratching : MonoBehaviour
     private int playerMove;
     private float startTime;
     private float bearMovesEndTime;
+    private int roundsWon = 0;
+
 
     // Controls sequence of bear moves and instantiates vars
     void Start()
@@ -60,6 +78,8 @@ public class BearTreeScratching : MonoBehaviour
         // makes moves
         for (int i = 0; i < bearMoves.Length; i++)
         {
+            
+            this.GetComponent<Animator>().enabled = false;      //TODO disable any remaining animations if needed
             MoveBear(bearMoves[i]);
             yield return new WaitForSeconds(moveDelay);
         }
@@ -72,12 +92,19 @@ public class BearTreeScratching : MonoBehaviour
         {
             case 0:
                 Debug.Log("right");
+                //Play right swipe animation 
+                this.GetComponent<Animator>().enabled = true;
+                bearRenderer.flipX = true;
+
+                bearRenderer.sprite = bearRightSprite;
+                
                 break;
             case 1:
                 Debug.Log("up");
                 break;
             case 2:
                 Debug.Log("left");
+                bearRenderer.flipX = false;
                 break;
             case 3:
                 Debug.Log("down");
@@ -91,8 +118,8 @@ public class BearTreeScratching : MonoBehaviour
     void Update()
     {
         // if incorrect key or all moves have been played, do nothing
-        if (!Input.GetKeyDown("right") && !Input.GetKeyDown("up") && !Input.GetKeyDown("left") && !Input.GetKeyDown("down") || playerMoveIndex >= movesQuantity)
-            return;
+        if (!Input.GetKeyDown("right") && !Input.GetKeyDown("up") && !Input.GetKeyDown("left") && !Input.GetKeyDown("down") && !Input.GetKeyDown(KeyCode.W) 
+            && !Input.GetKeyDown(KeyCode.A) && !Input.GetKeyDown(KeyCode.S) && !Input.GetKeyDown(KeyCode.D) || playerMoveIndex >= movesQuantity) return;
 
         // If a player plays while the bear is acting, lose
         if(Input.anyKeyDown && Time.time - startTime < bearMovesEndTime) { Lose(); return; }
@@ -101,13 +128,13 @@ public class BearTreeScratching : MonoBehaviour
         if (Input.anyKeyDown)
         {
             // set playerMove if a direction is hit, returns if other button is hit
-            if (Input.GetKeyDown("right"))
+            if (Input.GetKeyDown("right") || Input.GetKeyDown(KeyCode.D))
                 playerMove = 0;
-            else if (Input.GetKeyDown("up"))
+            else if (Input.GetKeyDown("up")|| Input.GetKeyDown(KeyCode.W))
                 playerMove = 1;
-            else if (Input.GetKeyDown("left"))
+            else if (Input.GetKeyDown("left")|| Input.GetKeyDown(KeyCode.A))
                 playerMove = 2;
-            else if (Input.GetKeyDown("down"))
+            else if (Input.GetKeyDown("down")|| Input.GetKeyDown(KeyCode.S))
                 playerMove = 3;
             else
                 return;
@@ -123,7 +150,19 @@ public class BearTreeScratching : MonoBehaviour
             // if correctly played and all moves played, win
             else if (playerMoveIndex == movesQuantity - 1)
             {
-                Win();
+                roundsWon += 1;
+                Debug.Log("Round Won: " + roundsWon);
+                if (roundsWon == roundsToWin)
+                {
+                    Win();
+                }
+                else
+                {
+                    playerMoveIndex = 0;
+                    movesQuantity += 1;
+                    bearMoves = DecideBearMoves(movesQuantity);
+                    StartCoroutine(MakeBearMoves());
+                }
             }
             // gives player feedback for correct
             else
