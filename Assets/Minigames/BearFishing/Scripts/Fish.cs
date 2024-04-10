@@ -80,6 +80,7 @@ public class Fish : MonoBehaviour
             {
                 this.transform.position = collision.transform.position;
                 stopfall = true;
+                StartCoroutine("ReloadScene");
             }
         }
     }
@@ -97,8 +98,9 @@ public class Fish : MonoBehaviour
         }
     }
 
-    private void WinScreen()
+    IEnumerator ReloadScene()
     {
+        yield return new WaitForSeconds(1);
         SceneManager.LoadScene("BearFishing");
     }
 }

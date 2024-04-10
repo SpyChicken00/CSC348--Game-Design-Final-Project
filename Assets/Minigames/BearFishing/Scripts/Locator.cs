@@ -9,7 +9,6 @@ public class Locator : MonoBehaviour
     static public Locator S { get; private set; }  // Singleton property    // a
 
     [Header("Inscribed")]
-    // These fields control the movement of the ship
     public float speed = 30;
     private bool isMoving;
     public GameObject spear;
@@ -68,10 +67,6 @@ public class Locator : MonoBehaviour
         Rigidbody2D rigidB = go.GetComponent<Rigidbody2D>();
         rigidB.velocity = dvect * spearSpeed;
         return go;
-
-
-
-
     }
 
     void OnTriggerExit2D(Collider2D other)
