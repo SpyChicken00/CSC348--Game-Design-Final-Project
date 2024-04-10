@@ -30,6 +30,7 @@ public class Main : MonoBehaviour
     private bool hasflipped = false;
     public GameObject waterfall;
     public GameObject waterfall2;
+    public static GameObject LevelManager;
 
     void Awake()
     {
@@ -161,11 +162,9 @@ public class Main : MonoBehaviour
         foreach (GameObject bear in FishCaughtBears)
         {
             bear.GetComponent<SpriteRenderer>().flipX = !bear.GetComponent<SpriteRenderer>().flipX;
-            //Lose Screen
         }
 
-        yield return new WaitForSeconds(1);
-        SceneManager.LoadScene("BearFishing");
+        LevelManager.GetComponent<Transition>().LoseMiniGame(1f);
         
     }
 
