@@ -52,8 +52,8 @@ public class MamaBear : MonoBehaviour
         line.SetPosition(1, myBaby.transform.position);
         List<Vector2> collPoints = new List<Vector2>();
         collPoints.Add(new Vector2(0, 0));
-        // WHAT IS GOING ON HERE
-        collPoints.Add(myBaby.pos - pos);
+        // I have no idea why, but it lines up if you multiply by 4
+        collPoints.Add(4 * (myBaby.pos - pos));
         lineColl.SetPoints(collPoints);
     }
 
