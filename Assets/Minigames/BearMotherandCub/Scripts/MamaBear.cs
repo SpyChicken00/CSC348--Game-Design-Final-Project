@@ -10,6 +10,7 @@ public class MamaBear : MonoBehaviour
     protected BabyBear myBaby;
     protected LineRenderer line;
     protected EdgeCollider2D lineColl;
+    protected PolygonCollider2D polyColl;
 
     [Header("Inscribed")]
     public GameObject babyPrefab;

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5083090228443632471}
   - component: {fileID: 5083090228443632468}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5083090228531972414}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Nose
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5083090228789906233}
   - component: {fileID: 5083090228789906182}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Circle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -207,7 +207,7 @@ GameObject:
   - component: {fileID: 5083090228887455887}
   - component: {fileID: -1609143186784224698}
   - component: {fileID: -6354121196635083875}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Baby Bear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -283,7 +283,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5083090228899797590}
   - component: {fileID: 5083090228899797591}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -365,7 +365,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5083090228986382049}
   - component: {fileID: 5083090228986382062}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -447,7 +447,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5083090229031283686}
   - component: {fileID: 5083090229031283687}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Eye (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -529,7 +529,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5083090229481407555}
   - component: {fileID: 5083090229481407552}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -611,7 +611,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5083090229506764460}
   - component: {fileID: 5083090229506764461}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Circle (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
