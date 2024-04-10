@@ -178,6 +178,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14f654be0a4d7384cbc53cf9ae24af1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCharacter: {fileID: 0}
   speed: 5
   InterpPoint: {fileID: 4377511118826861590, guid: 928171065e88b784fb07378f56720dad, type: 3}
+  LevelManager: {fileID: 2761603656066757837, guid: 9d563abc6d7744e46a00b501491e45da, type: 3}

@@ -14,6 +14,7 @@ public class Fish : MonoBehaviour
     protected bool isCaught;
     protected bool shouldfall = false;
     protected bool stopfall = false;
+    public GameObject LevelManager;
 
 
     void Awake()
@@ -80,7 +81,7 @@ public class Fish : MonoBehaviour
             {
                 this.transform.position = collision.transform.position;
                 stopfall = true;
-                StartCoroutine("ReloadScene");
+                //Main.LevelManager.GetComponet<Transition>.WinMiniGame(1f);
             }
         }
     }
@@ -96,11 +97,5 @@ public class Fish : MonoBehaviour
         { 
             pos -= new Vector3(0, 4, 0) * Time.deltaTime;
         }
-    }
-
-    IEnumerator ReloadScene()
-    {
-        yield return new WaitForSeconds(1);
-        SceneManager.LoadScene("BearFishing");
     }
 }

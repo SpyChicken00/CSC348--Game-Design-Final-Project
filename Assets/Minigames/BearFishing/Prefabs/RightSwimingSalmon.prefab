@@ -157,9 +157,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3650e1b43755f324dbf7b5e88a7c8550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCharacter: {fileID: 0}
   speed: 5
   InterpPoint: {fileID: 4377511118826861590, guid: 928171065e88b784fb07378f56720dad, type: 3}
+  LevelManager: {fileID: 2761603656066757837, guid: 9d563abc6d7744e46a00b501491e45da, type: 3}
 --- !u!114 &1905734792953259559
 MonoBehaviour:
   m_ObjectHideFlags: 0
