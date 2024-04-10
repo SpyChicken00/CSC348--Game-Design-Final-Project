@@ -29,7 +29,7 @@ public class BearAI : MonoBehaviour
     void Update()
     {
 
-        bearRenderer.sprite = bearSprite;
+        //bearRenderer.sprite = bearSprite;
         //GetComponent<bearAnimation> = bearAnimation;
         
 
@@ -68,6 +68,7 @@ public class BearAI : MonoBehaviour
             case Movement.Wait:
                 //stop animation
                 this.GetComponent<Animator>().enabled = false;
+                //TODO anim.speed = 0;
                 break;
         }
        

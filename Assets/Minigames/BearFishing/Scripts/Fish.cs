@@ -7,6 +7,7 @@ public class Fish : MonoBehaviour
 {
     [Header("Inscribed")]
     private WaterCheck wtrCheck;
+    public Fisherman mainCharacter;
 
     [Header("Dynamic")]
     public float speed = 5f;
@@ -20,6 +21,7 @@ public class Fish : MonoBehaviour
     {                                                            // c
         wtrCheck = GetComponent<WaterCheck>();
         isCaught = false;
+        mainCharacter = GameObject.Find("Main Character").GetComponent<Fisherman>();
     }
 
     // This is a Property: A method that acts like a field
@@ -80,6 +82,19 @@ public class Fish : MonoBehaviour
             {
                 this.transform.position = collision.transform.position;
                 stopfall = true;
+                mainCharacter.WinScreen();
+            } 
+
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        GameObject go = collision.gameObject;
+        if (go.name == "Main Character")
+        {
+            if (shouldfall){
+                mainCharacter.LoseScreen();
             }
         }
     }
@@ -95,10 +110,5 @@ public class Fish : MonoBehaviour
         { 
             pos -= new Vector3(0, 4, 0) * Time.deltaTime;
         }
-    }
-
-    private void WinScreen()
-    {
-        SceneManager.LoadScene("BearFishing");
     }
 }
