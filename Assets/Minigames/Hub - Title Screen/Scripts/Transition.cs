@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Transition : MonoBehaviour
 {
-    static public string[] GameList { get; private set; } = new string[] { "BearTreeScratching", "BearBrawling" };
+    static public string[] GameList { get; private set; } = new string[] { "BearTreeScratching", "BearBrawling", "BearFishing", "BearClimbing" };
     static public int LastGamePlayed = -1;
 
     public Animator animator;

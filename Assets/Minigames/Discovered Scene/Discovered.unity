@@ -224,7 +224,7 @@ MonoBehaviour:
   c1: {fileID: 493487658}
   uMin: 0
   uMax: 1
-  timeDuration: 6
+  timeDuration: 6.25
   loopMove: 0
   easingType: 5
   easingMod: 3

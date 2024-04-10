@@ -11,7 +11,8 @@ public class MainMotherCub : MonoBehaviour
     public GameObject endPnt;
     public MainCharacter mainCharacter;
     public int numMamaBear;
-    // Start is called before the first frame update
+
+
     void Start()
     {
         startPnt.transform.position = new Vector3(-8,0,0);
@@ -28,9 +29,15 @@ public class MainMotherCub : MonoBehaviour
             mainCharacter.Restart();
         }
     }
+
     private IEnumerator RestartScene(float wait)
     {
         yield return new WaitForSeconds(wait);
         SceneManager.LoadScene("BearMotherandCub");
+    }
+
+    public void Lose()
+    {
+        Debug.Log("Lose");
     }
 }

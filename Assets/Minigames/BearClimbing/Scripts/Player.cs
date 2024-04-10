@@ -16,54 +16,74 @@ using TMPro;
 
 public class Player : MonoBehaviour
 {
-    private GameObject head;
+    //private GameObject head;
     public bool keyDown;
     private float timeElapsed = 0;
     private bool gameOver = false;
 
     public GameObject LevelManager;
+    public int numOfBranches = 3;
+    private bool movementDisabled;
     [SerializeField]
     public int gameTimer = 30;
     public TextMeshProUGUI timerText;
     public float branchEatingTime = 0.4f;
-    public int numOfBranches = 5;
+    
+    public float movementSpeed = 0.007f;
+    public float minY = -2.7f;
+    public float maxY = 1.5f;
+
+    public AudioClip shortVictory;
+    public AudioClip bearGrowl;
 
     
     void Start()
     {
-        GameObject player = GameObject.Find("Player");
-        head = player.transform.GetChild(0).gameObject;
+        //GameObject player = GameObject.Find("Player");
+        //head = player.transform.GetChild(0).gameObject;
+        //numOfBranches = 3;
+        movementDisabled = true;
+        StartCoroutine(waitForSeconds(2.0f));
+        
+    }
+
+    IEnumerator waitForSeconds(float seconds) {
+        yield return new WaitForSeconds(seconds); 
+        movementDisabled = false;
+        gameTimer = 30;
+        timerText.enabled = true;
         timerText.text = gameTimer.ToString();
         StartCoroutine(UpdateTimer());
     }
 
     
-    void Update()
+    public void Update()
     {
+        if (movementDisabled) {return;}
         //get player input from keyboard
         if(Input.GetKey(KeyCode.W))
         {
             //move player up
-            if (transform.position.y < 4) {transform.position += new Vector3(0, 0.015f, 0);}
+            if (transform.position.y < maxY) {transform.position += new Vector3(0, movementSpeed, 0);}
             //4
         }
         if (Input.GetKey(KeyCode.S))
         {
             //move player down
-            if (transform.position.y > -4.3) {transform.position += new Vector3(0, -0.015f, 0);}
+            if (transform.position.y > minY) {transform.position += new Vector3(0, -movementSpeed, 0);}
             //-4.3
         }
         if (Input.GetKey(KeyCode.A))
         {
             //teleport to the left
             float y = transform.position.y;
-            transform.position = new Vector3(-1, y, 0); //0.0061f
+            transform.position = new Vector3(-0.3f, y, 0); //0.0061f
         }
         if (Input.GetKey(KeyCode.D))
         {
             //teleport to the right
             float y = transform.position.y;
-            transform.position = new Vector3(1, y, 0);
+            transform.position = new Vector3(0.3f, y, 0);
         }
 
         keyDown = Input.GetKey(KeyCode.Space);
@@ -75,30 +95,29 @@ public class Player : MonoBehaviour
         }
         
         //if all branches have been eaten, player wins
+        //
+        //Debug.Log("numOfBranches: " + numOfBranches);
+        //Debug.Log("eaten branches: " + eatenBranches);
         if (numOfBranches <= 0 && !gameOver)
             {
                 gameOver = true;
-                gameTimer = 0;
-                timerText.text = "0";
                 timerText.enabled = false;
                 stopTimer();
                 Win();
             }
+        
     }
 
     public void stopTimer() {
         StopCoroutine(UpdateTimer());
         timerText.text = "0";
         timerText.enabled = false;
-        //TODO HOW TO DISABLE TEXT FROM UPDATING?
-        
     }
 
     private IEnumerator UpdateTimer()
     {
         if (gameOver){
-            gameTimer = 0;
-            timerText.text = "0";
+            
             yield break;
             }
         while(gameTimer > 0)
@@ -143,12 +162,16 @@ public class Player : MonoBehaviour
 
     public void Win() {
         Debug.Log("All branches have been eaten");
-        LevelManager.GetComponent<Transition>().WinMiniGame(2.0f);
+        GetComponent<AudioSource>().clip = shortVictory;
+        GetComponent<AudioSource>().Play();
+        LevelManager.GetComponent<Transition>().WinMiniGame(1.5f);
     }
 
     public void Lose() {
         Debug.Log("Player loses");
-        LevelManager.GetComponent<Transition>().LoseMiniGame(2.0f);
+        GetComponent<AudioSource>().clip = bearGrowl;
+        GetComponent<AudioSource>().Play();
+        LevelManager.GetComponent<Transition>().LoseMiniGame(1.0f);
     }
 
     public void BranchesLeft() {
