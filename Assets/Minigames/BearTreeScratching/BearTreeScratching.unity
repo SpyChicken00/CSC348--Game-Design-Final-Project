@@ -361,8 +361,6 @@ GameObject:
   - component: {fileID: 921518849}
   - component: {fileID: 921518848}
   - component: {fileID: 921518847}
-  - component: {fileID: 921518850}
-  - component: {fileID: 921518851}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -435,49 +433,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &921518850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 921518846}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03202602c73db44839bc2b81532fe90a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bearRenderer: {fileID: 1541911045}
-  bearUpSprite: {fileID: 21300000, guid: b2ab935c1e62d42cf910115dbe29297d, type: 3}
-  bearDownSprite: {fileID: 0}
-  bearLeftSprite: {fileID: 0}
-  bearRightSprite: {fileID: 0}
-  startDelay: 3
-  moveDelay: 1
-  LevelManager: {fileID: 768606641}
-  movesQuantity: 2
-  roundsToWin: 2
---- !u!95 &921518851
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 921518846}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7d0ad0a4d352868408825c594f14717b, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1167895022
 GameObject:
   m_ObjectHideFlags: 0
@@ -592,6 +547,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1541911046}
   - component: {fileID: 1541911045}
+  - component: {fileID: 1541911048}
+  - component: {fileID: 1541911047}
   m_Layer: 0
   m_Name: bearResting
   m_TagString: Untagged
@@ -664,6 +621,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1541911047
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541911044}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7d0ad0a4d352868408825c594f14717b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1541911048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541911044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03202602c73db44839bc2b81532fe90a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bearRenderer: {fileID: 1541911045}
+  startDelay: 3
+  moveDelay: 1
+  LevelManager: {fileID: 768606641}
+  movesQuantity: 2
+  roundsToWin: 2
 --- !u!1 &1546492385
 GameObject:
   m_ObjectHideFlags: 0

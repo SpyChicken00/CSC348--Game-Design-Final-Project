@@ -12,10 +12,7 @@ public class BearTreeScratching : MonoBehaviour
     //public GameObject player;
 
     public SpriteRenderer bearRenderer;
-    public Sprite bearUpSprite;
-    public Sprite bearDownSprite;
-    public Sprite bearLeftSprite;
-    public Sprite bearRightSprite;
+    private Animator anim;
 
     // Controls delay between start of game, between bear moves
     public float startDelay;
@@ -53,6 +50,7 @@ public class BearTreeScratching : MonoBehaviour
         startTime = Time.time;
         bearMovesEndTime = startTime + startDelay + ((movesQuantity - 1) * moveDelay);
         playerMoveIndex = 0;
+        anim = GetComponent<Animator>();
 
         // Sets and executes bear moves
         bearMoves = DecideBearMoves(movesQuantity);
@@ -65,7 +63,6 @@ public class BearTreeScratching : MonoBehaviour
         int[] moves = new int[numMoves];
         for (int i = 0; i < numMoves; i++)
             moves[i] = Random.Range(0, 4);
-
         return moves;
     }
 
@@ -78,10 +75,9 @@ public class BearTreeScratching : MonoBehaviour
         // makes moves
         for (int i = 0; i < bearMoves.Length; i++)
         {
-            
-            this.GetComponent<Animator>().enabled = false;      //TODO disable any remaining animations if needed
             MoveBear(bearMoves[i]);
             yield return new WaitForSeconds(moveDelay);
+            anim.speed = 0;
         }
     }
 
@@ -93,21 +89,25 @@ public class BearTreeScratching : MonoBehaviour
             case 0:
                 Debug.Log("right");
                 //Play right swipe animation 
-                this.GetComponent<Animator>().enabled = true;
                 bearRenderer.flipX = true;
-
-                bearRenderer.sprite = bearRightSprite;
-                
+                anim.Play("RightSwipe");
+                anim.speed = 0.6f;
                 break;
             case 1:
                 Debug.Log("up");
+                anim.Play("UpSwipe");
+                anim.speed = 0.6f;
                 break;
             case 2:
                 Debug.Log("left");
                 bearRenderer.flipX = false;
+                anim.Play("LeftSwipe");
+                anim.speed = 0.6f;
                 break;
             case 3:
                 Debug.Log("down");
+                anim.Play("DownSwipeTemp");
+                anim.speed = 0.6f;
                 break;
             default:
                 break;
