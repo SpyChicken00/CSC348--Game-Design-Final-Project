@@ -4,13 +4,6 @@ using UnityEngine;
 
 public class BearTreeScratching : MonoBehaviour
 {
-    // Will probably use something like this when we add art
-    //public Animator anim;
-    //public Rigidbody2D rigid;
-    //public SpriteRenderer sRend;
-    //public GameObject bear;
-    //public GameObject player;
-
     public SpriteRenderer bearRenderer;
     private Animator anim;
 
@@ -18,18 +11,15 @@ public class BearTreeScratching : MonoBehaviour
     public float startDelay;
     public float moveDelay;
 
-    
-
     public GameObject LevelManager;
 
     // How many moves in the level
     public int movesQuantity;
-    public int roundsToWin = 3 ;
+    public int roundsToWin = 3;
 
 
     //TODO take 3 rounds to win game, each round repeat # goes up by 1
     //TODO sync animations with bear moves
-
 
 
 

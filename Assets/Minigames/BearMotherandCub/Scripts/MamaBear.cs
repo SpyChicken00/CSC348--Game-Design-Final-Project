@@ -17,9 +17,10 @@ public class MamaBear : MonoBehaviour
     public float radius = 10;
     public float timeThinkMin = 1f;
     public float timeThinkMax = 4f;
+    public GameObject sprite;
 
     [Header("Dynamic")]
-    public Vector2 facing;
+    public Vector2 facing = Vector2.up;
     public float timeNextDecision = 0;
 
     public Vector2 pos
@@ -51,8 +52,8 @@ public class MamaBear : MonoBehaviour
         line.SetPosition(0, transform.position);
         line.SetPosition(1, myBaby.transform.position);
         List<Vector2> collPoints = new List<Vector2>();
-        collPoints.Add(pos);
-        collPoints.Add(myBaby.pos);
+        collPoints.Add(new Vector2(0, 0));
+        collPoints.Add(myBaby.pos - pos);
         lineColl.SetPoints(collPoints);
     }
 
@@ -60,6 +61,8 @@ public class MamaBear : MonoBehaviour
     // sets a random direction, or staying stationary
     void DecideDirection()
     {
+        Vector2 oldFacing = facing;
+
         float sqrdDistance = (pos - myBaby.pos).sqrMagnitude;
 
         // if twice as far as radius, move towards cub, closer than radius, move away, else move random
@@ -80,6 +83,12 @@ public class MamaBear : MonoBehaviour
         }
 
         timeNextDecision = Time.time + Random.Range(timeThinkMin, timeThinkMax);
+
+        float angle = Vector2.SignedAngle(oldFacing, facing);
+
+        //This doesn't work :(
+        //Debug.Log(angle);
+        sprite.transform.Rotate(0, 0, angle);
     }
 
     // creates a child that is linked to the mom, 1 radius distance away
