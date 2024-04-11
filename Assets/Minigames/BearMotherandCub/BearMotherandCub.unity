@@ -138,6 +138,26 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4753902625798975616, guid: 70092f642c76afe4ea77570182cedd55, type: 3}
+      propertyPath: m_Name
+      value: WalkingBear
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753902625798975621, guid: 70092f642c76afe4ea77570182cedd55, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753902625798975621, guid: 70092f642c76afe4ea77570182cedd55, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753902625798975621, guid: 70092f642c76afe4ea77570182cedd55, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753902625798975621, guid: 70092f642c76afe4ea77570182cedd55, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5083090228887455886, guid: 70092f642c76afe4ea77570182cedd55, type: 3}
       propertyPath: m_Name
       value: Mama Bear
