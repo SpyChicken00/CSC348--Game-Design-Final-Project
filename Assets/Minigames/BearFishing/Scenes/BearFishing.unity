@@ -706,10 +706,10 @@ MonoBehaviour:
   - {fileID: 28537563}
   - {fileID: 1939051989}
   FlyingFish:
-  - {fileID: 1581926361597751418, guid: c967d04c9aa635c49a0e07139fa3bdb9, type: 3}
-  - {fileID: 5760108538018976693, guid: c6c3de1bca20625478a40a8d14bf9433, type: 3}
-  - {fileID: 8945645763328623850, guid: aa45b43e0cc764c4dae9318bde21326c, type: 3}
-  - {fileID: 317730155605961119, guid: 25298e56a89c2ac44963f8475b4d2334, type: 3}
+  - {fileID: 2433489054595924417, guid: 1d545e6f8feab9e4cafbf9fd139e1e25, type: 3}
+  - {fileID: 6882894008297123248, guid: c306d1840df5216499f7bc94ddcc6336, type: 3}
+  - {fileID: 5094912521901074713, guid: 60010c7cb3a06134e85614a989184ee7, type: 3}
+  - {fileID: 6031017607198533299, guid: b23cc599fa7930f4e9ec58e6674a5c16, type: 3}
   waterfall: {fileID: 790652803}
   waterfall2: {fileID: 1178927748}
 --- !u!20 &519420031
