@@ -14,13 +14,17 @@ public class Fish : MonoBehaviour
     protected bool isCaught;
     protected bool shouldfall = false;
     protected bool stopfall = false;
-    public GameObject LevelManager;
 
 
     void Awake()
     {                                                            // c
         wtrCheck = GetComponent<WaterCheck>();
         isCaught = false;
+    }
+
+    public bool GetCaughtStatus()
+    {
+        return stopfall;
     }
 
     // This is a Property: A method that acts like a field
@@ -81,7 +85,6 @@ public class Fish : MonoBehaviour
             {
                 this.transform.position = collision.transform.position;
                 stopfall = true;
-                //Main.LevelManager.GetComponet<Transition>.WinMiniGame(1f);
             }
         }
     }

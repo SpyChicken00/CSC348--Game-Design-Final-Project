@@ -30,7 +30,7 @@ public class Main : MonoBehaviour
     private bool hasflipped = false;
     public GameObject waterfall;
     public GameObject waterfall2;
-    public static GameObject LevelManager;
+    private bool hasWon = false;
 
     void Awake()
     {
@@ -134,6 +134,12 @@ public class Main : MonoBehaviour
                 Destroy(obj);
                 reanimateLocator();
             }
+
+            if (obj.GetComponent<Fish>().GetCaughtStatus() && !hasWon)
+            {
+                mainCharacter.GetComponent<Fisherman>().WinScreen();
+                hasWon = true;
+            }
         }
 
         if (!bear4 && !hasflipped)
@@ -164,8 +170,11 @@ public class Main : MonoBehaviour
             bear.GetComponent<SpriteRenderer>().flipX = !bear.GetComponent<SpriteRenderer>().flipX;
         }
 
-        LevelManager.GetComponent<Transition>().LoseMiniGame(1f);
-        
+        if(!hasWon)
+        {
+            mainCharacter.GetComponent<Fisherman>().LoseScreen();
+
+        }
     }
 
     IEnumerator MoveWaterfall(float wait)

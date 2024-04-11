@@ -401,6 +401,7 @@ GameObject:
   - component: {fileID: 256850301}
   - component: {fileID: 256850303}
   - component: {fileID: 256850300}
+  - component: {fileID: 256850304}
   m_Layer: 9
   m_Name: Main Character
   m_TagString: Untagged
@@ -520,6 +521,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &256850304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256850299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf75d366c52286e4897635f68b94abc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelManager: {fileID: 1583022565}
 --- !u!1001 &315357931
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -675,7 +689,7 @@ MonoBehaviour:
   enemyInsetDefault: 1.5
   spear: {fileID: 0}
   loc: {fileID: 1748556318}
-  mainCharacter: {fileID: 0}
+  mainCharacter: {fileID: 256850299}
   restingBears:
   - {fileID: 199722932}
   - {fileID: 1431040137}
@@ -698,7 +712,6 @@ MonoBehaviour:
   - {fileID: 317730155605961119, guid: 25298e56a89c2ac44963f8475b4d2334, type: 3}
   waterfall: {fileID: 790652803}
   waterfall2: {fileID: 1178927748}
-  LevelManager: {fileID: 1583022565}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
