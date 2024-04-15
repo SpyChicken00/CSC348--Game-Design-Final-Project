@@ -20,7 +20,7 @@ public class MamaBear : MonoBehaviour
     public GameObject sprite;
 
     [Header("Dynamic")]
-    public Vector2 facing = Vector2.up;
+    public Vector2 facing;
     public float timeNextDecision = 0;
 
     public Vector2 pos
@@ -35,6 +35,7 @@ public class MamaBear : MonoBehaviour
         line = GetComponent<LineRenderer>();
         lineColl = GetComponent<EdgeCollider2D>();
         GenerateBaby();
+        facing = Vector2.up;
         DecideDirection();
     }
 
@@ -67,28 +68,17 @@ public class MamaBear : MonoBehaviour
 
         // if twice as far as radius, move towards cub, closer than radius, move away, else move random
         if (sqrdDistance > Mathf.Pow(radius * 2, 2))
-        {
-            //Debug.Log("GET OVER HERE");
             facing = (myBaby.pos - pos).normalized;
-        }
         else if (sqrdDistance < Mathf.Pow(radius, 2))
-        {
-            //Debug.Log("#NotAHelicopter");
             facing = -(myBaby.pos - pos).normalized;
-        }
         else
-        {
-            //Debug.Log("What is parenting?");
             facing = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
-        }
 
         timeNextDecision = Time.time + Random.Range(timeThinkMin, timeThinkMax);
 
-        float angle = Vector2.SignedAngle(oldFacing, facing);
-
-        //This doesn't work :(
-        //Debug.Log(angle);
-        sprite.transform.Rotate(0, 0, angle);
+        // rotates the sprite to face the way it is going
+        float angle = Vector2.SignedAngle(facing, oldFacing);
+        sprite.transform.Rotate(0, 0, -angle);
     }
 
     // creates a child that is linked to the mom, 1 radius distance away

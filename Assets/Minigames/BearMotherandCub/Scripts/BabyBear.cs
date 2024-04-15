@@ -12,6 +12,7 @@ public class BabyBear : MonoBehaviour
     public float radius;
     public float timeThinkMin = 1f;
     public float timeThinkMax = 4f;
+    public GameObject sprite;
 
     [Header("Dynamic")]
     public Vector2 facing;
@@ -25,6 +26,7 @@ public class BabyBear : MonoBehaviour
 
     void Start()
     {
+        facing = Vector2.up;
         rigid = GetComponent<Rigidbody2D>();
         DecideDirection();
     }
@@ -44,7 +46,13 @@ public class BabyBear : MonoBehaviour
     // sets a random direction, or staying stationary
     public void DecideDirection()
     {
+        Vector2 oldFacing = facing;
+
         facing = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
         timeNextDecision = Time.time + Random.Range(timeThinkMin, timeThinkMax);
+
+        // rotates the sprite to face the way it is going
+        float angle = Vector2.SignedAngle(facing, oldFacing);
+        sprite.transform.Rotate(0, 0, -angle);
     }
 }

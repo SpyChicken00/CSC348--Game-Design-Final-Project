@@ -70,6 +70,7 @@ MonoBehaviour:
   radius: 0
   timeThinkMin: 1
   timeThinkMax: 4
+  sprite: {fileID: 4975764559600574540}
   facing: {x: 0, y: 0}
   timeNextDecision: 0
 --- !u!1001 &5778475518797941774
@@ -129,6 +130,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5577c8a61c5e84c35b7e5468e4c11ba4, type: 3}
+--- !u!1 &4975764559600574540 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1530154458489973826, guid: 5577c8a61c5e84c35b7e5468e4c11ba4, type: 3}
+  m_PrefabInstance: {fileID: 5778475518797941774}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4975764559600574537 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1530154458489973831, guid: 5577c8a61c5e84c35b7e5468e4c11ba4, type: 3}
