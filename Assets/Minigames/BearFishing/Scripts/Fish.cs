@@ -22,6 +22,11 @@ public class Fish : MonoBehaviour
         isCaught = false;
     }
 
+    public bool GetCaughtStatus()
+    {
+        return stopfall;
+    }
+
     // This is a Property: A method that acts like a field
     public Vector3 pos
     {                                                       // a
@@ -76,7 +81,7 @@ public class Fish : MonoBehaviour
         GameObject go = collision.gameObject;
         if (go.name == "Main Character")
         {
-            if (Input.GetKeyDown(KeyCode.Space) && shouldfall)
+            if (Input.GetKey(KeyCode.Space) && shouldfall)
             {
                 this.transform.position = collision.transform.position;
                 stopfall = true;
@@ -95,10 +100,5 @@ public class Fish : MonoBehaviour
         { 
             pos -= new Vector3(0, 4, 0) * Time.deltaTime;
         }
-    }
-
-    private void WinScreen()
-    {
-        SceneManager.LoadScene("BearFishing");
     }
 }

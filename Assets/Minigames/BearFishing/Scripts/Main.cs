@@ -17,6 +17,20 @@ public class Main : MonoBehaviour
     public GameObject spear;
     public GameObject loc;
     public GameObject mainCharacter;
+    private float _time = 0.0f;
+    private float gameTime = 10f;
+    public GameObject[] restingBears;
+    public GameObject[] MouthOpenBears;
+    public GameObject[] FishCaughtBears;
+    public GameObject[] FlyingFish;
+    private bool bear1 = true;
+    private bool bear2 = true;
+    private bool bear3 = true;
+    private bool bear4 = true;
+    private bool hasflipped = false;
+    public GameObject waterfall;
+    public GameObject waterfall2;
+    private bool hasWon = false;
 
     void Awake()
     {
@@ -24,9 +38,59 @@ public class Main : MonoBehaviour
         // Set wtrCheck to reference the WaterCheck component on this 
         // GameObject
         wtrCheck = GetComponent<WaterCheck>();
+        for(int i = 0; i < MouthOpenBears.Length; i++)
+        {
+            restingBears[i].SetActive(true);
+            MouthOpenBears[i].SetActive(false);
+            FishCaughtBears[i].SetActive(false);
+        }
 
         // Invoke SpawnFish() once (in 2 seconds, based on default values)
-        Invoke(nameof(SpawnFish), 1f / enemySpawnPerSecond);                
+        Invoke(nameof(SpawnFish), 1f / enemySpawnPerSecond);
+        StartCoroutine(MoveWaterfall(0.3f));
+    }
+
+    private void Update()
+    {
+        //Maybe I just need four individual prefabs and I can add them in from there.
+        //I need to ensure that the flying fish is only substantiated once.
+        //Just some ideas.
+        _time += Time.deltaTime;
+        if (_time > gameTime / 4 && bear1)
+        {
+            restingBears[0].SetActive(false);
+            MouthOpenBears[0].SetActive(true);
+            Instantiate<GameObject>(FlyingFish[0]);
+            bear1 = false;
+            StartCoroutine(BearSwap(MouthOpenBears[0], FishCaughtBears[0], 2));
+        }
+
+        if (_time > gameTime /2 && bear2)
+        {
+            restingBears[1].SetActive(false);
+            MouthOpenBears[1].SetActive(true);
+            Instantiate<GameObject>(FlyingFish[1]);
+            bear2 = false;
+            StartCoroutine(BearSwap(MouthOpenBears[1], FishCaughtBears[1], 2));
+        }
+
+        if (_time > (3 *gameTime / 4) && bear3)
+        {
+            restingBears[2].SetActive(false);
+            MouthOpenBears[2].SetActive(true);
+            Instantiate<GameObject>(FlyingFish[2]);
+            bear3 = false;
+            StartCoroutine(BearSwap(MouthOpenBears[2], FishCaughtBears[2], 2));
+        }
+
+        if(_time > gameTime && bear4)
+        {
+            restingBears[3].SetActive(false);
+            MouthOpenBears[3].SetActive(true);
+            Instantiate<GameObject>(FlyingFish[3]);
+            bear4 = false;
+            StartCoroutine(BearSwap(MouthOpenBears[3], FishCaughtBears[3], 2));
+        }
     }
 
     public void SpawnFish()
@@ -70,6 +134,18 @@ public class Main : MonoBehaviour
                 Destroy(obj);
                 reanimateLocator();
             }
+
+            if (obj.GetComponent<Fish>().GetCaughtStatus() && !hasWon)
+            {
+                mainCharacter.GetComponent<Fisherman>().WinScreen();
+                hasWon = true;
+            }
+        }
+
+        if (!bear4 && !hasflipped)
+        {
+            hasflipped = true;
+            StartCoroutine(BearJudging(2.3f));
         }
     }
 
@@ -78,5 +154,37 @@ public class Main : MonoBehaviour
         loc.GetComponent<Locator>().reanimate();
     }
 
+    IEnumerator BearSwap(GameObject activeBear, GameObject inactiveBear, float wait)
+    {
+        yield return new WaitForSeconds(wait);
+        inactiveBear.SetActive(true);
+        activeBear.SetActive(false);
+    }
+
+    IEnumerator BearJudging(float wait)
+    {
+        yield return new WaitForSeconds(wait);
+        loc.SetActive(false);
+        foreach (GameObject bear in FishCaughtBears)
+        {
+            bear.GetComponent<SpriteRenderer>().flipX = !bear.GetComponent<SpriteRenderer>().flipX;
+        }
+
+        if(!hasWon)
+        {
+            mainCharacter.GetComponent<Fisherman>().LoseScreen();
+
+        }
+    }
+
+    IEnumerator MoveWaterfall(float wait)
+    {
+        yield return new WaitForSeconds(wait);
+        waterfall.SetActive(!waterfall.activeSelf);
+        waterfall2.SetActive(!waterfall2.activeSelf);
+        StartCoroutine(MoveWaterfall(wait));
+        
+    }
 }
+
 

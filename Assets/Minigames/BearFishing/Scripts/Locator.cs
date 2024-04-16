@@ -9,7 +9,6 @@ public class Locator : MonoBehaviour
     static public Locator S { get; private set; }  // Singleton property    // a
 
     [Header("Inscribed")]
-    // These fields control the movement of the ship
     public float speed = 30;
     private bool isMoving;
     public GameObject spear;
@@ -63,15 +62,11 @@ public class Locator : MonoBehaviour
         Vector3 dvect = this.transform.position - go.transform.position;
         go.transform.rotation = Quaternion.LookRotation(
                        Vector3.forward, // Keep z+ pointing straight into the screen.
-                       -dvect           // Point y+ toward the target.
-                     );
+                       -dvect        // Point y+ toward the target.
+                     ) * Quaternion.Euler(0, 0, -90);
         Rigidbody2D rigidB = go.GetComponent<Rigidbody2D>();
         rigidB.velocity = dvect * spearSpeed;
         return go;
-
-
-
-
     }
 
     void OnTriggerExit2D(Collider2D other)

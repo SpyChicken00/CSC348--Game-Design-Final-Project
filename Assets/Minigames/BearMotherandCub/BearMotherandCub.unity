@@ -130,9 +130,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8935237265223581286, guid: 70092f642c76afe4ea77570182cedd55, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8935237265223581286, guid: 70092f642c76afe4ea77570182cedd55, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753902625798975616, guid: 70092f642c76afe4ea77570182cedd55, type: 3}
+      propertyPath: m_Name
+      value: WalkingBear
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753902625798975621, guid: 70092f642c76afe4ea77570182cedd55, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753902625798975621, guid: 70092f642c76afe4ea77570182cedd55, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753902625798975621, guid: 70092f642c76afe4ea77570182cedd55, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753902625798975621, guid: 70092f642c76afe4ea77570182cedd55, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5083090228887455886, guid: 70092f642c76afe4ea77570182cedd55, type: 3}
       propertyPath: m_Name
       value: Mama Bear
+      objectReference: {fileID: 0}
+    - target: {fileID: 5083090228887455886, guid: 70092f642c76afe4ea77570182cedd55, type: 3}
+      propertyPath: m_TagString
+      value: Bear
       objectReference: {fileID: 0}
     - target: {fileID: 5083090228887455887, guid: 70092f642c76afe4ea77570182cedd55, type: 3}
       propertyPath: m_RootOrder
@@ -177,6 +209,10 @@ PrefabInstance:
     - target: {fileID: 5083090228887455887, guid: 70092f642c76afe4ea77570182cedd55, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5934433921538234672, guid: 70092f642c76afe4ea77570182cedd55, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70092f642c76afe4ea77570182cedd55, type: 3}
@@ -355,7 +391,9 @@ GameObject:
   - component: {fileID: 1229959138}
   - component: {fileID: 1229959137}
   - component: {fileID: 1229959139}
-  m_Layer: 0
+  - component: {fileID: 1229959141}
+  - component: {fileID: 1229959140}
+  m_Layer: 12
   m_Name: MainCharacter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -443,6 +481,53 @@ MonoBehaviour:
   speed: 2.5
   startPnt: {fileID: 864807866}
   endPnt: {fileID: 724811324}
+--- !u!50 &1229959140
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229959136}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
+--- !u!61 &1229959141
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229959136}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1422471930
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,7 +540,7 @@ GameObject:
   - component: {fileID: 1422471932}
   - component: {fileID: 1422471931}
   - component: {fileID: 1422471934}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -539,7 +624,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6811fb4389f90249b1ac6d5f1e57748, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cub: {fileID: 0}
+  Cub: {fileID: -6354121196635083875, guid: 34ebc517f66176b419888ae4ab31a39d, type: 3}
   Mother: []
   startPnt: {fileID: 864807866}
   endPnt: {fileID: 724811324}

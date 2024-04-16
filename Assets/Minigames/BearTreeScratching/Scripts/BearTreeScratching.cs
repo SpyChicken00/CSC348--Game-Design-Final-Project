@@ -4,12 +4,8 @@ using UnityEngine;
 
 public class BearTreeScratching : MonoBehaviour
 {
-    // Will probably use something like this when we add art
-    //public Animator anim;
-    //public Rigidbody2D rigid;
-    //public SpriteRenderer sRend;
-    //public GameObject bear;
-    //public GameObject player;
+    public SpriteRenderer bearRenderer;
+    private Animator anim;
 
     // Controls delay between start of game, between bear moves
     public float startDelay;
@@ -19,6 +15,13 @@ public class BearTreeScratching : MonoBehaviour
 
     // How many moves in the level
     public int movesQuantity;
+    public int roundsToWin = 3;
+
+
+    //TODO take 3 rounds to win game, each round repeat # goes up by 1
+    //TODO sync animations with bear moves
+
+
 
     // stores bear moves, counts how many times a player has moved, stores player input
     // stores start time, stores when the bear finishes moving
@@ -27,14 +30,16 @@ public class BearTreeScratching : MonoBehaviour
     private int playerMove;
     private float startTime;
     private float bearMovesEndTime;
+    private int roundsWon = 0;
+
 
     // Controls sequence of bear moves and instantiates vars
     void Start()
     {
+
         //Instantiates vars
-        startTime = Time.time;
-        bearMovesEndTime = startTime + startDelay + ((movesQuantity - 1) * moveDelay);
         playerMoveIndex = 0;
+        anim = GetComponent<Animator>();
 
         // Sets and executes bear moves
         bearMoves = DecideBearMoves(movesQuantity);
@@ -44,10 +49,15 @@ public class BearTreeScratching : MonoBehaviour
     // randomly selects bear moves
     int[] DecideBearMoves(int numMoves)
     {
+        startTime = Time.time;
+        bearMovesEndTime = startDelay + ((movesQuantity - 1) * moveDelay);
+
         int[] moves = new int[numMoves];
         for (int i = 0; i < numMoves; i++)
             moves[i] = Random.Range(0, 4);
 
+        LogMoves(moves);
+        
         return moves;
     }
 
@@ -62,6 +72,7 @@ public class BearTreeScratching : MonoBehaviour
         {
             MoveBear(bearMoves[i]);
             yield return new WaitForSeconds(moveDelay);
+            anim.speed = 0;
         }
     }
 
@@ -71,16 +82,27 @@ public class BearTreeScratching : MonoBehaviour
         switch (direction)
         {
             case 0:
-                Debug.Log("right");
+                //Debug.Log("right");
+                //Play right swipe animation 
+                bearRenderer.flipX = true;
+                anim.Play("RightSwipe");
+                anim.speed = 0.6f;
                 break;
             case 1:
-                Debug.Log("up");
+                //Debug.Log("up");
+                anim.Play("UpSwipe");
+                anim.speed = 0.6f;
                 break;
             case 2:
-                Debug.Log("left");
+                //Debug.Log("left");
+                bearRenderer.flipX = false;
+                anim.Play("LeftSwipe");
+                anim.speed = 0.6f;
                 break;
             case 3:
-                Debug.Log("down");
+                //Debug.Log("down");
+                anim.Play("DownSwipeTemp");
+                anim.speed = 0.6f;
                 break;
             default:
                 break;
@@ -91,23 +113,24 @@ public class BearTreeScratching : MonoBehaviour
     void Update()
     {
         // if incorrect key or all moves have been played, do nothing
-        if (!Input.GetKeyDown("right") && !Input.GetKeyDown("up") && !Input.GetKeyDown("left") && !Input.GetKeyDown("down") || playerMoveIndex >= movesQuantity)
-            return;
+        if (!Input.GetKeyDown("right") && !Input.GetKeyDown("up") && !Input.GetKeyDown("left") && !Input.GetKeyDown("down") && !Input.GetKeyDown(KeyCode.W) 
+            && !Input.GetKeyDown(KeyCode.A) && !Input.GetKeyDown(KeyCode.S) && !Input.GetKeyDown(KeyCode.D) || playerMoveIndex >= movesQuantity) return;
 
         // If a player plays while the bear is acting, lose
-        if(Input.anyKeyDown && Time.time - startTime < bearMovesEndTime) { Lose(); return; }
+        // should we have the player lose or just not acknowldge their inputs?
+        if(Input.anyKeyDown && Time.time - startTime < bearMovesEndTime) { Debug.Log("Early Press: Lose"); Lose(); return; }
 
         // If a key was hit, player acts
         if (Input.anyKeyDown)
         {
             // set playerMove if a direction is hit, returns if other button is hit
-            if (Input.GetKeyDown("right"))
+            if (Input.GetKeyDown("right") || Input.GetKeyDown(KeyCode.D))
                 playerMove = 0;
-            else if (Input.GetKeyDown("up"))
+            else if (Input.GetKeyDown("up")|| Input.GetKeyDown(KeyCode.W))
                 playerMove = 1;
-            else if (Input.GetKeyDown("left"))
+            else if (Input.GetKeyDown("left")|| Input.GetKeyDown(KeyCode.A))
                 playerMove = 2;
-            else if (Input.GetKeyDown("down"))
+            else if (Input.GetKeyDown("down")|| Input.GetKeyDown(KeyCode.S))
                 playerMove = 3;
             else
                 return;
@@ -123,9 +146,22 @@ public class BearTreeScratching : MonoBehaviour
             // if correctly played and all moves played, win
             else if (playerMoveIndex == movesQuantity - 1)
             {
-                Win();
+                roundsWon += 1;
+                Debug.Log("Round Won: " + roundsWon);
+                if (roundsWon == roundsToWin)
+                {
+                    Win();
+                }
+                else
+                {
+                    playerMoveIndex = 0;
+                    movesQuantity += 1;
+                    bearMoves = DecideBearMoves(movesQuantity);
+                    StartCoroutine(MakeBearMoves());
+                }
             }
             // gives player feedback for correct
+            //TODO give visual/audio feedback for correct answer, show player moving
             else
             {
                 playerMoveIndex += 1;
@@ -136,10 +172,10 @@ public class BearTreeScratching : MonoBehaviour
 
     public void Lose()
     {
-        LevelManager.GetComponent<Transition>().LoseMiniGame(0);
-
         // prevents additional presses for double lives loss
         playerMoveIndex = movesQuantity;
+
+        LevelManager.GetComponent<Transition>().LoseMiniGame(0);
     }
 
     public void Win()
@@ -148,6 +184,18 @@ public class BearTreeScratching : MonoBehaviour
         Debug.Log("Win!");
         ScoreCounter.score += 1;
         HighScore.TRY_SET_HIGH_SCORE(ScoreCounter.score);
+
         LevelManager.GetComponent<Transition>().LoadRandomGame();
+    }
+
+    //outputs moves for debugging
+    void LogMoves(int[] moves)
+    {
+        string output = "";
+
+        for (int i = 0; i < moves.Length; i++)
+            output += moves[i] + ", ";
+
+        Debug.Log(output);
     }
 }

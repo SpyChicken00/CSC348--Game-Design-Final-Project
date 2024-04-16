@@ -32,4 +32,18 @@ public class MainCharacter : MonoBehaviour
     {
         this.transform.position = startPnt.transform.position;
     }
+
+    // this does not work, no matter what I do
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Bear"))
+            Debug.Log("AHHHHHH");
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Bear"))
+            Debug.Log("OOOOOOOH");
+    }
+
 }

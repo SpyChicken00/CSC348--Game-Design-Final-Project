@@ -180,3 +180,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   InterpPoint: {fileID: 4377511118826861590, guid: 928171065e88b784fb07378f56720dad, type: 3}
+  LevelManager: {fileID: 2761603656066757837, guid: 9d563abc6d7744e46a00b501491e45da, type: 3}
