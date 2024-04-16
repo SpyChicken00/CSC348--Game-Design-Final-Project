@@ -36,9 +36,8 @@ public class BearTreeScratching : MonoBehaviour
     // Controls sequence of bear moves and instantiates vars
     void Start()
     {
+
         //Instantiates vars
-        startTime = Time.time;
-        bearMovesEndTime = startTime + startDelay + ((movesQuantity - 1) * moveDelay);
         playerMoveIndex = 0;
         anim = GetComponent<Animator>();
 
@@ -50,9 +49,15 @@ public class BearTreeScratching : MonoBehaviour
     // randomly selects bear moves
     int[] DecideBearMoves(int numMoves)
     {
+        startTime = Time.time;
+        bearMovesEndTime = startDelay + ((movesQuantity - 1) * moveDelay);
+
         int[] moves = new int[numMoves];
         for (int i = 0; i < numMoves; i++)
             moves[i] = Random.Range(0, 4);
+
+        LogMoves(moves);
+        
         return moves;
     }
 
@@ -77,25 +82,25 @@ public class BearTreeScratching : MonoBehaviour
         switch (direction)
         {
             case 0:
-                Debug.Log("right");
+                //Debug.Log("right");
                 //Play right swipe animation 
                 bearRenderer.flipX = true;
                 anim.Play("RightSwipe");
                 anim.speed = 0.6f;
                 break;
             case 1:
-                Debug.Log("up");
+                //Debug.Log("up");
                 anim.Play("UpSwipe");
                 anim.speed = 0.6f;
                 break;
             case 2:
-                Debug.Log("left");
+                //Debug.Log("left");
                 bearRenderer.flipX = false;
                 anim.Play("LeftSwipe");
                 anim.speed = 0.6f;
                 break;
             case 3:
-                Debug.Log("down");
+                //Debug.Log("down");
                 anim.Play("DownSwipeTemp");
                 anim.speed = 0.6f;
                 break;
@@ -112,7 +117,8 @@ public class BearTreeScratching : MonoBehaviour
             && !Input.GetKeyDown(KeyCode.A) && !Input.GetKeyDown(KeyCode.S) && !Input.GetKeyDown(KeyCode.D) || playerMoveIndex >= movesQuantity) return;
 
         // If a player plays while the bear is acting, lose
-        if(Input.anyKeyDown && Time.time - startTime < bearMovesEndTime) { Lose(); return; }
+        // should we have the player lose or just not acknowldge their inputs?
+        if(Input.anyKeyDown && Time.time - startTime < bearMovesEndTime) { Debug.Log("Early Press: Lose"); Lose(); return; }
 
         // If a key was hit, player acts
         if (Input.anyKeyDown)
@@ -155,6 +161,7 @@ public class BearTreeScratching : MonoBehaviour
                 }
             }
             // gives player feedback for correct
+            //TODO give visual/audio feedback for correct answer, show player moving
             else
             {
                 playerMoveIndex += 1;
@@ -165,10 +172,10 @@ public class BearTreeScratching : MonoBehaviour
 
     public void Lose()
     {
-        LevelManager.GetComponent<Transition>().LoseMiniGame(0);
-
         // prevents additional presses for double lives loss
         playerMoveIndex = movesQuantity;
+
+        LevelManager.GetComponent<Transition>().LoseMiniGame(0);
     }
 
     public void Win()
@@ -177,6 +184,18 @@ public class BearTreeScratching : MonoBehaviour
         Debug.Log("Win!");
         ScoreCounter.score += 1;
         HighScore.TRY_SET_HIGH_SCORE(ScoreCounter.score);
+
         LevelManager.GetComponent<Transition>().LoadRandomGame();
+    }
+
+    //outputs moves for debugging
+    void LogMoves(int[] moves)
+    {
+        string output = "";
+
+        for (int i = 0; i < moves.Length; i++)
+            output += moves[i] + ", ";
+
+        Debug.Log(output);
     }
 }

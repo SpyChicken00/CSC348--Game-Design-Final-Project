@@ -13,11 +13,10 @@ public class DialogueBox: MonoBehaviour
     public TextMeshProUGUI nameText;
     public GameObject dialogueBox;
 
-    //public static event Action OnDialogueStarted;
-    //public static event Action OnDialogueEnded;
-    bool skipLineTriggered;
+    //bool _skipLineTriggered = false;
     public string[] lines;
     private int _INDEX = 0;
+    private bool isTyping = false;
 
     float charactersPerSecond = 90;
 
@@ -40,7 +39,7 @@ public class DialogueBox: MonoBehaviour
     {
         if (_INDEX < lines.Length)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) && !(isTyping))
             {
                 StartCoroutine(TypeTextUncapped(lines[_INDEX]));
                 _INDEX += 1;
@@ -49,6 +48,11 @@ public class DialogueBox: MonoBehaviour
         else 
         {
             StartCoroutine(LoadNewScene(2f));
+        }
+
+        if(Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            StartCoroutine(LoadNewScene(0.5f));
         }
     }
 
@@ -60,6 +64,7 @@ public class DialogueBox: MonoBehaviour
         string textBuffer = null;
         char[] chars = line.ToCharArray();
         int i = 0;
+        isTyping = true;
 
         while (i < chars.Length)
         {
@@ -76,6 +81,8 @@ public class DialogueBox: MonoBehaviour
                 yield return null;
             }
         }
+
+        isTyping = false;
     }
 
     IEnumerator LoadNewScene(float wait)
@@ -83,41 +90,4 @@ public class DialogueBox: MonoBehaviour
         yield return new WaitForSeconds(wait);
         SceneManager.LoadScene("Hub");
     }
-
-    //public void StartDialogue(string[] dialogue, int startPosition, string name)
-    //{
-    //    nameText.text = name + "...";
-    //    dialogueBox.gameObject.SetActive(true);
-    //    StopAllCoroutines();
-    //    StartCoroutine(RunDialogue(dialogue, startPosition));
-    //}
-
-    //IEnumerator RunDialogue(string[] dialogue, int startPosition)
-    //{
-    //    skipLineTriggered = false;
-    //    OnDialogueStarted?.Invoke();
-
-    //    for (int i = startPosition; i < dialogue.Length; i++)
-    //    {
-    //        dialogueText.text = dialogue[i];
-    //        while (skipLineTriggered == false)
-    //        {
-    //            // Wait for the current line to be skipped
-    //            yield return null;
-    //        }
-    //        skipLineTriggered = false;
-    //    }
-
-    //    OnDialogueEnded?.Invoke();
-    //    dialogueBox.gameObject.SetActive(false);
-    //}
-
-    //public void SkipLine()
-    //{
-    //    skipLineTriggered = true;
-    //}
-
-
-
-
 }

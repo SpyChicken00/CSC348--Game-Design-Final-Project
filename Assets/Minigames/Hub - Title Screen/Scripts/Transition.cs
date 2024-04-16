@@ -7,7 +7,7 @@ public class Transition : MonoBehaviour
 {
     //static public string[] GameList { get; private set; } = new string[] { "BearTreeScratching", "BearBrawling", "BearFishing", "BearClimbing" };
     //TODO bear fishing needs to implement levelManager with proper win/lose conditions to be added to the game list without breaking/freezing the game
-    static public string[] GameList { get; private set; } = new string[] { "BearTreeScratching", "BearBrawling", "BearClimbing" };
+    static public string[] GameList { get; private set; } = new string[] { "BearTreeScratching", "BearBrawling", "BearClimbing", "BearFishing" };
     static public int LastGamePlayed = -1;
 
     public Animator animator;
