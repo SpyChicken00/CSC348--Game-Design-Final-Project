@@ -71,7 +71,7 @@ public class Player : MonoBehaviour
     }
 
     
-    public void FixedUpdate()
+    public void Update()
     {
         anim.speed = animationSpeed;
 
@@ -97,11 +97,11 @@ public class Player : MonoBehaviour
             }
             //-4.3
         }
-        else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             //teleport to the left
             float y = transform.position.y;
-            transform.position = new Vector3(-0.3f, y, 0); //0.0061f
+            transform.position = new Vector3(-0.16f, y, 0); //0.0061f
             playerRenderer.flipX = false;
             //GetComponent<CapsuleCollider2D>().offset.x = 0.2804967f;
             //-0.1544539
@@ -119,36 +119,6 @@ public class Player : MonoBehaviour
             GetComponent<CapsuleCollider2D>().offset = new Vector2(0.05f, y2);
         }
 
-        // keyDown = Input.GetKey(KeyCode.Space);
-
-        // if (keyDown) {timeElapsed += Time.deltaTime;}
-        // if (Input.GetKeyUp(KeyCode.Space))
-        // {
-        //     timeElapsed = 0;        //time based
-        // }
-
-        // if(Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow))
-        // {
-        //     //stop player movement
-        //     anim.enabled = false;
-        //     //Debug.Log("Player stops moving");
-        // }
-        
-        // //if all branches have been eaten, player wins
-        // //
-        // //Debug.Log("numOfBranches: " + numOfBranches);
-        // //Debug.Log("eaten branches: " + eatenBranches);
-        // if (numOfBranches <= 0 && !gameOver)
-        //     {
-        //         gameOver = true;
-        //         timerText.enabled = false;
-        //         stopTimer();
-        //         Win();
-        //     }
-    
-    }
-
-    public void Update() {
         keyDown = Input.GetKey(KeyCode.Space);
 
         if (keyDown) {timeElapsed += Time.deltaTime;}
@@ -175,7 +145,37 @@ public class Player : MonoBehaviour
                 stopTimer();
                 Win();
             }
+    
     }
+
+    // public void Update() {
+    //     keyDown = Input.GetKey(KeyCode.Space);
+
+    //     if (keyDown) {timeElapsed += Time.deltaTime;}
+    //     if (Input.GetKeyUp(KeyCode.Space))
+    //     {
+    //         timeElapsed = 0;        //time based
+    //     }
+
+    //     if(Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow))
+    //     {
+    //         //stop player movement
+    //         anim.enabled = false;
+    //         //Debug.Log("Player stops moving");
+    //     }
+        
+    //     //if all branches have been eaten, player wins
+    //     //
+    //     //Debug.Log("numOfBranches: " + numOfBranches);
+    //     //Debug.Log("eaten branches: " + eatenBranches);
+    //     if (numOfBranches <= 0 && !gameOver)
+    //         {
+    //             gameOver = true;
+    //             timerText.enabled = false;
+    //             stopTimer();
+    //             Win();
+    //         }
+    // }
 
 
     public void expensiveUpdateMovement() {

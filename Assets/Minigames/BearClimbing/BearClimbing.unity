@@ -438,7 +438,7 @@ MonoBehaviour:
   anim: {fileID: 0}
   animationSpeed: 1
   shortVictory: {fileID: 8300000, guid: 9d9225c4624b5b54e82dd016d6a4e66f, type: 3}
-  bearGrowl: {fileID: 8300000, guid: 357b7a360e450a4488bfab79474e68d8, type: 3}
+  bearGrowl: {fileID: 8300000, guid: 8bc38882c42cbe44ba8445ddd2bffa6d, type: 3}
   birdChirp: {fileID: 8300000, guid: 9d362a12b47037d43943183fe37ad1f2, type: 3}
 --- !u!212 &286075900
 SpriteRenderer:
@@ -627,7 +627,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 357b7a360e450a4488bfab79474e68d8, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8bc38882c42cbe44ba8445ddd2bffa6d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
