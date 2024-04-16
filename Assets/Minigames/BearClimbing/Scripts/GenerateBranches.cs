@@ -6,8 +6,8 @@ public class GenerateBranches : MonoBehaviour
 {
     // private const float MAX_HEIGHT = 1.46f;
     // private const float MIN_HEIGHT = -7.2f;
-    private const float MAX_HEIGHT = 1.46f;
-    private const float MIN_HEIGHT = -2.4f;
+    //public const float MAX_HEIGHT = 1.46f;
+    //public const float MIN_HEIGHT = -2.4f;
     private float treeLocation;
     
     [SerializeField]
@@ -15,6 +15,10 @@ public class GenerateBranches : MonoBehaviour
     public int branchNum = 5;
     public GameObject branchPrefabLeft;
     public GameObject branchPrefabRight;  
+    public float MAX_HEIGHT = 1.46f;
+    public float MIN_HEIGHT = -2.4f;
+    public float leftRightOffset = 0;
+    public float upDownOffset = 0;
     
 
     //TODO - check for overlapping branches
@@ -37,7 +41,7 @@ public class GenerateBranches : MonoBehaviour
             //     Instantiate(branchPrefabRight, new Vector3(Random.Range(treeLocation -0.6f, treeLocation), Random.Range(MIN_HEIGHT, MAX_HEIGHT), 1), Quaternion.identity);
             // }
 
-            Instantiate(branchPrefabRight, new Vector3(Random.Range(treeLocation -0.5f, treeLocation + 0.5f), Random.Range(MIN_HEIGHT, MAX_HEIGHT), 1), Quaternion.identity);
+            Instantiate(branchPrefabRight, new Vector3(Random.Range(treeLocation -0.5f + leftRightOffset, treeLocation + 0.5f + leftRightOffset), Random.Range(MIN_HEIGHT + upDownOffset, MAX_HEIGHT + upDownOffset), 1), Quaternion.identity);
             
         }
        

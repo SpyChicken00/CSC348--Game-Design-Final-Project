@@ -7,6 +7,8 @@ public class Fish : MonoBehaviour
 {
     [Header("Inscribed")]
     private WaterCheck wtrCheck;
+    public AudioSource drumroll;
+    public AudioSource splash;
 
     [Header("Dynamic")]
     public float speed = 5f;
@@ -14,11 +16,16 @@ public class Fish : MonoBehaviour
     protected bool isCaught;
     protected bool shouldfall = false;
     protected bool stopfall = false;
+    private bool secondTime = false;
+    private bool isCatchingFish = false;
+    
 
 
     void Awake()
     {                                                            // c
         wtrCheck = GetComponent<WaterCheck>();
+        drumroll = GetComponent<AudioSource>().GetComponents<AudioSource>()[0];
+        splash = GetComponent<AudioSource>().GetComponents<AudioSource>()[1];
         isCaught = false;
     }
 
@@ -72,6 +79,8 @@ public class Fish : MonoBehaviour
         {
             Destroy(go);
             isCaught = true;
+            drumroll.Play();
+            isCatchingFish = true;
         }
         
     }
@@ -85,7 +94,37 @@ public class Fish : MonoBehaviour
             {
                 this.transform.position = collision.transform.position;
                 stopfall = true;
+                drumroll.Stop();
             }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        GameObject go = collision.gameObject;
+        if (go.name == "Waterfall")
+        {
+            //stopfall = false;
+            //stop drumroll sound
+            
+            if (secondTime) {
+                drumroll.Stop();
+                //Destroy(gameObject);
+                
+                isCatchingFish = false;
+                //play one off splash sound
+                splash.Play();
+                gameObject.transform.position = new Vector3(0, -10, 0);
+                
+                //need to reanimate locator by teleporting fish offscreen instead of destroying
+                //stopfall = true;
+            }
+            secondTime = true; 
+        }
+
+        if (go.name == "Main Character")
+        {
+            //
         }
     }
 
@@ -100,5 +139,10 @@ public class Fish : MonoBehaviour
         { 
             pos -= new Vector3(0, 4, 0) * Time.deltaTime;
         }
+    }
+
+    public bool GetIsCatchingFish()
+    {
+        return isCatchingFish;
     }
 }

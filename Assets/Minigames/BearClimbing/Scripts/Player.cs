@@ -61,25 +61,25 @@ public class Player : MonoBehaviour
     {
         if (movementDisabled) {return;}
         //get player input from keyboard
-        if(Input.GetKey(KeyCode.W))
+        if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             //move player up
             if (transform.position.y < maxY) {transform.position += new Vector3(0, movementSpeed, 0);}
             //4
         }
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
             //move player down
             if (transform.position.y > minY) {transform.position += new Vector3(0, -movementSpeed, 0);}
             //-4.3
         }
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             //teleport to the left
             float y = transform.position.y;
             transform.position = new Vector3(-0.3f, y, 0); //0.0061f
         }
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             //teleport to the right
             float y = transform.position.y;
