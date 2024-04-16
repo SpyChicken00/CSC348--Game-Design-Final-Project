@@ -9,11 +9,12 @@ public class BearAI : MonoBehaviour
     private Movement currentMovement = Movement.Wait;   
     private float timeBeforeMove = 0;
     public Player playerObj;
+    private Animator anim;
 
     [SerializeField]
     public Side currentSide;
     public int movementUpdateTime = 2;       //in seconds
-    public float movementSpeed = 0.01f;
+    public float movementSpeed = 0.007f;
     public float timeBeforeAttack = 0.5f;
     public SpriteRenderer bearRenderer;
     public Sprite bearSprite;
@@ -21,14 +22,18 @@ public class BearAI : MonoBehaviour
     public float maxY = 1.5f;
     public int sideSwapFrequency = 10; //how often bear changes side, 0 and 1 are swap, others are nothing, default = 10
     public float visionOffset = 0.23f;
+    public float animationSpeed = 1.0f;
+    
     //public Animation bearAnimation;
 
 
-
+    void Start() {
+        anim = GetComponent<Animator>();
+    }
 
     void Update()
     {
-
+        anim.speed = animationSpeed;
         //bearRenderer.sprite = bearSprite;
         //GetComponent<bearAnimation> = bearAnimation;
         
@@ -48,11 +53,12 @@ public class BearAI : MonoBehaviour
                     transform.position += new Vector3(0, movementSpeed, 0); 
                     //move vision child small amount too
                     transform.GetChild(0).position += new Vector3(0, movementSpeed * visionOffset, 0);
+                    
                 
                 }
                 //play animation
                 if (transform.position.y != maxY) {this.GetComponent<Animator>().enabled = true;}
-                if (transform.position.y == maxY) {currentMovement = Movement.Wait;}
+                if (transform.position.y >= maxY) {currentMovement = Movement.Down;}
                 break;
             case Movement.Down:
                 if (transform.position.y > minY) {
@@ -63,7 +69,7 @@ public class BearAI : MonoBehaviour
                 }
                 //play animation
                 if (transform.position.y != minY) {this.GetComponent<Animator>().enabled = true;}
-                if (transform.position.y == minY) {currentMovement = Movement.Wait;}
+                if (transform.position.y <= minY) {currentMovement = Movement.Up;}
                 break;
             case Movement.Wait:
                 //stop animation

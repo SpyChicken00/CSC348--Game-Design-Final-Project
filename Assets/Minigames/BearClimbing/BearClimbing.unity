@@ -1494,7 +1494,7 @@ MonoBehaviour:
   playerObj: {fileID: 286075899}
   currentSide: 0
   movementUpdateTime: 2
-  movementSpeed: 0.005
+  movementSpeed: 0.003
   timeBeforeAttack: 0.5
   bearRenderer: {fileID: 1411423732}
   bearSprite: {fileID: 21300000, guid: 0e2cfdce6c32543aa92cedd42fb5f9f0, type: 3}
@@ -1502,6 +1502,7 @@ MonoBehaviour:
   maxY: 1.5
   sideSwapFrequency: 5
   visionOffset: 0.25
+  animationSpeed: 0.6
 --- !u!50 &1411423734
 Rigidbody2D:
   serializedVersion: 4
@@ -1739,13 +1740,14 @@ MonoBehaviour:
   currentSide: 1
   movementUpdateTime: 2
   movementSpeed: 0.005
-  timeBeforeAttack: 0.5
+  timeBeforeAttack: 1
   bearRenderer: {fileID: 1738587921}
   bearSprite: {fileID: 21300000, guid: 0e2cfdce6c32543aa92cedd42fb5f9f0, type: 3}
   minY: -2.4
   maxY: 1.5
   sideSwapFrequency: 5
-  visionOffset: 0.25
+  visionOffset: 0.2
+  animationSpeed: 1
 --- !u!212 &1738587921 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 3808756998980233665, guid: 415502019124fd24b89e69f74a4c97e9, type: 3}
