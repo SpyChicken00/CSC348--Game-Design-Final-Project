@@ -28,13 +28,19 @@ public class Player : MonoBehaviour
     public int gameTimer = 30;
     public TextMeshProUGUI timerText;
     public float branchEatingTime = 0.4f;
+    public SpriteRenderer playerRenderer;
     
     public float movementSpeed = 0.007f;
     public float minY = -2.7f;
     public float maxY = 1.5f;
+    public Animator anim;
+    public float animationSpeed = 1.0f;
+    private int interval = 3;
 
     public AudioClip shortVictory;
     public AudioClip bearGrowl;
+    public AudioClip birdChirp;
+
 
     
     void Start()
@@ -42,8 +48,16 @@ public class Player : MonoBehaviour
         //GameObject player = GameObject.Find("Player");
         //head = player.transform.GetChild(0).gameObject;
         //numOfBranches = 3;
+        //birdChirp = GetComponent<AudioSource>().clip;
+        anim = GetComponent<Animator>();
+        GetComponent<AudioSource>().clip = birdChirp;
+        GetComponent<AudioSource>().Play();
+        //birdChirp = GetComponent<AudioSource>().GetComponents<AudioSource>()[2];
+        playerRenderer = GetComponent<SpriteRenderer>();
+        anim.enabled = false;
         movementDisabled = true;
         StartCoroutine(waitForSeconds(2.0f));
+
         
     }
 
@@ -57,41 +71,97 @@ public class Player : MonoBehaviour
     }
 
     
-    public void Update()
+    public void FixedUpdate()
     {
+        anim.speed = animationSpeed;
+
         if (movementDisabled) {return;}
         //get player input from keyboard
+        //if ((Time.frameCount % interval) == 0) {expensiveUpdateMovement();}
         if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             //move player up
-            if (transform.position.y < maxY) {transform.position += new Vector3(0, movementSpeed, 0);}
+            if (transform.position.y < maxY) {
+                transform.position += new Vector3(0, movementSpeed, 0);
+                anim.enabled = true;
+            }
+            
             //4
         }
-        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+        else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
             //move player down
-            if (transform.position.y > minY) {transform.position += new Vector3(0, -movementSpeed, 0);}
+            if (transform.position.y > minY) {
+                transform.position += new Vector3(0, -movementSpeed, 0);
+                anim.enabled = true;
+            }
             //-4.3
         }
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             //teleport to the left
             float y = transform.position.y;
             transform.position = new Vector3(-0.3f, y, 0); //0.0061f
+            playerRenderer.flipX = false;
+            //GetComponent<CapsuleCollider2D>().offset.x = 0.2804967f;
+            //-0.1544539
+            float y2 = GetComponent<CapsuleCollider2D>().offset.y;
+            GetComponent<CapsuleCollider2D>().offset = new Vector2(-0.1544f, y2);
         }
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+        else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             //teleport to the right
             float y = transform.position.y;
             transform.position = new Vector3(0.3f, y, 0);
+            playerRenderer.flipX = true;
+            //adjust the collider's position to match the player's position
+            float y2 = GetComponent<CapsuleCollider2D>().offset.y;
+            GetComponent<CapsuleCollider2D>().offset = new Vector2(0.05f, y2);
         }
 
+        // keyDown = Input.GetKey(KeyCode.Space);
+
+        // if (keyDown) {timeElapsed += Time.deltaTime;}
+        // if (Input.GetKeyUp(KeyCode.Space))
+        // {
+        //     timeElapsed = 0;        //time based
+        // }
+
+        // if(Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow))
+        // {
+        //     //stop player movement
+        //     anim.enabled = false;
+        //     //Debug.Log("Player stops moving");
+        // }
+        
+        // //if all branches have been eaten, player wins
+        // //
+        // //Debug.Log("numOfBranches: " + numOfBranches);
+        // //Debug.Log("eaten branches: " + eatenBranches);
+        // if (numOfBranches <= 0 && !gameOver)
+        //     {
+        //         gameOver = true;
+        //         timerText.enabled = false;
+        //         stopTimer();
+        //         Win();
+        //     }
+    
+    }
+
+    public void Update() {
         keyDown = Input.GetKey(KeyCode.Space);
 
         if (keyDown) {timeElapsed += Time.deltaTime;}
         if (Input.GetKeyUp(KeyCode.Space))
         {
             timeElapsed = 0;        //time based
+        }
+
+        if(Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow))
+        {
+            //stop player movement
+            anim.enabled = false;
+            //Debug.Log("Player stops moving");
         }
         
         //if all branches have been eaten, player wins
@@ -105,7 +175,65 @@ public class Player : MonoBehaviour
                 stopTimer();
                 Win();
             }
-        
+    }
+
+
+    public void expensiveUpdateMovement() {
+        if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+        {
+            //move player up
+            if (transform.position.y < maxY) {
+                transform.position += new Vector3(0, movementSpeed, 0);
+                anim.enabled = true;
+            }
+            
+            //4
+        }
+        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+        {
+            //move player down
+            if (transform.position.y > minY) {
+                transform.position += new Vector3(0, -movementSpeed, 0);
+                anim.enabled = true;
+            }
+            //-4.3
+        }
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        {
+            //teleport to the left
+            float y = transform.position.y;
+            transform.position = new Vector3(-0.3f, y, 0); //0.0061f
+            playerRenderer.flipX = false;
+            //GetComponent<CapsuleCollider2D>().offset.x = 0.2804967f;
+            //-0.1544539
+            float y2 = GetComponent<CapsuleCollider2D>().offset.y;
+            GetComponent<CapsuleCollider2D>().offset = new Vector2(-0.1544f, y2);
+        }
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+        {
+            //teleport to the right
+            float y = transform.position.y;
+            transform.position = new Vector3(0.3f, y, 0);
+            playerRenderer.flipX = true;
+            //adjust the collider's position to match the player's position
+            float y2 = GetComponent<CapsuleCollider2D>().offset.y;
+            GetComponent<CapsuleCollider2D>().offset = new Vector2(0.05f, y2);
+        }
+
+        keyDown = Input.GetKey(KeyCode.Space);
+
+        if (keyDown) {timeElapsed += Time.deltaTime;}
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            timeElapsed = 0;        //time based
+        }
+
+        if(Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow))
+        {
+            //stop player movement
+            anim.enabled = false;
+            //Debug.Log("Player stops moving");
+        }
     }
 
     public void stopTimer() {
@@ -162,6 +290,8 @@ public class Player : MonoBehaviour
 
     public void Win() {
         Debug.Log("All branches have been eaten");
+        GetComponent<AudioSource>().clip = birdChirp;
+        GetComponent<AudioSource>().Stop();
         GetComponent<AudioSource>().clip = shortVictory;
         GetComponent<AudioSource>().Play();
         LevelManager.GetComponent<Transition>().WinMiniGame(1.5f);
@@ -169,6 +299,8 @@ public class Player : MonoBehaviour
 
     public void Lose() {
         Debug.Log("Player loses");
+        GetComponent<AudioSource>().clip = birdChirp;
+        GetComponent<AudioSource>().Stop();
         GetComponent<AudioSource>().clip = bearGrowl;
         GetComponent<AudioSource>().Play();
         LevelManager.GetComponent<Transition>().LoseMiniGame(1.0f);

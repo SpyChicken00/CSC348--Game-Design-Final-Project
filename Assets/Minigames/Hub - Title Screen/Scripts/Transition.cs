@@ -5,13 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class Transition : MonoBehaviour
 {
-    //static public string[] GameList { get; private set; } = new string[] { "BearTreeScratching", "BearBrawling", "BearFishing", "BearClimbing" };
-    //TODO bear fishing needs to implement levelManager with proper win/lose conditions to be added to the game list without breaking/freezing the game
     static public string[] GameList { get; private set; } = new string[] { "BearTreeScratching", "BearBrawling", "BearClimbing", "BearFishing" };
+    //private string lastGamePlayed = "";
     static public int LastGamePlayed = -1;
 
     public Animator animator;
     public float transitionDelayTime = 1.0f;
+    private int gameIndex;
 
 
     void Awake()
@@ -61,20 +61,20 @@ public class Transition : MonoBehaviour
     public void LoadRandomGame()
     {
         //select a random game
-        int gameIndex = Random.Range(0, Transition.GameList.Length);
+        gameIndex = Random.Range(0, Transition.GameList.Length);
 
         //if the game was just played, try again
         while (gameIndex == LastGamePlayed)
             gameIndex = Random.Range(0, Transition.GameList.Length);
 
-        //set the last game played to the game that will be played, then play the game
-        LastGamePlayed = gameIndex;
         LoadLevel(Transition.GameList[gameIndex]);
     }
 
     // Loads the input level
     public void LoadLevel(string newLevel)
     {
+        //set the last game played to the game that will be played, then play the game
+        LastGamePlayed = gameIndex;
         StartCoroutine(DelayLoadLevel(newLevel));
     }
 
