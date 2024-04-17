@@ -84,6 +84,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WalkingBear
       objectReference: {fileID: 0}
+    - target: {fileID: 1530154458489973826, guid: 5577c8a61c5e84c35b7e5468e4c11ba4, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 1530154458489973831, guid: 5577c8a61c5e84c35b7e5468e4c11ba4, type: 3}
       propertyPath: m_RootOrder
       value: 0

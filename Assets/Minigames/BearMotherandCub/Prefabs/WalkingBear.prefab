@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1530154458489973828}
   - component: {fileID: 1530154458489973829}
   - component: {fileID: 3523791190779172792}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: WalkingBear
   m_TagString: Bear
   m_Icon: {fileID: 0}

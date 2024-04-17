@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Branch
   - Fish
+  - Bear
   layers:
   - Default
   - TransparentFX
@@ -18,8 +19,8 @@ TagManager:
   - Locator
   - MainCharacter
   - 
-  - MCBear
-  - MCPlayer
+  - MotherCub
+  - 
   - 
   - 
   - 
