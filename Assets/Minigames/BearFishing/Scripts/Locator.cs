@@ -15,12 +15,13 @@ public class Locator : MonoBehaviour
     public float spearSpeed = 1;
     private int SpearCount;
     private bool haveSpear;
+    public AudioSource shootSound;
 
     void Awake()
     {
         if (S == null)
         {
-            S = this; // Set the Singleton only if it’s null                  // c
+            S = this; // Set the Singleton only if itï¿½s null                  // c
         }
         else
         {
@@ -49,6 +50,8 @@ public class Locator : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && !haveSpear)
         {
             isMoving = false;
+            //play shooting sound effect
+            shootSound.Play();
             ShootHarpoon();
             haveSpear = true;
         }

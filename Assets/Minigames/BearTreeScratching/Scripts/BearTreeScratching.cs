@@ -193,9 +193,24 @@ public class BearTreeScratching : MonoBehaviour
     {
         string output = "";
 
-        for (int i = 0; i < moves.Length; i++)
-            output += moves[i] + ", ";
-
+        for (int i = 0; i < moves.Length; i++) {
+            switch (moves[i])
+            {
+            case 0:
+                output += "Right, ";
+                break;
+            case 1:
+                output += "Up, ";
+                break;
+            case 2:
+                output += "Left, ";
+                break;
+            case 3:
+                output += "Down, ";
+                anim.speed = 0.6f;
+                break;
+            }
+        }
         Debug.Log(output);
     }
 }

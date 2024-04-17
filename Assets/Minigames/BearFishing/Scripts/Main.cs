@@ -11,6 +11,7 @@ public class Main : MonoBehaviour
     public GameObject[] prefabFish;               // Array of Enemy prefabs
     public float enemySpawnPerSecond = 0.5f;  // # Enemies spawned/second
     public float enemyInsetDefault = 1.5f;    // Inset from the sides
+    public AudioSource riverSound;
 
 
     private WaterCheck wtrCheck;
@@ -18,11 +19,12 @@ public class Main : MonoBehaviour
     public GameObject loc;
     public GameObject mainCharacter;
     private float _time = 0.0f;
-    private float gameTime = 10f;
+    public float gameTime = 10f; //how long the game lasts in seconds 
     public GameObject[] restingBears;
     public GameObject[] MouthOpenBears;
     public GameObject[] FishCaughtBears;
     public GameObject[] FlyingFish;
+    //private GameObject[] fishObjects;
     private bool bear1 = true;
     private bool bear2 = true;
     private bool bear3 = true;
@@ -31,10 +33,12 @@ public class Main : MonoBehaviour
     public GameObject waterfall;
     public GameObject waterfall2;
     private bool hasWon = false;
+    //private bool isCatchingFish = false;
 
     void Awake()
     {
         S = this;
+        riverSound = GetComponent<AudioSource>();
         // Set wtrCheck to reference the WaterCheck component on this 
         // GameObject
         wtrCheck = GetComponent<WaterCheck>();
@@ -137,6 +141,7 @@ public class Main : MonoBehaviour
 
             if (obj.GetComponent<Fish>().GetCaughtStatus() && !hasWon)
             {
+                riverSound.GetComponent<AudioSource>().Stop();
                 mainCharacter.GetComponent<Fisherman>().WinScreen();
                 hasWon = true;
             }
@@ -145,7 +150,7 @@ public class Main : MonoBehaviour
         if (!bear4 && !hasflipped)
         {
             hasflipped = true;
-            StartCoroutine(BearJudging(2.3f));
+            StartCoroutine(BearJudging(2.5f)); //2.3f
         }
     }
 
@@ -170,9 +175,15 @@ public class Main : MonoBehaviour
             bear.GetComponent<SpriteRenderer>().flipX = !bear.GetComponent<SpriteRenderer>().flipX;
         }
 
+        //find fish objects on screen
+       
+
+        //update to include catching fish as condition before losing
         if(!hasWon)
         {
+            riverSound.GetComponent<AudioSource>().Stop();
             mainCharacter.GetComponent<Fisherman>().LoseScreen();
+        
 
         }
     }
