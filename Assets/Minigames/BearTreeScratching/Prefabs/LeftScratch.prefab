@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 2671142463223577101}
   - component: {fileID: 2697938881783137185}
   m_Layer: 0
-  m_Name: StartRightScratch
-  m_TagString: Untagged
+  m_Name: LeftScratch
+  m_TagString: Scratch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,8 +26,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8616185752877378853}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -3.263, y: -1.843, z: 4}
-  m_LocalScale: {x: 1.5660704, y: 3.1321409, z: 0.3132141}
+  m_LocalPosition: {x: -3.2722, y: -1.843, z: 4}
+  m_LocalScale: {x: 1.5660704, y: 2.3882573, z: 0.3132141}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0

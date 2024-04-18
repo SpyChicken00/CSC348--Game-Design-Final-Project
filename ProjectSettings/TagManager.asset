@@ -7,6 +7,7 @@ TagManager:
   - Branch
   - Fish
   - Bear
+  - Scratch
   layers:
   - Default
   - TransparentFX

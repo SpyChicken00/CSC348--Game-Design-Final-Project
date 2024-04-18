@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 3667271616124291951}
   - component: {fileID: 3640044224490451651}
   m_Layer: 0
-  m_Name: StartDownScratch
-  m_TagString: Untagged
+  m_Name: UpScratch
+  m_TagString: Scratch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

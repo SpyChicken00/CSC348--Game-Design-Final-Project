@@ -93,30 +93,27 @@ public class BearTreeScratching : MonoBehaviour
         switch (direction)
         {
             case 0:
-                //Debug.Log("right");
-                //Play right swipe animation 
-                Instantiate(StartRightScratch, new Vector3(-3.263f, -1.843f, 10), Quaternion.Euler(0, 0, 90));
-                bearRenderer.flipX = true;
-                anim.Play("RightSwipe");
-                anim.speed = 0.6f;
-                break;
-            case 1:
-                //Debug.Log("up");
-                Instantiate(StartUpScratch, new Vector3(-3.263f, -1.843f, 10), Quaternion.identity);
-                anim.Play("UpSwipe");
-                anim.speed = 0.6f;
-                break;
-            case 2:
-                //Debug.Log("left");
-                Instantiate(StartLeftScratch, new Vector3(-3.263f, -1.843f, 10), Quaternion.Euler(0,0, 90));
+                Instantiate(StartLeftScratch, new Vector3(-3.4f, -1.9f, 10), Quaternion.Euler(0,0, 90));
                 bearRenderer.flipX = false;
                 anim.Play("LeftSwipe");
                 anim.speed = 0.6f;
                 break;
+            case 1:
+                //Debug.Log("up");
+                Instantiate(StartDownScratch, new Vector3(-3.263f, -1.9f, 10), Quaternion.identity);
+                anim.Play("DownSwipe");
+                anim.speed = 0.6f;
+                break;
+            case 2:
+                Instantiate(StartRightScratch, new Vector3(-3.2f, -1.7f, 10), Quaternion.Euler(0, 0, 90));
+                bearRenderer.flipX = true;
+                anim.Play("RightSwipe");
+                anim.speed = 0.6f;
+                break;
             case 3:
                 //Debug.Log("down");
-                Instantiate(StartDownScratch, new Vector3(-3.263f, -1.843f, 10), Quaternion.identity);
-                anim.Play("DownSwipe");
+                 Instantiate(StartUpScratch, new Vector3(-3.263f, -1.80f, 10), Quaternion.identity);
+                anim.Play("UpSwipe");
                 anim.speed = 0.6f;
                 break;
             default:
@@ -176,6 +173,13 @@ public class BearTreeScratching : MonoBehaviour
                     playerMoveIndex = 0;
                     movesQuantity += 1;
                     bearMoves = DecideBearMoves(movesQuantity);
+                    //destroy scratches on screen
+                    GameObject[] scratches = GameObject.FindGameObjectsWithTag("Scratch");
+                    foreach (GameObject scratch in scratches)
+                    {
+                        Destroy(scratch);
+                    }
+                    
                     StartCoroutine(MakeBearMoves());
                 }
             }
