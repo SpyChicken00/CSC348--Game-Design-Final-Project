@@ -74,11 +74,11 @@ public class MamaBear : MonoBehaviour
         else
             facing = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
 
-        timeNextDecision = Time.time + Random.Range(timeThinkMin, timeThinkMax);
-
         // rotates the sprite to face the way it is going
         float angle = Vector2.SignedAngle(facing, oldFacing);
         sprite.transform.Rotate(0, 0, -angle);
+
+        timeNextDecision = Time.time + Random.Range(timeThinkMin, timeThinkMax); 
     }
 
     // creates a child that is linked to the mom, 1 radius distance away
@@ -93,5 +93,18 @@ public class MamaBear : MonoBehaviour
         float goX = this.transform.position.x + (radius * myBaby.facing.x);
         float goY = this.transform.position.y + (radius * myBaby.facing.y);
         myBaby.transform.position = new Vector3(goX, goY, this.transform.position.z);
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        //chooses a random direction to go in
+        Vector2 oldFacing = facing;
+        facing = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
+
+        // rotates the sprite to face the way it is going
+        float angle = Vector2.SignedAngle(facing, oldFacing);
+        sprite.transform.Rotate(0, 0, -angle);
+
+        timeNextDecision = Time.time + Random.Range(timeThinkMin, timeThinkMax);
     }
 }
