@@ -10,6 +10,9 @@ public class ZoomCameraStart : MonoBehaviour
     [Header("Set in Inspector")]
     public Transform c0;
     public Transform c1;
+    public Transform c2;
+    public Transform n1;
+    public Transform n0;
     public float uMin = 0;
     public float uMax = 1;
     public float timeDuration = 1;
@@ -18,6 +21,8 @@ public class ZoomCameraStart : MonoBehaviour
     public float easingMod = 2;
     // Click the checkToStart checkbox to start moving
     public bool checkToStart = true;
+    public bool BearToPlayerStart = true;
+    public bool PlayerToBearStart = true;
     public AudioClip discoveredAudio;
     
     [Header("Set Dynamically")]
@@ -31,7 +36,29 @@ public class ZoomCameraStart : MonoBehaviour
     // Update is called once per frame
     void Update () {
         if (checkToStart) {
+            n0 = c0;
+            n1 = c1;
             checkToStart = false;
+            moving = true;
+            timeStart = Time.time;
+            //GetComponent<AudioSource>().clip = discoveredAudio;
+            //GetComponent<AudioSource>().Play();
+
+        }
+        if (BearToPlayerStart) {
+            n0 = c1;
+            n1 = c2;
+            BearToPlayerStart = false;
+            moving = true;
+            timeStart = Time.time;
+            //GetComponent<AudioSource>().clip = discoveredAudio;
+            //GetComponent<AudioSource>().Play();
+
+        }
+        if (PlayerToBearStart) {
+            n0 = c2;
+            n1 = c1;
+            PlayerToBearStart = false;
             moving = true;
             timeStart = Time.time;
             //GetComponent<AudioSource>().clip = discoveredAudio;
@@ -55,11 +82,11 @@ public class ZoomCameraStart : MonoBehaviour
             // The Easing.Ease function modifies u to change tweak movement
             u = Easing.Ease(u, easingType, easingMod);
             // This is the standard linear interpolation function
-            p01 = (1-u)*c0.position + u*c1.position;
+            p01 = (1-u)*n0.position + u*n1.position;
             
-            s01 = (1-u)*c0.localScale + u*c1.localScale;
+            s01 = (1-u)*n0.localScale + u*n1.localScale;
             // Rotations are treated differently because Quaternions are tricky
-            r01 = Quaternion.Slerp(c0.rotation, c1.rotation, u);
+            r01 = Quaternion.Slerp(n0.rotation, n1.rotation, u);
             // Apply these to this Cube01
             transform.position = p01;
             

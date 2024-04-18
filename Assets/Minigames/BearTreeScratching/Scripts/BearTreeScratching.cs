@@ -78,6 +78,7 @@ public class BearTreeScratching : MonoBehaviour
             MoveBear(bearMoves[i]);
             yield return new WaitForSeconds(moveDelay);
             anim.speed = 0;
+            //move camera to player tree
         }
     }
 
@@ -166,10 +167,12 @@ public class BearTreeScratching : MonoBehaviour
                 Debug.Log("Round Won: " + roundsWon);
                 if (roundsWon == roundsToWin)
                 {
+                    anim.speed = 0;
                     Win();
                 }
                 else
                 {
+                    anim.speed = 0;
                     playerMoveIndex = 0;
                     movesQuantity += 1;
                     bearMoves = DecideBearMoves(movesQuantity);
@@ -179,7 +182,7 @@ public class BearTreeScratching : MonoBehaviour
                     {
                         Destroy(scratch);
                     }
-                    
+
                     StartCoroutine(MakeBearMoves());
                 }
             }
