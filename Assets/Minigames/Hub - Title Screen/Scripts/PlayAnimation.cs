@@ -8,6 +8,7 @@ public class PlayAnimation : MonoBehaviour
 
     public AnimationClip walk;
     Animator anim;
+    public GameObject levelManager;
 
     void Start()
     {
@@ -26,6 +27,6 @@ public class PlayAnimation : MonoBehaviour
     IEnumerator BeginCutscene(float wait)
     {
         yield return new WaitForSeconds(wait);
-        SceneManager.LoadScene("Opening");
+        levelManager.GetComponent<Transition>().LoadRandomGame();
     }
 }

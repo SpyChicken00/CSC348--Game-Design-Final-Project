@@ -12,11 +12,14 @@ public class DialogueBox: MonoBehaviour
     public TextMeshProUGUI dialogueText;
     public TextMeshProUGUI nameText;
     public GameObject dialogueBox;
+    public GameObject levelManager;
 
     //bool _skipLineTriggered = false;
     public string[] lines;
     private int _INDEX = 0;
     private bool isTyping = false;
+    private bool startTyping = false;
+    private string name_Text;
 
     float charactersPerSecond = 90;
 
@@ -31,15 +34,17 @@ public class DialogueBox: MonoBehaviour
             Destroy(this);
         }
 
-        StartCoroutine(TypeTextUncapped(lines[_INDEX]));
-        _INDEX += 1;
+        name_Text = nameText.text;
+        dialogueBox.SetActive(false);
+        nameText.text = null;
+        StartCoroutine(StartOfScene(2f));
     }
 
     public void Update()
     {
         if (_INDEX < lines.Length)
         {
-            if (Input.GetKeyDown(KeyCode.Space) && !(isTyping))
+            if (Input.GetKeyDown(KeyCode.Space) && !(isTyping) && startTyping)
             {
                 StartCoroutine(TypeTextUncapped(lines[_INDEX]));
                 _INDEX += 1;
@@ -47,7 +52,7 @@ public class DialogueBox: MonoBehaviour
         }
         else 
         {
-            StartCoroutine(LoadNewScene(2f));
+            StartCoroutine(LoadNewScene(1f));
         }
 
         if(Input.GetKeyDown(KeyCode.RightArrow))
@@ -88,6 +93,20 @@ public class DialogueBox: MonoBehaviour
     IEnumerator LoadNewScene(float wait)
     {
         yield return new WaitForSeconds(wait);
-        SceneManager.LoadScene("Hub");
+        dialogueBox.gameObject.SetActive(false);
+        nameText.text = null;
+        dialogueText.text = null;
+        yield return new WaitForSeconds (wait);
+        levelManager.GetComponent<Transition>().LoadLevel("Hub");
+    }
+
+    IEnumerator StartOfScene(float wait)
+    {
+        yield return new WaitForSeconds(wait);
+        dialogueBox.gameObject.SetActive(true);
+        startTyping = true;
+        StartCoroutine(TypeTextUncapped(lines[_INDEX]));
+        _INDEX += 1;
+        nameText.text = name_Text;
     }
 }
