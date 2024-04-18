@@ -893,6 +893,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walk: {fileID: 7400000, guid: 80addebcf511c734dab36c0bde36be3b, type: 2}
+  levelManager: {fileID: 2080800301}
 --- !u!1 &1473940545
 GameObject:
   m_ObjectHideFlags: 0
@@ -1185,6 +1186,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2080800301 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2761603656066757837, guid: 9d563abc6d7744e46a00b501491e45da, type: 3}
+  m_PrefabInstance: {fileID: 598112607295439899}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &598112607295439899
 PrefabInstance:
   m_ObjectHideFlags: 0
