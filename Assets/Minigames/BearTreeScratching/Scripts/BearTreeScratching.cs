@@ -101,7 +101,7 @@ public class BearTreeScratching : MonoBehaviour
                 break;
             case 3:
                 //Debug.Log("down");
-                anim.Play("DownSwipeTemp");
+                anim.Play("DownSwipe");
                 anim.speed = 0.6f;
                 break;
             default:

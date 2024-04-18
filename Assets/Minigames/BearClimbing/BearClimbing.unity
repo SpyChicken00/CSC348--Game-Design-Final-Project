@@ -432,7 +432,7 @@ MonoBehaviour:
   timerText: {fileID: 1919091294}
   branchEatingTime: 0.5
   playerRenderer: {fileID: 0}
-  movementSpeed: 0.018
+  movementSpeed: 0.005
   minY: -2.7
   maxY: 1.5
   anim: {fileID: 0}
@@ -1625,7 +1625,7 @@ MonoBehaviour:
   playerObj: {fileID: 286075899}
   currentSide: 0
   movementUpdateTime: 2
-  movementSpeed: 0.004
+  movementSpeed: 0.003
   timeBeforeAttack: 0.8
   bearRenderer: {fileID: 1411423732}
   bearSprite: {fileID: 21300000, guid: 0e2cfdce6c32543aa92cedd42fb5f9f0, type: 3}
@@ -1874,7 +1874,7 @@ MonoBehaviour:
   playerObj: {fileID: 286075899}
   currentSide: 1
   movementUpdateTime: 2
-  movementSpeed: 0.006
+  movementSpeed: 0.005
   timeBeforeAttack: 1.5
   bearRenderer: {fileID: 1738587921}
   bearSprite: {fileID: 21300000, guid: 0e2cfdce6c32543aa92cedd42fb5f9f0, type: 3}

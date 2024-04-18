@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
     public float maxY = 1.5f;
     public Animator anim;
     public float animationSpeed = 1.0f;
-    private int interval = 3;
+    //private int interval = 3;
 
     public AudioClip shortVictory;
     public AudioClip bearGrowl;
@@ -179,6 +179,13 @@ public class Player : MonoBehaviour
 
 
     public void expensiveUpdateMovement() {
+        //if player presses a keydown, start moving isMoving = true
+        //if player releases a key, stop moving isMoving = false
+
+        
+        //if(isMoving) {
+
+        // /}
         if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             //move player up
