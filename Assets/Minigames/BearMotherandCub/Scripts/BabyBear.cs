@@ -55,4 +55,17 @@ public class BabyBear : MonoBehaviour
         float angle = Vector2.SignedAngle(facing, oldFacing);
         sprite.transform.Rotate(0, 0, -angle);
     }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        //chooses a random direction to go in
+        Vector2 oldFacing = facing;
+        facing = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
+
+        // rotates the sprite to face the way it is going
+        float angle = Vector2.SignedAngle(facing, oldFacing);
+        sprite.transform.Rotate(0, 0, -angle);
+
+        timeNextDecision = Time.time + Random.Range(timeThinkMin, timeThinkMax);
+    }
 }

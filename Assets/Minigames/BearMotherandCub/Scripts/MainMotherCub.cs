@@ -5,18 +5,31 @@ using UnityEngine.SceneManagement;
 
 public class MainMotherCub : MonoBehaviour
 {
-    public BabyBear Cub;
-    public MamaBear[] Mother;
+    public GameObject Mother;
     public GameObject startPnt;
     public GameObject endPnt;
     public MainCharacter mainCharacter;
     public int numMamaBear;
 
+    public Vector2 xBounds = new Vector2(-36, 108);
+    public Vector2 yBounds = new Vector2(-20, 60);
+
+    public Transform[] startLocations;
 
     void Start()
     {
-        startPnt.transform.position = new Vector3(-8,0,0);
-        endPnt.transform.position =(new Vector3(8,0,0));
+        GameObject startGO = Instantiate<GameObject>(startPnt);
+        GameObject endGO = Instantiate<GameObject>(endPnt);
+
+        int startIndex = Random.Range(0, startLocations.Length);
+        int endIndex = Random.Range(0, startLocations.Length);
+        while (startIndex == endIndex)
+            endIndex = Random.Range(0, startLocations.Length);
+
+        startGO.transform.position = startLocations[startIndex].position;
+        endGO.transform.position = startLocations[endIndex].position;
+
+        PopulateBears(numMamaBear);
     }
 
     // Update is called once per frame
@@ -39,5 +52,17 @@ public class MainMotherCub : MonoBehaviour
     public void Lose()
     {
         Debug.Log("Lose");
+    }
+
+    public void PopulateBears(int numBears)
+    {
+        for (int i = 0; i < numBears; i++)
+        {
+            float x = Random.Range(xBounds.x, xBounds.y);
+            float y = Random.Range(yBounds.x, yBounds.y);
+
+            GameObject go = Instantiate<GameObject>(Mother);
+            go.transform.position = new Vector3(x, y, 0);
+        }
     }
 }
