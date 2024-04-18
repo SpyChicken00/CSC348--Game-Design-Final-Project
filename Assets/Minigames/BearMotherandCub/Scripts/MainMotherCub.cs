@@ -6,10 +6,15 @@ using UnityEngine.SceneManagement;
 public class MainMotherCub : MonoBehaviour
 {
     public GameObject Mother;
-    public GameObject startPnt;
-    public GameObject endPnt;
+
     public MainCharacter mainCharacter;
     public int numMamaBear;
+    public GameObject startPnt;
+    public GameObject endPnt;
+
+    // start and end point singletons
+    public GameObject s;
+    public GameObject e;
 
     public Vector2 xBounds = new Vector2(-36, 108);
     public Vector2 yBounds = new Vector2(-20, 60);
@@ -18,16 +23,16 @@ public class MainMotherCub : MonoBehaviour
 
     void Start()
     {
-        GameObject startGO = Instantiate<GameObject>(startPnt);
-        GameObject endGO = Instantiate<GameObject>(endPnt);
+        s = Instantiate<GameObject>(startPnt);
+        e = Instantiate<GameObject>(endPnt);
 
         int startIndex = Random.Range(0, startLocations.Length);
         int endIndex = Random.Range(0, startLocations.Length);
         while (startIndex == endIndex)
             endIndex = Random.Range(0, startLocations.Length);
 
-        startGO.transform.position = startLocations[startIndex].position;
-        endGO.transform.position = startLocations[endIndex].position;
+        s.transform.position = startLocations[startIndex].position;
+        e.transform.position = startLocations[endIndex].position;
 
         PopulateBears(numMamaBear);
     }
@@ -36,8 +41,8 @@ public class MainMotherCub : MonoBehaviour
     void Update()
     {
 
-        if (System.Math.Abs(mainCharacter.transform.position.x - endPnt.transform.position.x) < 0.25 &&
-            System.Math.Abs(mainCharacter.transform.position.y - endPnt.transform.position.y) < 0.25)
+        if (System.Math.Abs(mainCharacter.transform.position.x - e.transform.position.x) < 0.25 &&
+            System.Math.Abs(mainCharacter.transform.position.y - e.transform.position.y) < 0.25)
         {
             mainCharacter.Restart();
         }
