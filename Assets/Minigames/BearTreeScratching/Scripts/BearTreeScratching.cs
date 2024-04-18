@@ -6,6 +6,7 @@ public class BearTreeScratching : MonoBehaviour
 {
     public SpriteRenderer bearRenderer;
     private Animator anim;
+    //private Animator swipeAnim;
 
     // Controls delay between start of game, between bear moves
     public float startDelay;
@@ -17,6 +18,10 @@ public class BearTreeScratching : MonoBehaviour
     public int movesQuantity;
     public int roundsToWin = 3;
 
+    public GameObject StartUpScratch;
+    public GameObject StartDownScratch;
+    public GameObject StartLeftScratch;
+    public GameObject StartRightScratch;
 
     //TODO take 3 rounds to win game, each round repeat # goes up by 1
     //TODO sync animations with bear moves
@@ -79,28 +84,38 @@ public class BearTreeScratching : MonoBehaviour
     // TODO make this animate the bear art when we have art set
     void MoveBear(int direction)
     {
+        //spawn swipe animation and make play in time with bear swipe
+       
+
+       //create a new swipe object in the scene
+        //Instantiate(StartUpScratch, new Vector3(-3.263f, -1.843f, 10), Quaternion.identity);
+        
         switch (direction)
         {
             case 0:
                 //Debug.Log("right");
                 //Play right swipe animation 
+                Instantiate(StartRightScratch, new Vector3(-3.263f, -1.843f, 10), Quaternion.Euler(0, 0, 90));
                 bearRenderer.flipX = true;
                 anim.Play("RightSwipe");
                 anim.speed = 0.6f;
                 break;
             case 1:
                 //Debug.Log("up");
+                Instantiate(StartUpScratch, new Vector3(-3.263f, -1.843f, 10), Quaternion.identity);
                 anim.Play("UpSwipe");
                 anim.speed = 0.6f;
                 break;
             case 2:
                 //Debug.Log("left");
+                Instantiate(StartLeftScratch, new Vector3(-3.263f, -1.843f, 10), Quaternion.Euler(0,0, 90));
                 bearRenderer.flipX = false;
                 anim.Play("LeftSwipe");
                 anim.speed = 0.6f;
                 break;
             case 3:
                 //Debug.Log("down");
+                Instantiate(StartDownScratch, new Vector3(-3.263f, -1.843f, 10), Quaternion.identity);
                 anim.Play("DownSwipe");
                 anim.speed = 0.6f;
                 break;
@@ -108,6 +123,10 @@ public class BearTreeScratching : MonoBehaviour
                 break;
         }
     }
+
+    //TODO flip up down left right to make swipe direction the one you want
+    //TODO remove scratches between rounds to make it look cleaner 
+    //Move camera to player tree and perform animations with players matching bear moves, then return back to bear
 
     // Controls player actions
     void Update()
