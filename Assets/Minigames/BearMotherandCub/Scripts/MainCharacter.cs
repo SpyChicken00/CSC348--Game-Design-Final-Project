@@ -6,21 +6,23 @@ using UnityEngine;
 
 public class MainCharacter : MonoBehaviour
 {
+    // Inscribed
     public float speed = 2.5f;
-    public GameObject startPnt;
-    public GameObject endPnt;
+
+    // Instantiated
+    public MainMotherCub main;
 
     private Rigidbody2D rigid;
-    private float movementX;
-    private float movementY;
 
+    // Instantiates main and sets original position
     void Start()
     {
-        this.transform.position = startPnt.transform.position;
+        main = GetComponentInChildren<MainMotherCub>();
+
+        transform.position = main.s.transform.position;
         rigid = GetComponent<Rigidbody2D>();
     }
 
-    // This may be teleporting the player, not moving them. Check rollaball
     void Update()
     {
         // Pull in information from the Input class
@@ -31,16 +33,16 @@ public class MainCharacter : MonoBehaviour
         Vector3 pos = transform.position;
         pos.x += hAxis * speed * Time.deltaTime;
         pos.y += vAxis * speed * Time.deltaTime;
+        pos.z = 0;
         transform.position = pos;
 
     }
 
     public void Restart()
     {
-        this.transform.position = startPnt.transform.position;
+        this.transform.position = main.s.transform.position;
     }
 
-    // this does not work, no matter what I do
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Bear"))

@@ -1,11 +1,11 @@
-using System.Collections;
+    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
 //USING CODE FROM INTERPOLATION EXAMPLE
-public class ZoomCameraStart : MonoBehaviour
+public class CameraZoomControl : MonoBehaviour
 {
     [Header("Set in Inspector")]
     public Transform c0;
@@ -68,13 +68,6 @@ public class ZoomCameraStart : MonoBehaviour
         }
 
 
-        //check if the camera is at end location
-        // if (transform.position == c1.position)
-        // {
-        //     //load the hub scene
-        //     SceneManager.LoadScene("Hub");
-            
-        // }
     }
   
 }

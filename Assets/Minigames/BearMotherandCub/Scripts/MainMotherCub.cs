@@ -5,26 +5,44 @@ using UnityEngine.SceneManagement;
 
 public class MainMotherCub : MonoBehaviour
 {
-    public BabyBear Cub;
-    public MamaBear[] Mother;
-    public GameObject startPnt;
-    public GameObject endPnt;
+    public GameObject Mother;
+
     public MainCharacter mainCharacter;
     public int numMamaBear;
+    public GameObject startPnt;
+    public GameObject endPnt;
 
+    // start and end point singletons
+    public GameObject s;
+    public GameObject e;
+
+    public Vector2 xBounds = new Vector2(-36, 108);
+    public Vector2 yBounds = new Vector2(-20, 60);
+
+    public Transform[] startLocations;
 
     void Start()
     {
-        startPnt.transform.position = new Vector3(-8,0,0);
-        endPnt.transform.position =(new Vector3(8,0,0));
+        s = Instantiate<GameObject>(startPnt);
+        e = Instantiate<GameObject>(endPnt);
+
+        int startIndex = Random.Range(0, startLocations.Length);
+        int endIndex = Random.Range(0, startLocations.Length);
+        while (startIndex == endIndex)
+            endIndex = Random.Range(0, startLocations.Length);
+
+        s.transform.position = startLocations[startIndex].position;
+        e.transform.position = startLocations[endIndex].position;
+
+        PopulateBears(numMamaBear);
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if (System.Math.Abs(mainCharacter.transform.position.x - endPnt.transform.position.x) < 0.25 &&
-            System.Math.Abs(mainCharacter.transform.position.y - endPnt.transform.position.y) < 0.25)
+        if (System.Math.Abs(mainCharacter.transform.position.x - e.transform.position.x) < 0.25 &&
+            System.Math.Abs(mainCharacter.transform.position.y - e.transform.position.y) < 0.25)
         {
             mainCharacter.Restart();
         }
@@ -39,5 +57,17 @@ public class MainMotherCub : MonoBehaviour
     public void Lose()
     {
         Debug.Log("Lose");
+    }
+
+    public void PopulateBears(int numBears)
+    {
+        for (int i = 0; i < numBears; i++)
+        {
+            float x = Random.Range(xBounds.x, xBounds.y);
+            float y = Random.Range(yBounds.x, yBounds.y);
+
+            GameObject go = Instantiate<GameObject>(Mother);
+            go.transform.position = new Vector3(x, y, 0);
+        }
     }
 }

@@ -239,7 +239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.078431375, g: 0.41960785, b: 0.13725491, a: 0.5294118}
+  m_Color: {r: 0.254717, g: 0.08506585, b: 0.09462193, a: 0.972549}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -398,6 +398,80 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 214881180}
   m_CullTransparentMesh: 1
+--- !u!1001 &217734634
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 993404551666189888, guid: 9d563abc6d7744e46a00b501491e45da, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 993404551666189888, guid: 9d563abc6d7744e46a00b501491e45da, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 993404551666189888, guid: 9d563abc6d7744e46a00b501491e45da, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 993404551666189888, guid: 9d563abc6d7744e46a00b501491e45da, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 993404551666189888, guid: 9d563abc6d7744e46a00b501491e45da, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 993404551666189888, guid: 9d563abc6d7744e46a00b501491e45da, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 993404551666189888, guid: 9d563abc6d7744e46a00b501491e45da, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 993404551666189888, guid: 9d563abc6d7744e46a00b501491e45da, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 993404551666189888, guid: 9d563abc6d7744e46a00b501491e45da, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 993404551666189888, guid: 9d563abc6d7744e46a00b501491e45da, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 993404551666189888, guid: 9d563abc6d7744e46a00b501491e45da, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2761603656066757837, guid: 9d563abc6d7744e46a00b501491e45da, type: 3}
+      propertyPath: m_Name
+      value: LevelManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5023779036577017218, guid: 9d563abc6d7744e46a00b501491e45da, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6041093848190315575, guid: 9d563abc6d7744e46a00b501491e45da, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913646371880805761, guid: 9d563abc6d7744e46a00b501491e45da, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d563abc6d7744e46a00b501491e45da, type: 3}
+--- !u!1 &217734635 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2761603656066757837, guid: 9d563abc6d7744e46a00b501491e45da, type: 3}
+  m_PrefabInstance: {fileID: 217734634}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &452676349
 GameObject:
   m_ObjectHideFlags: 0
@@ -611,6 +685,7 @@ MonoBehaviour:
   dialogueText: {fileID: 1774945340}
   nameText: {fileID: 214881182}
   dialogueBox: {fileID: 16806766}
+  levelManager: {fileID: 217734635}
   lines:
   - Dear Dr. Edwin Hayes,
   - "I hate to be the bearer of bad news, but unfortunately our research proposal
@@ -766,7 +841,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Insert Dialogue Here.
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

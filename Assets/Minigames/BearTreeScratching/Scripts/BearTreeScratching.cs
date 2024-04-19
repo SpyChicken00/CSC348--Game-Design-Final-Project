@@ -5,7 +5,10 @@ using UnityEngine;
 public class BearTreeScratching : MonoBehaviour
 {
     public SpriteRenderer bearRenderer;
+    public SpriteRenderer playerRenderer;
     private Animator anim;
+    private Animator playerAnim;
+    //private Animator swipeAnim;
 
     // Controls delay between start of game, between bear moves
     public float startDelay;
@@ -17,6 +20,15 @@ public class BearTreeScratching : MonoBehaviour
     public int movesQuantity;
     public int roundsToWin = 3;
 
+    public GameObject StartUpScratch;
+    public GameObject StartDownScratch;
+    public GameObject StartLeftScratch;
+    public GameObject StartRightScratch;
+
+    public AudioClip winSound;
+    public AudioClip loseSound;
+
+    public GameObject mainCamera;
 
     //TODO take 3 rounds to win game, each round repeat # goes up by 1
     //TODO sync animations with bear moves
@@ -36,10 +48,17 @@ public class BearTreeScratching : MonoBehaviour
     // Controls sequence of bear moves and instantiates vars
     void Start()
     {
+        playerRenderer = GameObject.Find("playerBear").GetComponent<SpriteRenderer>();
 
+        //winSound = this.GetComponent<AudioSource>().transform.GetChild(0).GetComponent<AudioSource>();
+        //loseSound = this.GetComponent<AudioSource>().transform.GetChild(1).GetComponent<AudioSource>();
         //Instantiates vars
         playerMoveIndex = 0;
         anim = GetComponent<Animator>();
+        playerAnim = GameObject.Find("playerBear").GetComponent<Animator>();
+
+        mainCamera = GameObject.Find("Main Camera");
+        //mainCamera.GetComponent<CameraFollow>().start = true;
 
         // Sets and executes bear moves
         bearMoves = DecideBearMoves(movesQuantity);
@@ -74,40 +93,65 @@ public class BearTreeScratching : MonoBehaviour
             yield return new WaitForSeconds(moveDelay);
             anim.speed = 0;
         }
+        yield return new WaitForSeconds(0.5f);
+        mainCamera.GetComponent<ZoomCameraStart>().getTimeDuration(1.0f);
+        mainCamera.GetComponent<ZoomCameraStart>().bearToPlayer();
     }
 
     // TODO make this animate the bear art when we have art set
     void MoveBear(int direction)
     {
+        //spawn swipe animation and make play in time with bear swipe
+       
+
+       //create a new swipe object in the scene
+        //Instantiate(StartUpScratch, new Vector3(-3.263f, -1.843f, 10), Quaternion.identity);
+        
         switch (direction)
         {
             case 0:
-                //Debug.Log("right");
-                //Play right swipe animation 
-                bearRenderer.flipX = true;
-                anim.Play("RightSwipe");
-                anim.speed = 0.6f;
-                break;
-            case 1:
-                //Debug.Log("up");
-                anim.Play("UpSwipe");
-                anim.speed = 0.6f;
-                break;
-            case 2:
-                //Debug.Log("left");
+                Instantiate(StartLeftScratch, new Vector3(-3.4f, -1.9f, 10), Quaternion.Euler(0,0, 90));
                 bearRenderer.flipX = false;
                 anim.Play("LeftSwipe");
                 anim.speed = 0.6f;
                 break;
+            case 1:
+                //Debug.Log("up");
+                Instantiate(StartDownScratch, new Vector3(-3.263f, -1.9f, 10), Quaternion.identity);
+                bearRenderer.flipX = false;
+                anim.Play("DownSwipe");
+                anim.speed = 0.6f;
+                break;
+            case 2:
+                Instantiate(StartRightScratch, new Vector3(-3.2f, -1.7f, 10), Quaternion.Euler(0, 0, 90));
+                bearRenderer.flipX = true;
+                anim.Play("RightSwipe");
+                anim.speed = 0.6f;
+                break;
             case 3:
                 //Debug.Log("down");
-                anim.Play("DownSwipeTemp");
+                Instantiate(StartUpScratch, new Vector3(-3.263f, -1.80f, 10), Quaternion.identity);
+                bearRenderer.flipX = false;
+                anim.Play("UpSwipe");
                 anim.speed = 0.6f;
                 break;
             default:
                 break;
         }
+
+        StartCoroutine(StopBearSwipe());
     }
+
+    IEnumerator StopBearSwipe()
+    {
+        yield return new WaitForSeconds(1.0f);
+        anim.speed = 0;
+        playerAnim.speed = 0;
+    }
+
+    //TODO flip up down left right to make swipe direction the one you want
+    //TODO remove scratches between rounds to make it look cleaner 
+    //Move camera to player tree and perform animations with players matching bear moves, then return back to bear
 
     // Controls player actions
     void Update()
@@ -118,20 +162,47 @@ public class BearTreeScratching : MonoBehaviour
 
         // If a player plays while the bear is acting, lose
         // should we have the player lose or just not acknowldge their inputs?
-        if(Input.anyKeyDown && Time.time - startTime < bearMovesEndTime) { Debug.Log("Early Press: Lose"); Lose(); return; }
+        float tempTime = bearMovesEndTime * 1.55f;
+        if(Input.anyKeyDown && Time.time - startTime < tempTime) { Debug.Log("Early Press"); return; }//Lose(); return; }
 
         // If a key was hit, player acts
         if (Input.anyKeyDown)
-        {
+        {   
+            //anim.loop = true;
             // set playerMove if a direction is hit, returns if other button is hit
-            if (Input.GetKeyDown("right") || Input.GetKeyDown(KeyCode.D))
+            if (Input.GetKeyDown("right") || Input.GetKeyDown(KeyCode.D)) {
                 playerMove = 0;
-            else if (Input.GetKeyDown("up")|| Input.GetKeyDown(KeyCode.W))
+                Instantiate(StartLeftScratch, new Vector3(2.25f, -1.9f, 10), Quaternion.Euler(0,0, 90));
+                playerRenderer.flipX = false;
+                playerAnim.speed = 0.6f;
+                playerAnim.Play("LeftSwipe");
+                StartCoroutine(StopBearSwipe());
+            }
+            else if (Input.GetKeyDown("up")|| Input.GetKeyDown(KeyCode.W)) {
                 playerMove = 1;
-            else if (Input.GetKeyDown("left")|| Input.GetKeyDown(KeyCode.A))
+                Instantiate(StartDownScratch, new Vector3(2.35f, -1.9f, 10), Quaternion.identity);
+                playerRenderer.flipX = false;
+                playerAnim.speed = 0.6f;
+                playerAnim.Play("DownSwipe");
+                StartCoroutine(StopBearSwipe());
+            }
+            else if (Input.GetKeyDown("left")|| Input.GetKeyDown(KeyCode.A)) {
                 playerMove = 2;
-            else if (Input.GetKeyDown("down")|| Input.GetKeyDown(KeyCode.S))
+                Instantiate(StartRightScratch, new Vector3(2.5f, -1.7f, 10), Quaternion.Euler(0, 0, 90));
+                playerRenderer.flipX = true;     //TODO switch to playerRenderer
+                playerAnim.speed = 0.6f;
+                playerAnim.Play("RightSwipe");
+            
+                StartCoroutine(StopBearSwipe());
+            }
+            else if (Input.GetKeyDown("down")|| Input.GetKeyDown(KeyCode.S)) {
                 playerMove = 3;
+                Instantiate(StartUpScratch, new Vector3(2.35f, -1.80f, 10), Quaternion.identity);
+                playerRenderer.flipX = false;
+                playerAnim.speed = 0.6f;
+                playerAnim.Play("UpSwipe");
+                StartCoroutine(StopBearSwipe());
+            }
             else
                 return;
 
@@ -140,7 +211,7 @@ public class BearTreeScratching : MonoBehaviour
             {
                 Debug.Log("incorrect play: lose");
                 Debug.Log("The correct answer was " + bearMoves[playerMoveIndex]);
-                Lose();
+                StartCoroutine(Lose());
                 return;
             }
             // if correctly played and all moves played, win
@@ -150,13 +221,17 @@ public class BearTreeScratching : MonoBehaviour
                 Debug.Log("Round Won: " + roundsWon);
                 if (roundsWon == roundsToWin)
                 {
-                    Win();
+                    anim.speed = 0;
+                    StartCoroutine(Win());
                 }
                 else
                 {
+                    anim.speed = 0;
                     playerMoveIndex = 0;
                     movesQuantity += 1;
                     bearMoves = DecideBearMoves(movesQuantity);
+                    //mainCamera.GetComponent<ZoomCameraStart>().playerToBear();
+                    StartCoroutine(MoveCamera());
                     StartCoroutine(MakeBearMoves());
                 }
             }
@@ -169,22 +244,41 @@ public class BearTreeScratching : MonoBehaviour
             }
         }
     }
+    
+    private IEnumerator MoveCamera()
+    {
+        yield return new WaitForSeconds(1.0f);
+        mainCamera.GetComponent<ZoomCameraStart>().playerToBear();
+        //destroy scratches on screen
+        GameObject[] scratches = GameObject.FindGameObjectsWithTag("Scratch");
+        foreach (GameObject scratch in scratches)
+        {
+             Destroy(scratch);
+        }
+    }
 
-    public void Lose()
+    public IEnumerator Lose()
     {
         // prevents additional presses for double lives loss
         playerMoveIndex = movesQuantity;
-
+        Debug.Log("Lose!");
+        //loseSound.Play();
+        //loseSound.GetComponent<AudioSource>().Play();
+        GetComponent<AudioSource>().PlayOneShot(loseSound);
+        yield return new WaitForSeconds(1.0f);
         LevelManager.GetComponent<Transition>().LoseMiniGame(0);
     }
 
-    public void Win()
+    public IEnumerator Win()
     {
         playerMoveIndex += 1;
         Debug.Log("Win!");
+        //play winsound
+        //winSound.GetComponent<AudioSource>().Play();
+        GetComponent<AudioSource>().PlayOneShot(winSound);
         ScoreCounter.score += 1;
         HighScore.TRY_SET_HIGH_SCORE(ScoreCounter.score);
-
+        yield return new WaitForSeconds(1.0f);
         LevelManager.GetComponent<Transition>().LoadRandomGame();
     }
 

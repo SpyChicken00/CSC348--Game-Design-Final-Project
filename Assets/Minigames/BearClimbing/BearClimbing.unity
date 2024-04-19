@@ -432,7 +432,7 @@ MonoBehaviour:
   timerText: {fileID: 1919091294}
   branchEatingTime: 0.5
   playerRenderer: {fileID: 0}
-  movementSpeed: 0.018
+  movementSpeed: 0.005
   minY: -2.7
   maxY: 1.5
   anim: {fileID: 0}
@@ -1402,6 +1402,7 @@ GameObject:
   - component: {fileID: 1359058423}
   - component: {fileID: 1359058422}
   - component: {fileID: 1359058425}
+  - component: {fileID: 1359058426}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1481,9 +1482,42 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1359058421}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2030cb554b4ec40448c5427572006f9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  c0: {fileID: 208999726}
+  c1: {fileID: 327227361}
+  c2: {fileID: 0}
+  n1: {fileID: 0}
+  n0: {fileID: 0}
+  uMin: 0
+  uMax: 1
+  timeDuration: 2
+  loopMove: 0
+  easingType: 1
+  easingMod: 2
+  checkToStart: 1
+  BearToPlayerStart: 1
+  PlayerToBearStart: 1
+  discoveredAudio: {fileID: 0}
+  p01: {x: 0, y: 0, z: -10}
+  c01: {r: 0, g: 0, b: 0, a: 0}
+  r01: {x: 0, y: 0, z: 0, w: 0}
+  s01: {x: 0, y: 0, z: 0}
+  moving: 0
+  timeStart: 0
+--- !u!114 &1359058426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359058421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffc0b368b054b684e8f5317dbd210f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   c0: {fileID: 208999726}
@@ -1492,11 +1526,11 @@ MonoBehaviour:
   uMax: 1
   timeDuration: 2
   loopMove: 0
-  easingType: 1
+  easingType: 3
   easingMod: 2
   checkToStart: 1
   discoveredAudio: {fileID: 0}
-  p01: {x: 0, y: 0, z: -10}
+  p01: {x: 0, y: 0, z: 0}
   c01: {r: 0, g: 0, b: 0, a: 0}
   r01: {x: 0, y: 0, z: 0, w: 0}
   s01: {x: 0, y: 0, z: 0}
@@ -1625,7 +1659,7 @@ MonoBehaviour:
   playerObj: {fileID: 286075899}
   currentSide: 0
   movementUpdateTime: 2
-  movementSpeed: 0.004
+  movementSpeed: 0.003
   timeBeforeAttack: 0.8
   bearRenderer: {fileID: 1411423732}
   bearSprite: {fileID: 21300000, guid: 0e2cfdce6c32543aa92cedd42fb5f9f0, type: 3}
@@ -1874,7 +1908,7 @@ MonoBehaviour:
   playerObj: {fileID: 286075899}
   currentSide: 1
   movementUpdateTime: 2
-  movementSpeed: 0.006
+  movementSpeed: 0.005
   timeBeforeAttack: 1.5
   bearRenderer: {fileID: 1738587921}
   bearSprite: {fileID: 21300000, guid: 0e2cfdce6c32543aa92cedd42fb5f9f0, type: 3}
