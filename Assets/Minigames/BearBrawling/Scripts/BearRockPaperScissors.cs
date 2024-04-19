@@ -251,14 +251,14 @@ public class BearRockPaperScissors : MonoBehaviour
         stopGame = true;
         Debug.Log("You've been Discovered!");
         StartCoroutine(Discovered());
-        LevelManager.GetComponent<Transition>().LoseMiniGame(1f);
+        LevelManager.GetComponent<Transition>().LoseMiniGame(0.8f);
     }
 
     //play discovered music and then restart game
     private IEnumerator Discovered() {
         playMusic(BrawlMusicClip.brawlMistakeClip); 
         yield return new WaitForSeconds(GetComponent<AudioSource>().clip.length);
-        playMusic(BrawlMusicClip.brawlDiscoveredClip);
+        //playMusic(BrawlMusicClip.brawlDiscoveredClip);
         yield return new WaitForSeconds(GetComponent<AudioSource>().clip.length);
         StartCoroutine(RestartGame(0));
     }
