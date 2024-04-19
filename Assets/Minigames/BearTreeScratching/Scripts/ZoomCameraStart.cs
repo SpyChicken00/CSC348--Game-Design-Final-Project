@@ -33,6 +33,20 @@ public class ZoomCameraStart : MonoBehaviour
     public bool moving = false;
     public float timeStart;
    
+    public void bearToPlayer() {
+        BearToPlayerStart = true;
+    }
+    public void playerToBear() {
+        PlayerToBearStart = true;
+    }
+    public void startMove() {
+        checkToStart = true;
+    }
+
+    public void getTimeDuration(float time) {
+        timeDuration = time;
+
+    }
     // Update is called once per frame
     void Update () {
         if (checkToStart) {

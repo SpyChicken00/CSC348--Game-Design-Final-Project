@@ -28,9 +28,13 @@ public class Scratch : MonoBehaviour
         //change this objects trasnsform z value
         //zBuffer += 0.02f;
         scratchSprite.sortingOrder -= 1;
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(1.0f);
         scratchSprite.sortingOrder -= 1;   
-        yield return new WaitForSeconds(25.0f);
+        yield return new WaitForSeconds(1.0f);
+        scratchSprite.sortingOrder -= 1; 
+        yield return new WaitForSeconds(1.0f);
+        scratchSprite.sortingOrder -= 1; 
+        yield return new WaitForSeconds(50.0f);
         scratchSprite.sortingOrder -= 1;  
         //yield return new WaitForSeconds(25);
     }
