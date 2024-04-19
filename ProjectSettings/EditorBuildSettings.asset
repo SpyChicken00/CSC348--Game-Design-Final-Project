@@ -27,7 +27,7 @@ EditorBuildSettings:
     path: Assets/BearMotherandCub/Scenes/BearMotherandCub.unity
     guid: c87c424d4928c5a48804e3615be5aa84
   - enabled: 1
-    path: Assets/Minigames/Discovered Scene/Discovered.unity
+    path: Assets/Minigames/Hub - Title Screen/Scenes/Discovered.unity
     guid: 20f634909edf6b24ab566e014885c746
   - enabled: 1
     path: Assets/Minigames/Hub - Title Screen/Scenes/Opening.unity
