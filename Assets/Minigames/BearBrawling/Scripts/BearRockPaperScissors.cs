@@ -17,7 +17,8 @@ public class BearRockPaperScissors : MonoBehaviour
     public TextMeshProUGUI Result;
     public TextMeshProUGUI timerText;
     public TextMeshProUGUI winCounterText;
-    public Difficulty difficulty = Difficulty.Easy;
+    public Difficulty initialDifficulty = Difficulty.Easy;
+    private Difficulty difficulty;
     public int correctToWin = 3;
     public GameObject LevelManager;
     private Sprite armSprite;
@@ -88,6 +89,7 @@ public class BearRockPaperScissors : MonoBehaviour
 
     //Scene Startup - Load Game Music
     void Start() {
+        difficulty = initialDifficulty;
         StartCoroutine(StartMusicWait());
         StartCoroutine(StartBear());
         //armSprite = arms.GetComponent<SpriteRenderer>().sprite;
@@ -125,7 +127,8 @@ public class BearRockPaperScissors : MonoBehaviour
     }
 
     //Determine Bear AI Choice
-    public void BearMove() {     
+    public void BearMove() {  
+        arms.GetComponent<SpriteRenderer>().sprite = armDefault;   
         BrawlChoice randomChoice = Choices[Random.Range(0, Choices.Length)]; 
         switch (randomChoice) {
             case BrawlChoice.Rock:
@@ -256,10 +259,29 @@ public class BearRockPaperScissors : MonoBehaviour
             //timer = 3;
 
             //set difficulty to gradually increase speed of game
-            if (winCounter < 3) { difficulty = Difficulty.Easy; }
-            else if (winCounter < 6) { difficulty = Difficulty.Medium; }
-            else if (winCounter < 9) { difficulty = Difficulty.Hard; }
-            else if (winCounter < 12) { difficulty = Difficulty.Insane; }
+            if (initialDifficulty == Difficulty.Easy) {
+                if (winCounter < 3) { difficulty = Difficulty.Easy; }
+                else if (winCounter < 6) { difficulty = Difficulty.Medium; }
+                else if (winCounter < 9) { difficulty = Difficulty.Hard; }
+                else if (winCounter < 12) { difficulty = Difficulty.Insane; }
+            }
+            else if (initialDifficulty == Difficulty.Medium) {
+                if (winCounter < 3) { difficulty = Difficulty.Medium; }
+                else if (winCounter < 6) { difficulty = Difficulty.Hard; }
+                else if (winCounter < 9) { difficulty = Difficulty.Insane; }
+                else if (winCounter < 12) { difficulty = Difficulty.Insane; }
+            }
+            else if (initialDifficulty == Difficulty.Hard) {
+                if (winCounter < 3) { difficulty = Difficulty.Hard; }
+                else if (winCounter < 6) { difficulty = Difficulty.Hard; }
+                else if (winCounter < 9) { difficulty = Difficulty.Insane; }
+                else if (winCounter < 12) { difficulty = Difficulty.Insane; }
+            } else if (initialDifficulty == Difficulty.Insane) {
+                if (winCounter < 3) { difficulty = Difficulty.Insane; }
+                else if (winCounter < 6) { difficulty = Difficulty.Insane; }
+                else if (winCounter < 9) { difficulty = Difficulty.Insane; }
+                else if (winCounter < 12) { difficulty = Difficulty.Insane; }
+            }
 
 
 
@@ -288,7 +310,6 @@ public class BearRockPaperScissors : MonoBehaviour
         Debug.Log("Good!");
         winCounter += 1;
         winCounterText.text = "Win Count: " + winCounter.ToString() + "/" + correctToWin.ToString();
-        arms.GetComponent<SpriteRenderer>().sprite = armDefault;
         if (winCounter >= correctToWin) {
             bearOpponent.GetComponent<SpriteRenderer>().sprite = bearOpponentDefault;
             //bearOpponent.transform.position -= new Vector3(0, 0.5f, 0);

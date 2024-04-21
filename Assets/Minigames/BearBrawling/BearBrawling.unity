@@ -1622,7 +1622,7 @@ MonoBehaviour:
   Result: {fileID: 1359467264}
   timerText: {fileID: 2086672604}
   winCounterText: {fileID: 1692253364}
-  difficulty: 0
+  initialDifficulty: 1
   correctToWin: 12
   LevelManager: {fileID: 1081628366}
   brawlStartClip: {fileID: 8300000, guid: efdd299520151cf47ad30d2385b37ad6, type: 3}
