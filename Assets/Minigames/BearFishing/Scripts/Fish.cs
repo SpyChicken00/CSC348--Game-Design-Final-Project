@@ -90,9 +90,11 @@ public class Fish : MonoBehaviour
         GameObject go = collision.gameObject;
         if (go.name == "Main Character")
         {
+            //if fish is caught
             if (Input.GetKey(KeyCode.Space) && shouldfall)
             {
-                this.transform.position = collision.transform.position;
+                //set position fish is caught/stops at
+                this.transform.position = new Vector3(-0.05f, 3.415f, 0);
                 stopfall = true;
                 drumroll.Stop();
             }
@@ -133,7 +135,7 @@ public class Fish : MonoBehaviour
         if (!shouldfall)
         {
             Vector3 mvmtVtr = InterpPoint.transform.position - this.transform.position;
-            pos += 2* mvmtVtr * Time.deltaTime;
+            pos += 2 * mvmtVtr * Time.deltaTime;
         }
         else if(shouldfall && !stopfall)
         { 
