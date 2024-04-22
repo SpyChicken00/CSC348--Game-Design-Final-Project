@@ -11,8 +11,13 @@ public class MainCharacter : MonoBehaviour
 
     // Instantiated
     public MainMotherCub main;
+    public AudioClip bearSound;
+    public AudioClip babyBearSound;
+    
 
     private Rigidbody2D rigid;
+    
+    
 
     // Instantiates main and sets original position
     void Start()
@@ -21,6 +26,7 @@ public class MainCharacter : MonoBehaviour
 
         transform.position = main.s.transform.position;
         rigid = GetComponent<Rigidbody2D>();
+        
     }
 
     void Update()
@@ -45,14 +51,26 @@ public class MainCharacter : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Bear"))
-            Debug.Log("AHHHHHH");
+        if (collision.CompareTag("Bear")) {
+            if (collision.gameObject.name == "Baby Bear(Clone)") {
+                if (!GetComponent<AudioSource>().isPlaying) GetComponent<AudioSource>().PlayOneShot(babyBearSound);
+                Debug.Log("EEEEEEEEEEEEEK");
+            } else {
+                if (!GetComponent<AudioSource>().isPlaying) GetComponent<AudioSource>().PlayOneShot(bearSound);
+                Debug.Log("AHHHHHH");
+            }
+        }
+
+        
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Bear"))
+        if (collision.collider.CompareTag("Bear")) {
             Debug.Log("OOOOOOOH");
+            if (!GetComponent<AudioSource>().isPlaying) GetComponent<AudioSource>().PlayOneShot(bearSound);
+        }
     }
 
 }

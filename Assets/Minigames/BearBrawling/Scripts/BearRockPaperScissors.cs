@@ -7,14 +7,23 @@ using UnityEngine.UI;
 public class BearRockPaperScissors : MonoBehaviour
 {
     public Image AIChoice; 
+    public GameObject bearOpponent;
+    public GameObject arms;
     public BrawlChoice[] Choices;
     public Sprite Rock, Paper, Scissors;
+    public Sprite armsBlockBite, armsBlockLeft, armsBlockRight, armDefault;
+    public Sprite bearBite, bearLeft, bearRight, bearOpponentDefault;
+    public Sprite bearBite2, bearLeft2, bearRight2;
     public TextMeshProUGUI Result;
     public TextMeshProUGUI timerText;
     public TextMeshProUGUI winCounterText;
-    public Difficulty difficulty = Difficulty.Easy;
+    public Difficulty initialDifficulty = Difficulty.Easy;
+    private Difficulty difficulty;
     public int correctToWin = 3;
     public GameObject LevelManager;
+    private Sprite armSprite;
+    private Sprite bearSprite;
+    
 
     public AudioClip brawlStartClip;
     public AudioClip  brawlLoopClip120;
@@ -24,6 +33,8 @@ public class BearRockPaperScissors : MonoBehaviour
     public AudioClip  brawlMistakeClip;
     public AudioClip  brawlDiscoveredClip;
     public AudioClip brawlVictoryClip;
+    public AudioClip armSwingClip;
+    public AudioClip punchClip;
 
     public enum BrawlChoice{Rock,Paper,Scissors,nullChoice}
     public enum BrawlMusicClip {brawlStartClip,brawlLoopClip120,brawlLoopClip180,brawlLoopClip240,brawlLoopClip300,
@@ -33,44 +44,64 @@ public class BearRockPaperScissors : MonoBehaviour
     private BrawlChoice PlayerMove = BrawlChoice.nullChoice;
     private int winCounter = 0;
     private bool stopGame = false;
+    //private int timer = 3;
 
     //Player Choice Registered through button clicks, change to keyboard input if desired
-    public void onClick(string choice) {
-        switch (choice) {
-            case "Rock":
-                PlayerMove = BrawlChoice.Rock;
-                break;
-            case "Paper":
-                PlayerMove = BrawlChoice.Paper;
-                break;
-            case "Scissors":
-                PlayerMove = BrawlChoice.Scissors;
-                break;
-            default:
-                PlayerMove = BrawlChoice.nullChoice;
-                break;
-        }
-    }
+    // public void onClick(string choice) {
+    //     switch (choice) {
+    //         case "Rock":
+    //             PlayerMove = BrawlChoice.Rock;
+    //             break;
+    //         case "Paper":
+    //             PlayerMove = BrawlChoice.Paper;
+    //             break;
+    //         case "Scissors":
+    //             PlayerMove = BrawlChoice.Scissors;
+    //             break;
+    //         default:
+    //             PlayerMove = BrawlChoice.nullChoice;
+    //             break;
+    //     }
+    // }
 
+
+    
     public void Update() {
         //get keyboard input for rock paper scissors (left, down, right) / (a, s, d)
         if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A)) {
             PlayerMove = BrawlChoice.Rock;
-            Debug.Log("Player: Rock");
+            Debug.Log("Player: Rock, BlockLeft");
+            //change player arm sprite to rock
+            arms.GetComponent<SpriteRenderer>().sprite = armsBlockLeft;
+            GetComponent<AudioSource>().PlayOneShot(armSwingClip);
         } else if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S)) {
             PlayerMove = BrawlChoice.Paper;
-            Debug.Log("Player: Paper");
+            Debug.Log("Player: Paper, BlockBite");
+            arms.GetComponent<SpriteRenderer>().sprite = armsBlockBite;
+            GetComponent<AudioSource>().PlayOneShot(armSwingClip);
         } else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D)) {
             PlayerMove = BrawlChoice.Scissors;
-            Debug.Log("Player: Scissors");
-        } //else {
-            //PlayerMove = BrawlChoice.nullChoice;
-        //}
+            arms.GetComponent<SpriteRenderer>().sprite = armsBlockRight;
+            Debug.Log("Player: Scissors, BlockRight");
+            GetComponent<AudioSource>().PlayOneShot(armSwingClip);
+        }
     }
 
     //Scene Startup - Load Game Music
     void Start() {
+        difficulty = initialDifficulty;
         StartCoroutine(StartMusicWait());
+        StartCoroutine(StartBear());
+        //armSprite = arms.GetComponent<SpriteRenderer>().sprite;
+        //bearSprite = bearOpponent.GetComponent<SpriteRenderer>().sprite;
+    }
+
+    private IEnumerator StartBear() {
+        yield return new WaitForSeconds(2.6f);
+        bearOpponent.GetComponent<SpriteRenderer>().sprite = bearBite2;
+        yield return new WaitForSeconds(0.5f);
+        //bearOpponent.transform.position -= new Vector3(0.2f, 0.4f, 0);
+       
     }
 
     //Start Game with intro music and then loop music based on difficulty
@@ -96,30 +127,34 @@ public class BearRockPaperScissors : MonoBehaviour
     }
 
     //Determine Bear AI Choice
-    public void BearMove() {     
+    public void BearMove() {  
+        arms.GetComponent<SpriteRenderer>().sprite = armDefault;   
         BrawlChoice randomChoice = Choices[Random.Range(0, Choices.Length)]; 
         switch (randomChoice) {
             case BrawlChoice.Rock:
-                Debug.Log("Bear: Rock");
-                Result.text = "Rock";
+                Debug.Log("Bear: Rock, BearBite");
+                Result.text = "Rock, BearBite";
                 AIChoice.sprite = Rock;
+                bearOpponent.GetComponent<SpriteRenderer>().sprite = bearBite;
                 break;
             case BrawlChoice.Paper:
-                Result.text = "Paper";
-                Debug.Log("Bear: Paper");
+                Result.text = "Paper, BearRight";
+                Debug.Log("Bear: Paper, BearRight");
                 AIChoice.sprite = Paper;
+                bearOpponent.GetComponent<SpriteRenderer>().sprite = bearRight;
                 break;
             case BrawlChoice.Scissors:
-                Result.text = "Scissors";
-                Debug.Log("Bear: Scissors");
+                Result.text = "Scissors, BearLeft";
+                Debug.Log("Bear: Scissors, BearLeft");
                 AIChoice.sprite = Scissors;
+                bearOpponent.GetComponent<SpriteRenderer>().sprite = bearLeft;
                 break;
         }
-        StartCoroutine(PlayerWait());
+        StartCoroutine(PlayerWait(randomChoice));
     } 
 
     //Wait for player choice and then determine winner
-    private IEnumerator PlayerWait() {
+    private IEnumerator PlayerWait(BrawlChoice randomChoice) {
         //wait for player choice, varies depending on tempo
         float speed;
         switch (difficulty) {
@@ -141,12 +176,34 @@ public class BearRockPaperScissors : MonoBehaviour
         }
 
         //countdown timer
+        //timer = 3;
         timerText.text = "3";
         yield return new WaitForSeconds(speed / 3.0f);
+        //timer = 2;
         timerText.text = "2";
         yield return new WaitForSeconds(speed / 3.0f);
+        //UPDATE BEARSPRITE
+        switch (randomChoice) {
+            case BrawlChoice.Rock:
+                bearOpponent.GetComponent<SpriteRenderer>().sprite = bearBite2;
+                bearOpponent.transform.position -= new Vector3(0.2f, 0.4f, 0);
+                break;
+            case BrawlChoice.Paper:
+                bearOpponent.GetComponent<SpriteRenderer>().sprite = bearRight2;
+                bearOpponent.transform.position -= new Vector3(0.2f, 0.4f, 0);
+                break;
+            case BrawlChoice.Scissors:
+                bearOpponent.GetComponent<SpriteRenderer>().sprite = bearLeft2;
+                bearOpponent.transform.position -= new Vector3(0.2f, 0.4f, 0);
+                break;
+        }
+
+
+        //timer = 1;
         timerText.text = "1";
         yield return new WaitForSeconds(speed / 3.0f);
+        
+        //timer = 0;
         timerText.text = "0";
 
         //check player selection
@@ -198,6 +255,36 @@ public class BearRockPaperScissors : MonoBehaviour
 
         //if game is not over, repeat
         if (!stopGame) {
+            bearOpponent.transform.position = new Vector3(0.69f, -2.43f, 0);
+            //timer = 3;
+
+            //set difficulty to gradually increase speed of game
+            if (initialDifficulty == Difficulty.Easy) {
+                if (winCounter < 3) { difficulty = Difficulty.Easy; }
+                else if (winCounter < 6) { difficulty = Difficulty.Medium; }
+                else if (winCounter < 9) { difficulty = Difficulty.Hard; }
+                else if (winCounter < 12) { difficulty = Difficulty.Insane; }
+            }
+            else if (initialDifficulty == Difficulty.Medium) {
+                if (winCounter < 3) { difficulty = Difficulty.Medium; }
+                else if (winCounter < 6) { difficulty = Difficulty.Hard; }
+                else if (winCounter < 9) { difficulty = Difficulty.Insane; }
+                else if (winCounter < 12) { difficulty = Difficulty.Insane; }
+            }
+            else if (initialDifficulty == Difficulty.Hard) {
+                if (winCounter < 3) { difficulty = Difficulty.Hard; }
+                else if (winCounter < 6) { difficulty = Difficulty.Hard; }
+                else if (winCounter < 9) { difficulty = Difficulty.Insane; }
+                else if (winCounter < 12) { difficulty = Difficulty.Insane; }
+            } else if (initialDifficulty == Difficulty.Insane) {
+                if (winCounter < 3) { difficulty = Difficulty.Insane; }
+                else if (winCounter < 6) { difficulty = Difficulty.Insane; }
+                else if (winCounter < 9) { difficulty = Difficulty.Insane; }
+                else if (winCounter < 12) { difficulty = Difficulty.Insane; }
+            }
+
+
+
             switch (difficulty) {
             case Difficulty.Easy:
                 playMusic(BrawlMusicClip.brawlLoopClip120); 
@@ -213,6 +300,7 @@ public class BearRockPaperScissors : MonoBehaviour
                 break;
             }
             BearMove();
+            
         } 
     } 
 
@@ -223,6 +311,8 @@ public class BearRockPaperScissors : MonoBehaviour
         winCounter += 1;
         winCounterText.text = "Win Count: " + winCounter.ToString() + "/" + correctToWin.ToString();
         if (winCounter >= correctToWin) {
+            bearOpponent.GetComponent<SpriteRenderer>().sprite = bearOpponentDefault;
+            //bearOpponent.transform.position -= new Vector3(0, 0.5f, 0);
             Result.text = "You Win the Game!";
             timerText.text = "";
             winCounterText.text = "";
@@ -247,18 +337,19 @@ public class BearRockPaperScissors : MonoBehaviour
     //If player loses current round, game over
     private void Lose() {
         //TODO Add game over / discovered animation or screen
+        GetComponent<AudioSource>().PlayOneShot(punchClip);
         Result.text = "You've been Discovered!";
         stopGame = true;
         Debug.Log("You've been Discovered!");
         StartCoroutine(Discovered());
-        LevelManager.GetComponent<Transition>().LoseMiniGame(1f);
+        LevelManager.GetComponent<Transition>().LoseMiniGame(0.8f);
     }
 
     //play discovered music and then restart game
     private IEnumerator Discovered() {
         playMusic(BrawlMusicClip.brawlMistakeClip); 
         yield return new WaitForSeconds(GetComponent<AudioSource>().clip.length);
-        playMusic(BrawlMusicClip.brawlDiscoveredClip);
+        //playMusic(BrawlMusicClip.brawlDiscoveredClip);
         yield return new WaitForSeconds(GetComponent<AudioSource>().clip.length);
         StartCoroutine(RestartGame(0));
     }

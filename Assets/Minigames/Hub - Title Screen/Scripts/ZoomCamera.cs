@@ -72,11 +72,15 @@ public class ZoomCamera : MonoBehaviour
         if (transform.position == c1.position)
         {
             //load the hub scene
-            SceneManager.LoadScene("Hub");
-            
+            StartCoroutine(LoadHub());
         }
     }
 
 
+    IEnumerator LoadHub()
+    {
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene("Hub");
+    }
     
 }

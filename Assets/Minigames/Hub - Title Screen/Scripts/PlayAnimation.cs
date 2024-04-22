@@ -9,6 +9,7 @@ public class PlayAnimation : MonoBehaviour
     public AnimationClip walk;
     Animator anim;
     public GameObject levelManager;
+    public AudioClip scratch;
 
     void Start()
     {
@@ -21,6 +22,8 @@ public class PlayAnimation : MonoBehaviour
         {
             anim.SetTrigger("Active");
             StartCoroutine(BeginCutscene(1f));
+            //Debug.Log("Play Scratch Sound");
+            GetComponent<AudioSource>().PlayOneShot(scratch);
         }
     }
 

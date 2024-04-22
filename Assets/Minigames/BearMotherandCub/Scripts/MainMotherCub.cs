@@ -11,6 +11,8 @@ public class MainMotherCub : MonoBehaviour
     public int numMamaBear;
     public GameObject startPnt;
     public GameObject endPnt;
+    
+    //public AudioClip loseSound;
 
     // start and end point singletons
     public GameObject s;
@@ -57,6 +59,8 @@ public class MainMotherCub : MonoBehaviour
     public void Lose()
     {
         Debug.Log("Lose");
+        //play lose sound
+        //GetComponent<AudioSource>().PlayOneShot(loseSound);
     }
 
     public void PopulateBears(int numBears)

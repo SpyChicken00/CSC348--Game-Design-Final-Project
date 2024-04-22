@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Minigames/Hub - Title Screen/Scenes/Hub.unity
     guid: 65654e9b7f0ba4cef94fcd520af3ca1f
   - enabled: 1
-    path: Assets/Minigames/BearBrawling/Scenes/BearBrawling.unity
+    path: Assets/Minigames/BearBrawling/BearBrawling.unity
     guid: 16a6c28adc286bf4c944fdd43a54cc7d
   - enabled: 1
     path: Assets/Minigames/BearTreeScratching/BearTreeScratching.unity
@@ -21,13 +21,13 @@ EditorBuildSettings:
     path: Assets/Minigames/BearClimbing/BearClimbing.unity
     guid: 11e6c619003a14547876eb3e628ee5a5
   - enabled: 1
-    path: Assets/Minigames/BearFishing/Scenes/BearFishing.unity
+    path: Assets/Minigames/BearFishing/BearFishing.unity
     guid: fc9e4a111103b5f46975c95e4266a455
   - enabled: 0
     path: Assets/BearMotherandCub/Scenes/BearMotherandCub.unity
     guid: c87c424d4928c5a48804e3615be5aa84
   - enabled: 1
-    path: Assets/Minigames/Discovered Scene/Discovered.unity
+    path: Assets/Minigames/Hub - Title Screen/Scenes/Discovered.unity
     guid: 20f634909edf6b24ab566e014885c746
   - enabled: 1
     path: Assets/Minigames/Hub - Title Screen/Scenes/Opening.unity
