@@ -1546,8 +1546,8 @@ MonoBehaviour:
   Mother: {fileID: 5083090228887455886, guid: 70092f642c76afe4ea77570182cedd55, type: 3}
   mainCharacter: {fileID: 1229959139}
   numMamaBear: 50
-  startPnt: {fileID: 907540269404608477, guid: 55f829ba5e57f4b389229512096f9217, type: 3}
-  endPnt: {fileID: 4471860760699330626, guid: 5cd9dc78513d549f6b5dc55056a81fc4, type: 3}
+  startPnt: {fileID: 2457504389693368399, guid: fab60be5f24d04110b035a9254f2dcc4, type: 3}
+  endPnt: {fileID: 749956991384313647, guid: d780f2c68ae144af6b9ec2c4f9b437bb, type: 3}
   LevelManager: {fileID: 372237096}
   over: 0
   xBounds: {x: -25, y: 90}
