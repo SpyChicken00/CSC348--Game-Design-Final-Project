@@ -25,7 +25,7 @@ public class MainCharacter : MonoBehaviour
     {
         main = GetComponentInChildren<MainMotherCub>();
 
-        transform.position = main.s.transform.position;
+        transform.position = MainMotherCub.s.transform.position;
         rigid = GetComponent<Rigidbody2D>();
         
     }
@@ -36,7 +36,7 @@ public class MainCharacter : MonoBehaviour
         Vector2 movementDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         movementDirection.Normalize();
 
-        transform.Translate(movementDirection * speed * Time.deltaTime, Space.World);
+        transform.Translate(speed * Time.deltaTime * movementDirection, Space.World);
 
         if(movementDirection != Vector2.zero)
             sprite.transform.up = movementDirection;
@@ -63,6 +63,8 @@ public class MainCharacter : MonoBehaviour
         if (collision.collider.CompareTag("Bear")) {
             Debug.Log("OOOOOOOH");
             if (!GetComponent<AudioSource>().isPlaying) GetComponent<AudioSource>().PlayOneShot(bearSound);
+
+            main.Lose();
         }
     }
 

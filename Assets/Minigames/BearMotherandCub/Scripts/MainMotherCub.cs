@@ -17,8 +17,8 @@ public class MainMotherCub : MonoBehaviour
     //public AudioClip loseSound;
 
     // start and end point singletons
-    public GameObject s;
-    public GameObject e;
+    public static GameObject s;
+    public static GameObject e;
 
     public Vector2 xBounds = new Vector2(-36, 108);
     public Vector2 yBounds = new Vector2(-20, 60);
