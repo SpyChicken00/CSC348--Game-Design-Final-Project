@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-//USING CODE FROM INTERPOLATION EXAMPLE
+//USING CODE FROM INTERPOLATION EXAMPLE - Moves camera between 3 different locations:
+//start to bearTree, bearTree to player, and player to bearTree
 public class ZoomCameraStart : MonoBehaviour
 {
     [Header("Set in Inspector")]
@@ -55,8 +56,6 @@ public class ZoomCameraStart : MonoBehaviour
             checkToStart = false;
             moving = true;
             timeStart = Time.time;
-            //GetComponent<AudioSource>().clip = discoveredAudio;
-            //GetComponent<AudioSource>().Play();
 
         }
         if (BearToPlayerStart) {
@@ -65,8 +64,6 @@ public class ZoomCameraStart : MonoBehaviour
             BearToPlayerStart = false;
             moving = true;
             timeStart = Time.time;
-            //GetComponent<AudioSource>().clip = discoveredAudio;
-            //GetComponent<AudioSource>().Play();
 
         }
         if (PlayerToBearStart) {
@@ -75,8 +72,6 @@ public class ZoomCameraStart : MonoBehaviour
             PlayerToBearStart = false;
             moving = true;
             timeStart = Time.time;
-            //GetComponent<AudioSource>().clip = discoveredAudio;
-            //GetComponent<AudioSource>().Play();
 
         }
         if (moving) {
@@ -107,15 +102,6 @@ public class ZoomCameraStart : MonoBehaviour
             transform.localScale = s01;
             transform.rotation = r01;
         }
-
-
-        //check if the camera is at end location
-        // if (transform.position == c1.position)
-        // {
-        //     //load the hub scene
-        //     SceneManager.LoadScene("Hub");
-            
-        // }
     }
   
 }

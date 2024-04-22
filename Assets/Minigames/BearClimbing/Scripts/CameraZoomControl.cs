@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-//USING CODE FROM INTERPOLATION EXAMPLE
+//USING CODE FROM INTERPOLATION EXAMPLE - zooms camera at start of game
 public class CameraZoomControl : MonoBehaviour
 {
     [Header("Set in Inspector")]

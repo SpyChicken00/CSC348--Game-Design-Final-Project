@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+//A Rock Paper Scissors game with a bear opponent
 public class BearRockPaperScissors : MonoBehaviour
 {
     public Image AIChoice; 
@@ -23,7 +24,6 @@ public class BearRockPaperScissors : MonoBehaviour
     public GameObject LevelManager;
     private Sprite armSprite;
     private Sprite bearSprite;
-    
 
     public AudioClip brawlStartClip;
     public AudioClip  brawlLoopClip120;
@@ -44,28 +44,8 @@ public class BearRockPaperScissors : MonoBehaviour
     private BrawlChoice PlayerMove = BrawlChoice.nullChoice;
     private int winCounter = 0;
     private bool stopGame = false;
-    //private int timer = 3;
-
-    //Player Choice Registered through button clicks, change to keyboard input if desired
-    // public void onClick(string choice) {
-    //     switch (choice) {
-    //         case "Rock":
-    //             PlayerMove = BrawlChoice.Rock;
-    //             break;
-    //         case "Paper":
-    //             PlayerMove = BrawlChoice.Paper;
-    //             break;
-    //         case "Scissors":
-    //             PlayerMove = BrawlChoice.Scissors;
-    //             break;
-    //         default:
-    //             PlayerMove = BrawlChoice.nullChoice;
-    //             break;
-    //     }
-    // }
-
-
     
+    //Get Player Input
     public void Update() {
         //get keyboard input for rock paper scissors (left, down, right) / (a, s, d)
         if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A)) {
@@ -92,10 +72,9 @@ public class BearRockPaperScissors : MonoBehaviour
         difficulty = initialDifficulty;
         StartCoroutine(StartMusicWait());
         StartCoroutine(StartBear());
-        //armSprite = arms.GetComponent<SpriteRenderer>().sprite;
-        //bearSprite = bearOpponent.GetComponent<SpriteRenderer>().sprite;
     }
 
+    //Bear Animation at start of game insync with music
     private IEnumerator StartBear() {
         yield return new WaitForSeconds(2.6f);
         bearOpponent.GetComponent<SpriteRenderer>().sprite = bearBite2;
@@ -176,7 +155,6 @@ public class BearRockPaperScissors : MonoBehaviour
         }
 
         //countdown timer
-        //timer = 3;
         timerText.text = "3";
         yield return new WaitForSeconds(speed / 3.0f);
         //timer = 2;
@@ -198,7 +176,6 @@ public class BearRockPaperScissors : MonoBehaviour
                 break;
         }
 
-
         //timer = 1;
         timerText.text = "1";
         yield return new WaitForSeconds(speed / 3.0f);
@@ -213,7 +190,8 @@ public class BearRockPaperScissors : MonoBehaviour
                     Win();
                     break;
                 } else if (AIChoice.sprite == Rock) {
-                    Draw();
+                    //Draw();
+                    Lose();
                     break;
                 } else if (AIChoice.sprite == Paper) {
                     Lose();
@@ -225,7 +203,8 @@ public class BearRockPaperScissors : MonoBehaviour
                     Win();
                     break;
                 } else if (AIChoice.sprite == Paper) {
-                    Draw();
+                    //Draw();
+                    Lose();
                     break;
                 } else if (AIChoice.sprite == Scissors) {
                     Lose();
@@ -237,7 +216,8 @@ public class BearRockPaperScissors : MonoBehaviour
                     Win();
                     break;
                 } else if (AIChoice.sprite == Scissors) {
-                    Draw();
+                    //Draw();
+                    Lose();
                     break;
                 } else if (AIChoice.sprite == Rock) {
                     Lose();
@@ -256,7 +236,6 @@ public class BearRockPaperScissors : MonoBehaviour
         //if game is not over, repeat
         if (!stopGame) {
             bearOpponent.transform.position = new Vector3(0.69f, -2.43f, 0);
-            //timer = 3;
 
             //set difficulty to gradually increase speed of game
             if (initialDifficulty == Difficulty.Easy) {
@@ -282,8 +261,6 @@ public class BearRockPaperScissors : MonoBehaviour
                 else if (winCounter < 9) { difficulty = Difficulty.Insane; }
                 else if (winCounter < 12) { difficulty = Difficulty.Insane; }
             }
-
-
 
             switch (difficulty) {
             case Difficulty.Easy:
@@ -312,7 +289,6 @@ public class BearRockPaperScissors : MonoBehaviour
         winCounterText.text = "Win Count: " + winCounter.ToString() + "/" + correctToWin.ToString();
         if (winCounter >= correctToWin) {
             bearOpponent.GetComponent<SpriteRenderer>().sprite = bearOpponentDefault;
-            //bearOpponent.transform.position -= new Vector3(0, 0.5f, 0);
             Result.text = "You Win the Game!";
             timerText.text = "";
             winCounterText.text = "";
@@ -320,11 +296,7 @@ public class BearRockPaperScissors : MonoBehaviour
             GetComponent<AudioSource>().Stop();
             stopGame = true;
             playMusic(BrawlMusicClip.brawlVictoryClip);
-            //TODO could insert win screen here
-
-            // Hayes here. I replaced the restart with selecting a random game when you win
             LevelManager.GetComponent<Transition>().WinMiniGame(4.5f);
-            //StartCoroutine(RestartGame(4.5f));
         }
     }
 
@@ -400,19 +372,3 @@ public class BearRockPaperScissors : MonoBehaviour
     }
 
 }
-
-
-/*
-To-Do:
-Main Functionality Complete, need to polish when art + proper design is complete
-
-
-Extra Features:
--Add Proper cutscenes for win/lose + Better Art
--Convert theme to bear fighting themed and add more options (claws, bite, etc.) 4-5 maybe?
--Be able to change the location of the AIChoice Image depending on which one selected (high, low, etc.)
--add keyboard functionality instead of clickable buttons?
-
--Add a "Bear Rage" mode where the bear will always win for a few rounds [github copilot's random idea]
--Add special rounds that hide the bear's choice from the player occasionally?
-*/

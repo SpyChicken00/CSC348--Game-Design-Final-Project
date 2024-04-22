@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Attached to each branch to enable eating of berries and decreasing of berry durability
 public class Branch : MonoBehaviour
 {
     [SerializeField]
@@ -9,14 +10,13 @@ public class Branch : MonoBehaviour
     public int berryDurability = 3;
     public AudioClip berryEatSound;
     public Player playerObj;
- 
-
 
     void Start() {
         berries = GameObject.Find("Berries");
         gameObject.SetActive(true);
     }
 
+    //Decrease berry durability when player collides with branch and holds space
     public void DecreaseBerryDurability() {   
         StartCoroutine(waitForSeconds(0.5f));
     }

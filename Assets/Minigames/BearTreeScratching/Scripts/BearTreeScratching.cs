@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Main controller for tracking bear moves and player input
 public class BearTreeScratching : MonoBehaviour
 {
     public SpriteRenderer bearRenderer;
     public SpriteRenderer playerRenderer;
     private Animator anim;
     private Animator playerAnim;
-    //private Animator swipeAnim;
 
     // Controls delay between start of game, between bear moves
     public float startDelay;
@@ -30,11 +30,6 @@ public class BearTreeScratching : MonoBehaviour
 
     public GameObject mainCamera;
 
-    //TODO take 3 rounds to win game, each round repeat # goes up by 1
-    //TODO sync animations with bear moves
-
-
-
     // stores bear moves, counts how many times a player has moved, stores player input
     // stores start time, stores when the bear finishes moving
     private int[] bearMoves;
@@ -49,16 +44,12 @@ public class BearTreeScratching : MonoBehaviour
     void Start()
     {
         playerRenderer = GameObject.Find("playerBear").GetComponent<SpriteRenderer>();
-
-        //winSound = this.GetComponent<AudioSource>().transform.GetChild(0).GetComponent<AudioSource>();
-        //loseSound = this.GetComponent<AudioSource>().transform.GetChild(1).GetComponent<AudioSource>();
         //Instantiates vars
         playerMoveIndex = 0;
         anim = GetComponent<Animator>();
         playerAnim = GameObject.Find("playerBear").GetComponent<Animator>();
 
         mainCamera = GameObject.Find("Main Camera");
-        //mainCamera.GetComponent<CameraFollow>().start = true;
 
         // Sets and executes bear moves
         bearMoves = DecideBearMoves(movesQuantity);
@@ -98,15 +89,10 @@ public class BearTreeScratching : MonoBehaviour
         mainCamera.GetComponent<ZoomCameraStart>().bearToPlayer();
     }
 
-    // TODO make this animate the bear art when we have art set
+    //animates bear in sync with scratch direction
     void MoveBear(int direction)
     {
         //spawn swipe animation and make play in time with bear swipe
-       
-
-       //create a new swipe object in the scene
-        //Instantiate(StartUpScratch, new Vector3(-3.263f, -1.843f, 10), Quaternion.identity);
-        
         switch (direction)
         {
             case 0:
@@ -148,10 +134,6 @@ public class BearTreeScratching : MonoBehaviour
         anim.speed = 0;
         playerAnim.speed = 0;
     }
-
-    //TODO flip up down left right to make swipe direction the one you want
-    //TODO remove scratches between rounds to make it look cleaner 
-    //Move camera to player tree and perform animations with players matching bear moves, then return back to bear
 
     // Controls player actions
     void Update()
@@ -236,7 +218,6 @@ public class BearTreeScratching : MonoBehaviour
                 }
             }
             // gives player feedback for correct
-            //TODO give visual/audio feedback for correct answer, show player moving
             else
             {
                 playerMoveIndex += 1;
@@ -257,24 +238,22 @@ public class BearTreeScratching : MonoBehaviour
         }
     }
 
+    //lose game, play lose sound, and transition to lose screen
     public IEnumerator Lose()
     {
         // prevents additional presses for double lives loss
         playerMoveIndex = movesQuantity;
         Debug.Log("Lose!");
-        //loseSound.Play();
-        //loseSound.GetComponent<AudioSource>().Play();
         GetComponent<AudioSource>().PlayOneShot(loseSound);
         yield return new WaitForSeconds(1.0f);
         LevelManager.GetComponent<Transition>().LoseMiniGame(0);
     }
 
+    //win game, play win sound, and transition to win screen
     public IEnumerator Win()
     {
         playerMoveIndex += 1;
         Debug.Log("Win!");
-        //play winsound
-        //winSound.GetComponent<AudioSource>().Play();
         GetComponent<AudioSource>().PlayOneShot(winSound);
         ScoreCounter.score += 1;
         HighScore.TRY_SET_HIGH_SCORE(ScoreCounter.score);
