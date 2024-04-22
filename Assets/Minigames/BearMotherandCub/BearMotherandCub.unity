@@ -216,6 +216,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dea5d7235083e45cea00fbec36a70f14, type: 3}
+--- !u!1 &372237096 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2761603656066757837, guid: 9d563abc6d7744e46a00b501491e45da, type: 3}
+  m_PrefabInstance: {fileID: 394104725}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &394104725
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1461,6 +1466,8 @@ MonoBehaviour:
   numMamaBear: 50
   startPnt: {fileID: 907540269404608477, guid: 55f829ba5e57f4b389229512096f9217, type: 3}
   endPnt: {fileID: 4471860760699330626, guid: 5cd9dc78513d549f6b5dc55056a81fc4, type: 3}
+  LevelManager: {fileID: 372237096}
+  over: 0
   s: {fileID: 0}
   e: {fileID: 0}
   xBounds: {x: -25, y: 90}
