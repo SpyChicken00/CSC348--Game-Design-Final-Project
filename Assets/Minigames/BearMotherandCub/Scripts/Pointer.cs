@@ -8,17 +8,14 @@ public class Pointer : MonoBehaviour
 
     private Vector3 direction;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
+        // Sets the direction from the player to the goal
         direction = MainMotherCub.e.transform.position - character.transform.position;
         direction.Normalize();
+
+        // puts the arrow pointing towards the goal
         this.transform.position = character.transform.position + direction;
         transform.up = direction;
     }
