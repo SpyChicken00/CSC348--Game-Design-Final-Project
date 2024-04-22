@@ -1,7 +1,145 @@
 fileFormatVersion: 2
 guid: 428b9cbb1291f4facb5bc4810a7ad89b
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 194052264791649829
+    second: Ground_Rocks_Touched_Up_0
+  - first:
+      213: 5089696928822457502
+    second: Ground_Rocks_Touched_Up_1
+  - first:
+      213: -7636107936222731099
+    second: Ground_Rocks_Touched_Up_2
+  - first:
+      213: 4090621232465025504
+    second: Ground_Rocks_Touched_Up_3
+  - first:
+      213: -4794664069072356036
+    second: Ground_Rocks_Touched_Up_4
+  - first:
+      213: 8375074708712768914
+    second: Ground_Rocks_Touched_Up_5
+  - first:
+      213: -6882263769614409160
+    second: Ground_Rocks_Touched_Up_6
+  - first:
+      213: 4189448458780726719
+    second: Ground_Rocks_Touched_Up_7
+  - first:
+      213: -5792027115214125039
+    second: Ground_Rocks_Touched_Up_8
+  - first:
+      213: 7311286042806073613
+    second: Ground_Rocks_Touched_Up_9
+  - first:
+      213: 8070729433732187015
+    second: Ground_Rocks_Touched_Up_10
+  - first:
+      213: -2788812056222762928
+    second: Ground_Rocks_Touched_Up_11
+  - first:
+      213: -2400132591316370663
+    second: Ground_Rocks_Touched_Up_12
+  - first:
+      213: 7721457490713004393
+    second: Ground_Rocks_Touched_Up_13
+  - first:
+      213: 1429316961804929405
+    second: Ground_Rocks_Touched_Up_14
+  - first:
+      213: -6934471083789756394
+    second: Ground_Rocks_Touched_Up_15
+  - first:
+      213: 4818723635875026451
+    second: Ground_Rocks_Touched_Up_16
+  - first:
+      213: -5241979650762846606
+    second: Ground_Rocks_Touched_Up_17
+  - first:
+      213: 1268495694617935751
+    second: Ground_Rocks_Touched_Up_18
+  - first:
+      213: -6592353646867688163
+    second: Ground_Rocks_Touched_Up_19
+  - first:
+      213: 5794024802589377386
+    second: Ground_Rocks_Touched_Up_20
+  - first:
+      213: 1879226326719039191
+    second: Ground_Rocks_Touched_Up_21
+  - first:
+      213: -3969154737021550868
+    second: Ground_Rocks_Touched_Up_22
+  - first:
+      213: 3309702908557045463
+    second: Ground_Rocks_Touched_Up_23
+  - first:
+      213: -3328997798406405497
+    second: Ground_Rocks_Touched_Up_24
+  - first:
+      213: 1794900358227753482
+    second: Ground_Rocks_Touched_Up_25
+  - first:
+      213: -2968659099182955352
+    second: Ground_Rocks_Touched_Up_26
+  - first:
+      213: -6793709598891561082
+    second: Ground_Rocks_Touched_Up_27
+  - first:
+      213: 2349952830511982554
+    second: Ground_Rocks_Touched_Up_28
+  - first:
+      213: -4955226921772999902
+    second: Ground_Rocks_Touched_Up_29
+  - first:
+      213: 1772739996127570098
+    second: Ground_Rocks_Touched_Up_30
+  - first:
+      213: 3449567101478339641
+    second: Ground_Rocks_Touched_Up_31
+  - first:
+      213: -2855227555733935996
+    second: Ground_Rocks_Touched_Up_32
+  - first:
+      213: 6265232704706416746
+    second: Ground_Rocks_Touched_Up_33
+  - first:
+      213: 1870114310176966316
+    second: Ground_Rocks_Touched_Up_34
+  - first:
+      213: -5961410410489883380
+    second: Ground_Rocks_Touched_Up_35
+  - first:
+      213: 6633073949676051250
+    second: Ground_Rocks_Touched_Up_36
+  - first:
+      213: 1711961322507215412
+    second: Ground_Rocks_Touched_Up_37
+  - first:
+      213: 6982113178102378491
+    second: Ground_Rocks_Touched_Up_38
+  - first:
+      213: 2544598200699907192
+    second: Ground_Rocks_Touched_Up_39
+  - first:
+      213: -5368803001429339797
+    second: Ground_Rocks_Touched_Up_40
+  - first:
+      213: -2743891225912759831
+    second: Ground_Rocks_Touched_Up_41
+  - first:
+      213: 8333514624931881800
+    second: Ground_Rocks_Touched_Up_42
+  - first:
+      213: -877367306793376402
+    second: Ground_Rocks_Touched_Up_43
+  - first:
+      213: -8053203481013989501
+    second: Ground_Rocks_Touched_Up_44
+  - first:
+      213: -4469144577362157429
+    second: Ground_Rocks_Touched_Up_45
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -41,7 +179,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -90,7 +228,1037 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_0
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 432
+        width: 54
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24, y: -5}
+        - {x: 21, y: -5}
+        - {x: 20, y: -6}
+        - {x: 15, y: 0}
+        - {x: 14, y: 0}
+        - {x: 11, y: -3}
+        - {x: 11, y: -5}
+        - {x: 9, y: -8}
+        - {x: 7, y: -6}
+        - {x: 5, y: -6}
+        - {x: 4, y: -7}
+        - {x: 4, y: -5}
+        - {x: 8, y: -1}
+        - {x: 8, y: 0}
+        - {x: 5, y: 3}
+        - {x: 2, y: 3}
+        - {x: 1, y: 2}
+        - {x: -1, y: 2}
+        - {x: -4, y: -1}
+        - {x: -6, y: 1}
+        - {x: -8, y: 1}
+        - {x: -12, y: -4}
+        - {x: -15, y: -4}
+        - {x: -16, y: -3}
+        - {x: -22, y: -3}
+        - {x: -25, y: -4}
+        - {x: -27, y: -7}
+        - {x: -27, y: -10}
+        - {x: -25, y: -12}
+        - {x: -21, y: -13}
+        - {x: -21, y: -14}
+        - {x: -18, y: -17}
+        - {x: 24, y: -17}
+        - {x: 26, y: -15}
+        - {x: 26, y: -10}
+        - {x: 27, y: -8}
+      - - {x: 24, y: 6}
+        - {x: 22, y: 4}
+        - {x: 22, y: 3}
+        - {x: 26, y: 0}
+        - {x: 27, y: 0}
+        - {x: 27, y: 5}
+        - {x: 26, y: 6}
+      - - {x: -27, y: 4}
+        - {x: -25, y: 1}
+        - {x: -19, y: 2}
+        - {x: -16, y: 5}
+        - {x: -17, y: 8}
+        - {x: -20, y: 8}
+      - - {x: -13, y: 4}
+        - {x: -10, y: 5}
+        - {x: -10, y: 8}
+        - {x: -13, y: 9}
+        - {x: -15, y: 7}
+      - - {x: 11, y: 9}
+        - {x: 6, y: 13}
+        - {x: -1, y: 13}
+        - {x: -6, y: 11}
+        - {x: -6, y: 8}
+        - {x: -4, y: 6}
+        - {x: 6, y: 7}
+        - {x: 7, y: 6}
+        - {x: 9, y: 6}
+        - {x: 11, y: 8}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 52e24c6b18961b200800000000000000
+      internalID: 194052264791649829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_1
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 432
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e94fbd0f36c32a640800000000000000
+      internalID: 5089696928822457502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_2
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 433
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a427e23a48170690800000000000000
+      internalID: -7636107936222731099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_3
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 432
+        width: 42
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e99fbf765ec4c830800000000000000
+      internalID: 4090621232465025504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_4
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 432
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3dfc91be6ee57db0800000000000000
+      internalID: -4794664069072356036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_5
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 432
+        width: 35
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 295ce24131e3a3470800000000000000
+      internalID: 8375074708712768914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_6
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 367
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 832a799b0994d70a0800000000000000
+      internalID: -6882263769614409160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_7
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 368
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb5de663d29e32a30800000000000000
+      internalID: 4189448458780726719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_8
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 369
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1184b34b6069e9fa0800000000000000
+      internalID: -5792027115214125039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_9
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 368
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d093ab84be7e67560800000000000000
+      internalID: 7311286042806073613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_10
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 367
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78385efc8adf00070800000000000000
+      internalID: 8070729433732187015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_11
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 369
+        width: 63
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058f38be5362c49d0800000000000000
+      internalID: -2788812056222762928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_12
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 368
+        width: 37
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91bffb8ef1401bed0800000000000000
+      internalID: -2400132591316370663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_13
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 368
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9694a328da0282b60800000000000000
+      internalID: 7721457490713004393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_14
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 368
+        width: 38
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d79c2d33434f5d310800000000000000
+      internalID: 1429316961804929405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_15
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 368
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6185e792a4fc3cf90800000000000000
+      internalID: -6934471083789756394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_16
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 286
+        width: 46
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3161c1bbd9b8fd240800000000000000
+      internalID: 4818723635875026451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_17
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 217
+        width: 165
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e4474e74fb047b0800000000000000
+      internalID: -5241979650762846606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_18
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 217
+        width: 77
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f70dc0d1a9a9110800000000000000
+      internalID: 1268495694617935751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_19
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 218
+        width: 80
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1553b439414384a0800000000000000
+      internalID: -6592353646867688163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_20
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 216
+        width: 121
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6384222cd2886050800000000000000
+      internalID: 5794024802589377386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_21
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 169
+        width: 45
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d686a8336a541a10800000000000000
+      internalID: 1879226326719039191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_22
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 169
+        width: 40
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cee7541dbcabae8c0800000000000000
+      internalID: -3969154737021550868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_23
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 169
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7deae90824d6eed20800000000000000
+      internalID: 3309702908557045463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_24
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 167
+        width: 43
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 782cdefd3260dc1d0800000000000000
+      internalID: -3328997798406405497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_25
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 170
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0af263bd54c8e810800000000000000
+      internalID: 1794900358227753482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_26
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 109
+        width: 46
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a408f527443dc6d0800000000000000
+      internalID: -2968659099182955352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_27
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 110
+        width: 51
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f28ea4d15e7b1a0800000000000000
+      internalID: -6793709598891561082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_28
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 110
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad7279516a5bc9020800000000000000
+      internalID: 2349952830511982554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_29
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 109
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b944a5e5f7b3bb0800000000000000
+      internalID: -4955226921772999902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_30
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 109
+        width: 36
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b8af4452a90a9810800000000000000
+      internalID: 1772739996127570098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_31
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 110
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9348d7090035fdf20800000000000000
+      internalID: 3449567101478339641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_32
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 110
+        width: 44
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 488629b6aa13068d0800000000000000
+      internalID: -2855227555733935996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_33
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 109
+        width: 25
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a609f2743f392f650800000000000000
+      internalID: 6265232704706416746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_34
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 112
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca6097b8e0bf3f910800000000000000
+      internalID: 1870114310176966316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_35
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 109
+        width: 64
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c055f6a01d0d44da0800000000000000
+      internalID: -5961410410489883380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_36
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 27
+        width: 95
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23b965b1d996d0c50800000000000000
+      internalID: 6633073949676051250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_37
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 27
+        width: 52
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4322041a0cb12c710800000000000000
+      internalID: 1711961322507215412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_38
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 31
+        width: 75
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bffad5251f275e060800000000000000
+      internalID: 6982113178102378491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_39
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 29
+        width: 65
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ce0d8e49a305320800000000000000
+      internalID: 2544598200699907192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_40
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 30
+        width: 61
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61d0c68d1e2e75b0800000000000000
+      internalID: -5368803001429339797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_41
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 27
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e9a821c77dbbe9d0800000000000000
+      internalID: -2743891225912759831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_42
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 27
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8436695066796a370800000000000000
+      internalID: 8333514624931881800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_43
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 28
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e652a0d3517f2d3f0800000000000000
+      internalID: -877367306793376402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_44
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 29
+        width: 17
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38fc83a0a164d3090800000000000000
+      internalID: -8053203481013989501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Rocks_Touched_Up_45
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 27
+        width: 27
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8027787fa86af1c0800000000000000
+      internalID: -4469144577362157429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
