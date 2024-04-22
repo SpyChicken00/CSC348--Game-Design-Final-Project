@@ -101,7 +101,7 @@ public class Player : MonoBehaviour
         {
             //teleport to the left
             float y = transform.position.y;
-            transform.position = new Vector3(-0.16f, y, 0); //0.0061f
+            transform.position = new Vector3(-0.07f, y, 0); //0.0061f
             playerRenderer.flipX = false;
             //GetComponent<CapsuleCollider2D>().offset.x = 0.2804967f;
             //-0.1544539
@@ -112,7 +112,7 @@ public class Player : MonoBehaviour
         {
             //teleport to the right
             float y = transform.position.y;
-            transform.position = new Vector3(0.3f, y, 0);
+            transform.position = new Vector3(0.14f, y, 0);
             playerRenderer.flipX = true;
             //adjust the collider's position to match the player's position
             float y2 = GetComponent<CapsuleCollider2D>().offset.y;
