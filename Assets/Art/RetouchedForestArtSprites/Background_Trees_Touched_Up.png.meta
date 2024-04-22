@@ -107,10 +107,10 @@ TextureImporter:
       name: Background_Trees_Touched_Up_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 346
-        width: 75
-        height: 120
+        x: 330
+        y: 345
+        width: 96
+        height: 108
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,10 +128,10 @@ TextureImporter:
       name: Background_Trees_Touched_Up_1
       rect:
         serializedVersion: 2
-        x: 124
-        y: 347
-        width: 84
-        height: 119
+        x: 231
+        y: 348
+        width: 69
+        height: 103
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,10 +149,10 @@ TextureImporter:
       name: Background_Trees_Touched_Up_2
       rect:
         serializedVersion: 2
-        x: 231
-        y: 347
-        width: 74
-        height: 117
+        x: 117
+        y: 346
+        width: 92
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,10 +170,10 @@ TextureImporter:
       name: Background_Trees_Touched_Up_3
       rect:
         serializedVersion: 2
-        x: 329
-        y: 347
-        width: 94
-        height: 118
+        x: 19
+        y: 344
+        width: 80
+        height: 121
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
