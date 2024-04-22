@@ -14,7 +14,7 @@ public class MamaBear : MonoBehaviour
     [Header("Inscribed")]
     public GameObject babyPrefab;
     public float speed = 0.5f;
-    public float radius = 10;
+    public static float radius = 10;
     public float timeThinkMin = 1f;
     public float timeThinkMax = 4f;
     public GameObject sprite;
