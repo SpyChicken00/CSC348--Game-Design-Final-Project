@@ -1,7 +1,106 @@
 fileFormatVersion: 2
 guid: 8dc983cfaf8854641ac64fbdc1b5510b
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -7848881699284015750
+    second: Trees_Leaves_Touched_Up_0
+  - first:
+      213: 7064739304067247340
+    second: Trees_Leaves_Touched_Up_1
+  - first:
+      213: -1293692284720657651
+    second: Trees_Leaves_Touched_Up_2
+  - first:
+      213: -203266749914946784
+    second: Trees_Leaves_Touched_Up_3
+  - first:
+      213: 4413452862831986414
+    second: Trees_Leaves_Touched_Up_4
+  - first:
+      213: 6887544043013749522
+    second: Trees_Leaves_Touched_Up_5
+  - first:
+      213: 4985663956921473939
+    second: Trees_Leaves_Touched_Up_6
+  - first:
+      213: -3918975499564785106
+    second: Trees_Leaves_Touched_Up_7
+  - first:
+      213: -3890538145959080928
+    second: Trees_Leaves_Touched_Up_8
+  - first:
+      213: -8826224540670185070
+    second: Trees_Leaves_Touched_Up_9
+  - first:
+      213: -9114170937280681782
+    second: Trees_Leaves_Touched_Up_10
+  - first:
+      213: -3070563045300182993
+    second: Trees_Leaves_Touched_Up_11
+  - first:
+      213: -2393355311847016121
+    second: Trees_Leaves_Touched_Up_12
+  - first:
+      213: 3460682408093947919
+    second: Trees_Leaves_Touched_Up_13
+  - first:
+      213: 6696395040464664649
+    second: Trees_Leaves_Touched_Up_14
+  - first:
+      213: 2001553662945591139
+    second: Trees_Leaves_Touched_Up_15
+  - first:
+      213: 2981118258735205084
+    second: Trees_Leaves_Touched_Up_16
+  - first:
+      213: 3192124631287110429
+    second: Trees_Leaves_Touched_Up_17
+  - first:
+      213: -7215193265256798956
+    second: Trees_Leaves_Touched_Up_18
+  - first:
+      213: -7728659062965914709
+    second: Trees_Leaves_Touched_Up_19
+  - first:
+      213: -8876754484707461350
+    second: Trees_Leaves_Touched_Up_20
+  - first:
+      213: -4159642951717860018
+    second: Trees_Leaves_Touched_Up_21
+  - first:
+      213: -4347026140216659272
+    second: Trees_Leaves_Touched_Up_22
+  - first:
+      213: 7429711922548190454
+    second: Trees_Leaves_Touched_Up_23
+  - first:
+      213: -6166038339291737077
+    second: Trees_Leaves_Touched_Up_24
+  - first:
+      213: -5564316032557507778
+    second: Trees_Leaves_Touched_Up_25
+  - first:
+      213: 6824359407306552085
+    second: Trees_Leaves_Touched_Up_26
+  - first:
+      213: -6270568542737354340
+    second: Trees_Leaves_Touched_Up_27
+  - first:
+      213: -2916790212231869154
+    second: Trees_Leaves_Touched_Up_28
+  - first:
+      213: -1732252364132490632
+    second: Trees_Leaves_Touched_Up_29
+  - first:
+      213: 8466902887266683453
+    second: Trees_Leaves_Touched_Up_30
+  - first:
+      213: 8910929663457843734
+    second: Trees_Leaves_Touched_Up_31
+  - first:
+      213: 7931933778965196650
+    second: Trees_Leaves_Touched_Up_32
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -41,7 +140,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -90,7 +189,700 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Trees_Leaves_Touched_Up_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 321
+        width: 57
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a75ac1efdab231390800000000000000
+      internalID: -7848881699284015750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_Leaves_Touched_Up_1
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 321
+        width: 61
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cec2ba967fefa0260800000000000000
+      internalID: 7064739304067247340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_Leaves_Touched_Up_2
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 320
+        width: 40
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0bcf88a8b1eb0ee0800000000000000
+      internalID: -1293692284720657651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_Leaves_Touched_Up_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 356
+        width: 67
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 023eba8c7f9dd2df0800000000000000
+      internalID: -203266749914946784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_Leaves_Touched_Up_4
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 357
+        width: 60
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee6080acefbbf3d30800000000000000
+      internalID: 4413452862831986414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_Leaves_Touched_Up_5
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 358
+        width: 54
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b31bab0d8759f50800000000000000
+      internalID: 6887544043013749522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_Leaves_Touched_Up_6
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 356
+        width: 84
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39bd5c124f2a03540800000000000000
+      internalID: 4985663956921473939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_Leaves_Touched_Up_7
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 359
+        width: 80
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e226bf8fb800d99c0800000000000000
+      internalID: -3918975499564785106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_Leaves_Touched_Up_8
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 245
+        width: 95
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02c80015b28020ac0800000000000000
+      internalID: -3890538145959080928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_Leaves_Touched_Up_9
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 245
+        width: 99
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 291b4892b83f28580800000000000000
+      internalID: -8826224540670185070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_Leaves_Touched_Up_10
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 247
+        width: 85
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac8223d42d5f38180800000000000000
+      internalID: -9114170937280681782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_Leaves_Touched_Up_11
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 245
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f20e078cd2b2365d0800000000000000
+      internalID: -3070563045300182993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_Leaves_Touched_Up_12
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 245
+        width: 56
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7497010460819ced0800000000000000
+      internalID: -2393355311847016121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_Leaves_Touched_Up_13
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 245
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0812ee8050d60030800000000000000
+      internalID: 3460682408093947919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_Leaves_Touched_Up_14
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 244
+        width: 38
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 948759e6fcf5eec50800000000000000
+      internalID: 6696395040464664649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_Leaves_Touched_Up_15
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 247
+        width: 53
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36ff0c6a372f6cb10800000000000000
+      internalID: 2001553662945591139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_Leaves_Touched_Up_16
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 244
+        width: 58
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdac75df24f0f5920800000000000000
+      internalID: 2981118258735205084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_Leaves_Touched_Up_17
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 245
+        width: 59
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b94a68074bc4c20800000000000000
+      internalID: 3192124631287110429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_Leaves_Touched_Up_18
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 187
+        width: 59
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 415e396f3fb7edb90800000000000000
+      internalID: -7215193265256798956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_Leaves_Touched_Up_19
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 187
+        width: 57
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba330d9c7894eb490800000000000000
+      internalID: -7728659062965914709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_Leaves_Touched_Up_20
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 185
+        width: 53
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a17f7a4c3de6fc480800000000000000
+      internalID: -8876754484707461350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_Leaves_Touched_Up_21
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 184
+        width: 42
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4d466e26caf546c0800000000000000
+      internalID: -4159642951717860018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_Leaves_Touched_Up_22
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 185
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b27c0bc1c24ca3c0800000000000000
+      internalID: -4347026140216659272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_Leaves_Touched_Up_23
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 138
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc28f611a3ab1760800000000000000
+      internalID: 7429711922548190454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_Leaves_Touched_Up_24
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 141
+        width: 165
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b04931bacc4dd6aa0800000000000000
+      internalID: -6166038339291737077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_Leaves_Touched_Up_25
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 139
+        width: 98
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3b1665ac0497c2b0800000000000000
+      internalID: -5564316032557507778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_Leaves_Touched_Up_26
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 27
+        width: 76
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5133a1459bef4be50800000000000000
+      internalID: 6824359407306552085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_Leaves_Touched_Up_27
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 28
+        width: 105
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c91b66e12277af8a0800000000000000
+      internalID: -6270568542737354340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_Leaves_Touched_Up_28
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 31
+        width: 127
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d459b71ca7587d0800000000000000
+      internalID: -2916790212231869154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_Leaves_Touched_Up_29
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 25
+        width: 33
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8726d8617adc5f7e0800000000000000
+      internalID: -1732252364132490632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_Leaves_Touched_Up_30
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 29
+        width: 104
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a824ff05b708570800000000000000
+      internalID: 8466902887266683453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_Leaves_Touched_Up_31
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 34
+        width: 86
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a55e8115bf9ab70800000000000000
+      internalID: 8910929663457843734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_Leaves_Touched_Up_32
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 28
+        width: 114
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f642d2fb3e31e60800000000000000
+      internalID: 7931933778965196650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
