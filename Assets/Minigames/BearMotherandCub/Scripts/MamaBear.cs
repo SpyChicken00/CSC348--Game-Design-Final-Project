@@ -23,19 +23,24 @@ public class MamaBear : MonoBehaviour
     public Vector2 facing;
     public float timeNextDecision = 0;
 
+    // The position of the MamaBear
     public Vector2 pos
     {
         get { return this.transform.position; }
         set { this.transform.position = value; }
     }
 
+    // Instantiates vars and picks a direction to walk
     void Start()
     {
+        // Instantiates vars
         rigid = GetComponent<Rigidbody2D>();
         line = GetComponent<LineRenderer>();
         lineColl = GetComponent<EdgeCollider2D>();
         GenerateBaby();
         facing = Vector2.up;
+
+        // Picks a direction to walk
         DecideDirection();
     }
 
@@ -50,6 +55,7 @@ public class MamaBear : MonoBehaviour
         Vector2 tempPos = pos;
         pos = tempPos;
 
+        // moves the line connecting mother and baby
         line.SetPosition(0, transform.position);
         line.SetPosition(1, myBaby.transform.position);
         List<Vector2> collPoints = new List<Vector2>();
@@ -62,8 +68,10 @@ public class MamaBear : MonoBehaviour
     // sets a random direction, or staying stationary
     void DecideDirection()
     {
+        // saves the original way faced
         Vector2 oldFacing = facing;
 
+        // measures distance between mother and baby
         float sqrdDistance = (pos - myBaby.pos).sqrMagnitude;
 
         // if twice as far as radius, move towards cub, closer than radius, move away, else move random
@@ -78,6 +86,7 @@ public class MamaBear : MonoBehaviour
         float angle = Vector2.SignedAngle(facing, oldFacing);
         sprite.transform.Rotate(0, 0, -angle);
 
+        // sets when MamaBear will next turn
         timeNextDecision = Time.time + Random.Range(timeThinkMin, timeThinkMax); 
     }
 
@@ -97,7 +106,7 @@ public class MamaBear : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        //chooses a random direction to go in
+        // chooses a random direction to go in
         Vector2 oldFacing = facing;
         facing = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
 
@@ -105,6 +114,7 @@ public class MamaBear : MonoBehaviour
         float angle = Vector2.SignedAngle(facing, oldFacing);
         sprite.transform.Rotate(0, 0, -angle);
 
+        // Sets when MamaBear will turn again
         timeNextDecision = Time.time + Random.Range(timeThinkMin, timeThinkMax);
     }
 }

@@ -64,3 +64,6 @@ TagManager:
   - name: Spear
     uniqueID: 1164173153
     locked: 0
+  - name: Locator
+    uniqueID: 661349639
+    locked: 0

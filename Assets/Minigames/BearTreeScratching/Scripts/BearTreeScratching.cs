@@ -59,13 +59,16 @@ public class BearTreeScratching : MonoBehaviour
     // randomly selects bear moves
     int[] DecideBearMoves(int numMoves)
     {
+        // saves when the bear moves will end so players cannot input early
         startTime = Time.time;
         bearMovesEndTime = startDelay + ((movesQuantity - 1) * moveDelay);
 
+        // sets moves
         int[] moves = new int[numMoves];
         for (int i = 0; i < numMoves; i++)
             moves[i] = Random.Range(0, 4);
 
+        // outputs moves to the console
         LogMoves(moves);
         
         return moves;
@@ -84,6 +87,8 @@ public class BearTreeScratching : MonoBehaviour
             yield return new WaitForSeconds(moveDelay);
             anim.speed = 0;
         }
+
+        // Moves camera from bear to player
         yield return new WaitForSeconds(0.5f);
         mainCamera.GetComponent<ZoomCameraStart>().getTimeDuration(1.0f);
         mainCamera.GetComponent<ZoomCameraStart>().bearToPlayer();
@@ -128,6 +133,7 @@ public class BearTreeScratching : MonoBehaviour
         StartCoroutine(StopBearSwipe());
     }
 
+    // Pauses and resets animation speeds when bear is done swiping
     IEnumerator StopBearSwipe()
     {
         yield return new WaitForSeconds(1.0f);
@@ -228,8 +234,10 @@ public class BearTreeScratching : MonoBehaviour
     
     private IEnumerator MoveCamera()
     {
+        //moves camera
         yield return new WaitForSeconds(1.0f);
         mainCamera.GetComponent<ZoomCameraStart>().playerToBear();
+
         //destroy scratches on screen
         GameObject[] scratches = GameObject.FindGameObjectsWithTag("Scratch");
         foreach (GameObject scratch in scratches)
@@ -238,20 +246,26 @@ public class BearTreeScratching : MonoBehaviour
         }
     }
 
-    //lose game, play lose sound, and transition to lose screen
+
+    // Loses the minigame and moves to the next one
     public IEnumerator Lose()
     {
         // prevents additional presses for double lives loss
         playerMoveIndex = movesQuantity;
+
+        // Gives player lose feedback
         Debug.Log("Lose!");
         GetComponent<AudioSource>().PlayOneShot(loseSound);
+
+        // Transitions to next minigame
         yield return new WaitForSeconds(1.0f);
         LevelManager.GetComponent<Transition>().LoseMiniGame(0);
     }
 
-    //win game, play win sound, and transition to win screen
+    // Wins the minigame and moves to the next one
     public IEnumerator Win()
     {
+        // Sets index to prevent extra presses
         playerMoveIndex += 1;
         Debug.Log("Win!");
         GetComponent<AudioSource>().PlayOneShot(winSound);
