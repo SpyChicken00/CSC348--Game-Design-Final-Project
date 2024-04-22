@@ -33,6 +33,9 @@ public class MainCharacter : MonoBehaviour
 
         // Moves player
         transform.Translate(speed * Time.deltaTime * movementDirection, Space.World);
+        //if player is moving, play walking sound
+        //if (movementDirection != Vector2.zero && !GetComponent<AudioSource>().isPlaying) GetComponent<AudioSource>().Play();
+            
 
         // Rotates player
         if(movementDirection != Vector2.zero)
@@ -49,7 +52,6 @@ public class MainCharacter : MonoBehaviour
             } else {
                 if (!GetComponent<AudioSource>().isPlaying) GetComponent<AudioSource>().PlayOneShot(bearSound);
             }
-
             // Lose if a bear is hit
             main.Lose();
         }
@@ -60,7 +62,6 @@ public class MainCharacter : MonoBehaviour
     {
         if (collision.collider.CompareTag("Bear")) {
             if (!GetComponent<AudioSource>().isPlaying) GetComponent<AudioSource>().PlayOneShot(bearSound);
-
             main.Lose();
         }
     }

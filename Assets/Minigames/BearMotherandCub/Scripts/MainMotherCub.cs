@@ -13,6 +13,8 @@ public class MainMotherCub : MonoBehaviour
     public GameObject endPnt;
     public GameObject LevelManager;
     public bool over = false;
+    public AudioClip lossSound;
+    public AudioClip winSound;
     
     //public AudioClip loseSound;
 
@@ -64,11 +66,10 @@ public class MainMotherCub : MonoBehaviour
         {
             // prevents multiple lives lost in one game, or winning after losing
             over = true;
-            LevelManager.GetComponent<Transition>().LoseMiniGame(0.5f);
+            // Play Lose Soynd
+            GetComponent<AudioSource>().PlayOneShot(lossSound);
+            LevelManager.GetComponent<Transition>().LoseMiniGame(1.0f);
         }
-            
-        //play lose sound
-        //GetComponent<AudioSource>().PlayOneShot(loseSound);
     }
 
     // wins minigame and transitions to next
@@ -79,7 +80,9 @@ public class MainMotherCub : MonoBehaviour
         {
             // prevents multiple wins or losing after winning
             over = true;
-            LevelManager.GetComponent<Transition>().WinMiniGame(0f);
+            // Play Lose Soynd
+            GetComponent<AudioSource>().PlayOneShot(winSound);
+            LevelManager.GetComponent<Transition>().WinMiniGame(1.0f);
         }
     }
 
