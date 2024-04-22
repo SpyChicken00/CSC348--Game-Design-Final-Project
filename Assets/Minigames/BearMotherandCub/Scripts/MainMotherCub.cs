@@ -51,8 +51,8 @@ public class MainMotherCub : MonoBehaviour
     void Update()
     {
         // If the player gets close enough to the goal, win
-        if (System.Math.Abs(mainCharacter.transform.position.x - e.transform.position.x) < 0.5 &&
-            System.Math.Abs(mainCharacter.transform.position.y - e.transform.position.y) < 0.5)
+        if (System.Math.Abs(mainCharacter.transform.position.x - e.transform.position.x) < 4 &&
+            System.Math.Abs(mainCharacter.transform.position.y - e.transform.position.y) < 4)
         {
             Win();
         }
