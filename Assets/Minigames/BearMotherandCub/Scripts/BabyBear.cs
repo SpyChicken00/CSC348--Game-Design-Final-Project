@@ -9,7 +9,6 @@ public class BabyBear : MonoBehaviour
 
     [Header("Inscribed")]
     public float speed = 1f;
-    public float radius;
     public float timeThinkMin = 1f;
     public float timeThinkMax = 4f;
     public GameObject sprite;
@@ -18,12 +17,14 @@ public class BabyBear : MonoBehaviour
     public Vector2 facing;
     public float timeNextDecision = 0;
 
+    // The position of the BabyBear
     public Vector2 pos
     {
         get { return this.transform.position; }
         set { this.transform.position = value; }
     }
 
+    // Instantiates facing and rigid, then decides where to walk
     void Start()
     {
         facing = Vector2.up;
@@ -43,7 +44,7 @@ public class BabyBear : MonoBehaviour
         pos = tempPos;
     }
 
-    // sets a random direction, or staying stationary
+    // sets a random direction
     public void DecideDirection()
     {
         Vector2 oldFacing = facing;
@@ -66,6 +67,7 @@ public class BabyBear : MonoBehaviour
         float angle = Vector2.SignedAngle(facing, oldFacing);
         sprite.transform.Rotate(0, 0, -angle);
 
+        // sets when a new direction will be chosen
         timeNextDecision = Time.time + Random.Range(timeThinkMin, timeThinkMax);
     }
 }
