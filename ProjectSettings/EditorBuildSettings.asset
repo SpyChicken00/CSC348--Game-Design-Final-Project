@@ -5,6 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 1
+    path: Assets/Minigames/Hub - Title Screen/Scenes/Opening.unity
+    guid: b2c6ead9ef9937c40855b0acff816e4c
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
@@ -24,12 +27,9 @@ EditorBuildSettings:
     path: Assets/Minigames/BearFishing/BearFishing.unity
     guid: fc9e4a111103b5f46975c95e4266a455
   - enabled: 0
-    path: Assets/BearMotherandCub/Scenes/BearMotherandCub.unity
-    guid: c87c424d4928c5a48804e3615be5aa84
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Minigames/Hub - Title Screen/Scenes/Discovered.unity
     guid: 20f634909edf6b24ab566e014885c746
-  - enabled: 1
-    path: Assets/Minigames/Hub - Title Screen/Scenes/Opening.unity
-    guid: b2c6ead9ef9937c40855b0acff816e4c
   m_configObjects: {}
