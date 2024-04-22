@@ -1,49 +1,49 @@
 fileFormatVersion: 2
-guid: 1283c835c4f974361a1ef5395513c586
+guid: b2ddd3c6f00864e13b6dc8b273a58450
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8055542921212684118
-    second: Light_Green_Trees_Touched_Up_0
+      213: 7981401827686890879
+    second: newAlphaTouchup2 (1)_0
   - first:
-      213: -8990974150068156102
-    second: Light_Green_Trees_Touched_Up_1
+      213: 4984733468874314472
+    second: newAlphaTouchup2 (1)_1
   - first:
-      213: -7662402526780012532
-    second: Light_Green_Trees_Touched_Up_2
+      213: -4036522044236877817
+    second: newAlphaTouchup2 (1)_2
   - first:
-      213: 5453819728628212495
-    second: Light_Green_Trees_Touched_Up_3
+      213: 3311763953854389694
+    second: newAlphaTouchup2 (1)_3
   - first:
-      213: 306321081243406226
-    second: Light_Green_Trees_Touched_Up_4
+      213: -746841014062568665
+    second: newAlphaTouchup2 (1)_4
   - first:
-      213: -7993751073604786030
-    second: Light_Green_Trees_Touched_Up_5
+      213: 3739748288274793147
+    second: newAlphaTouchup2 (1)_5
   - first:
-      213: -1600817708388580776
-    second: Light_Green_Trees_Touched_Up_6
+      213: -2000498661561590308
+    second: newAlphaTouchup2 (1)_6
   - first:
-      213: 6230276736528535503
-    second: Light_Green_Trees_Touched_Up_7
+      213: 3216457061451884081
+    second: newAlphaTouchup2 (1)_7
   - first:
-      213: 8755175255570547268
-    second: Light_Green_Trees_Touched_Up_8
+      213: -785299848133804172
+    second: newAlphaTouchup2 (1)_8
   - first:
-      213: -1427956649065115376
-    second: Light_Green_Trees_Touched_Up_9
+      213: -1453193633292810486
+    second: newAlphaTouchup2 (1)_9
   - first:
-      213: 1076383699735036519
-    second: Light_Green_Trees_Touched_Up_10
+      213: 865370950563316645
+    second: newAlphaTouchup2 (1)_10
   - first:
-      213: 1132065741894744773
-    second: Light_Green_Trees_Touched_Up_11
+      213: 8631397728475757013
+    second: newAlphaTouchup2 (1)_11
   - first:
-      213: 161604338630485290
-    second: Light_Green_Trees_Touched_Up_12
+      213: 2184998538853619137
+    second: newAlphaTouchup2 (1)_12
   - first:
-      213: -5605830743248509192
-    second: Light_Green_Trees_Touched_Up_13
+      213: -6913900357559375912
+    second: newAlphaTouchup2 (1)_13
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -134,11 +134,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Light_Green_Trees_Touched_Up_0
+      name: newAlphaTouchup2 (1)_0
       rect:
         serializedVersion: 2
         x: 22
-        y: 227
+        y: 223
         width: 100
         height: 107
       alignment: 0
@@ -148,20 +148,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6576bc35b990bcf60800000000000000
-      internalID: 8055542921212684118
+      spriteID: f7d3eeccca2a3ce60800000000000000
+      internalID: 7981401827686890879
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Light_Green_Trees_Touched_Up_1
+      name: newAlphaTouchup2 (1)_1
       rect:
         serializedVersion: 2
         x: 142
-        y: 228
-        width: 87
-        height: 110
+        y: 227
+        width: 89
+        height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,19 +169,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a39c77095a4a93380800000000000000
-      internalID: -8990974150068156102
+      spriteID: 8e211400ea45d2540800000000000000
+      internalID: 4984733468874314472
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Light_Green_Trees_Touched_Up_2
+      name: newAlphaTouchup2 (1)_2
       rect:
         serializedVersion: 2
-        x: 248
-        y: 227
-        width: 94
+        x: 246
+        y: 225
+        width: 97
         height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -190,40 +190,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c08c831cf7da9a590800000000000000
-      internalID: -7662402526780012532
+      spriteID: 7003a3156946bf7c0800000000000000
+      internalID: -4036522044236877817
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Light_Green_Trees_Touched_Up_3
+      name: newAlphaTouchup2 (1)_3
       rect:
         serializedVersion: 2
-        x: 367
-        y: 227
-        width: 91
-        height: 92
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f03e6e9c52cdfab40800000000000000
-      internalID: 5453819728628212495
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Light_Green_Trees_Touched_Up_4
-      rect:
-        serializedVersion: 2
-        x: 503
-        y: 227
-        width: 72
+        x: 362
+        y: 223
+        width: 104
         height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -232,20 +211,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29f0ab28665404400800000000000000
-      internalID: 306321081243406226
+      spriteID: ebd1f6105cfb5fd20800000000000000
+      internalID: 3311763953854389694
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Light_Green_Trees_Touched_Up_5
+      name: newAlphaTouchup2 (1)_4
       rect:
         serializedVersion: 2
-        x: 614
+        x: 499
         y: 225
         width: 80
-        height: 92
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,19 +232,40 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 298a3e250cd701190800000000000000
-      internalID: -7993751073604786030
+      spriteID: 72bab1dfd00b2a5f0800000000000000
+      internalID: -746841014062568665
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Light_Green_Trees_Touched_Up_6
+      name: newAlphaTouchup2 (1)_5
       rect:
         serializedVersion: 2
-        x: 479
-        y: 118
-        width: 122
+        x: 613
+        y: 223
+        width: 85
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb28eff014146e330800000000000000
+      internalID: 3739748288274793147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newAlphaTouchup2 (1)_6
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 117
+        width: 79
         height: 99
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -274,103 +274,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 852085596c0c8c9e0800000000000000
-      internalID: -1600817708388580776
+      spriteID: cdd1afff01dcc34e0800000000000000
+      internalID: -2000498661561590308
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Light_Green_Trees_Touched_Up_7
+      name: newAlphaTouchup2 (1)_7
       rect:
         serializedVersion: 2
-        x: 618
+        x: 475
         y: 119
-        width: 79
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fcfc925bea3667650800000000000000
-      internalID: 6230276736528535503
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Light_Green_Trees_Touched_Up_8
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 32
-        width: 107
-        height: 151
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 442829e0281a08970800000000000000
-      internalID: 8755175255570547268
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Light_Green_Trees_Touched_Up_9
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 25
-        width: 79
-        height: 142
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 01111d94ef0ee2ce0800000000000000
-      internalID: -1427956649065115376
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Light_Green_Trees_Touched_Up_10
-      rect:
-        serializedVersion: 2
-        x: 207
-        y: 28
-        width: 98
-        height: 124
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7624ab0a54510fe00800000000000000
-      internalID: 1076383699735036519
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Light_Green_Trees_Touched_Up_11
-      rect:
-        serializedVersion: 2
-        x: 316
-        y: 26
-        width: 159
+        width: 124
         height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -379,20 +295,62 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ca76085bc7e5bf00800000000000000
-      internalID: 1132065741894744773
+      spriteID: 136e227e7a623ac20800000000000000
+      internalID: 3216457061451884081
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Light_Green_Trees_Touched_Up_12
+      name: newAlphaTouchup2 (1)_8
       rect:
         serializedVersion: 2
-        x: 496
+        x: 17
+        y: 31
+        width: 105
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47ff0d5e2fd0a15f0800000000000000
+      internalID: -785299848133804172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newAlphaTouchup2 (1)_9
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 23
+        width: 81
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0709b1071835dbe0800000000000000
+      internalID: -1453193633292810486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newAlphaTouchup2 (1)_10
+      rect:
+        serializedVersion: 2
+        x: 207
         y: 29
-        width: 90
-        height: 84
+        width: 95
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -400,20 +358,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a256b3e2a422e3200800000000000000
-      internalID: 161604338630485290
+      spriteID: 5a3c44b6b4a620c00800000000000000
+      internalID: 865370950563316645
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Light_Green_Trees_Touched_Up_13
+      name: newAlphaTouchup2 (1)_11
       rect:
         serializedVersion: 2
-        x: 595
+        x: 313
         y: 25
-        width: 100
-        height: 87
+        width: 161
+        height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -421,8 +379,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f665b5d3a61432b0800000000000000
-      internalID: -5605830743248509192
+      spriteID: 5d939e0c082e8c770800000000000000
+      internalID: 8631397728475757013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newAlphaTouchup2 (1)_12
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 24
+        width: 95
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c51e1f289ca25e10800000000000000
+      internalID: 2184998538853619137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newAlphaTouchup2 (1)_13
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 17
+        width: 101
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d72a379144ec00a0800000000000000
+      internalID: -6913900357559375912
       vertices: []
       indices: 
       edges: []
