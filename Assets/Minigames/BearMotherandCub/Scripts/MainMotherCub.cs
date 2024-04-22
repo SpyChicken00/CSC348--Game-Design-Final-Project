@@ -11,6 +11,8 @@ public class MainMotherCub : MonoBehaviour
     public int numMamaBear;
     public GameObject startPnt;
     public GameObject endPnt;
+    public GameObject LevelManager;
+    public bool over = false;
     
     //public AudioClip loseSound;
 
@@ -36,42 +38,59 @@ public class MainMotherCub : MonoBehaviour
         s.transform.position = startLocations[startIndex].position;
         e.transform.position = startLocations[endIndex].position;
 
-        PopulateBears(numMamaBear);
+        PopulateBears(numMamaBear, startLocations[startIndex]);
     }
 
     // Update is called once per frame
     void Update()
     {
-
         if (System.Math.Abs(mainCharacter.transform.position.x - e.transform.position.x) < 0.25 &&
             System.Math.Abs(mainCharacter.transform.position.y - e.transform.position.y) < 0.25)
         {
-            mainCharacter.Restart();
+            Win();
         }
-    }
-
-    private IEnumerator RestartScene(float wait)
-    {
-        yield return new WaitForSeconds(wait);
-        SceneManager.LoadScene("BearMotherandCub");
     }
 
     public void Lose()
     {
-        Debug.Log("Lose");
+        // if not in win mode, trigger
+        if (!(System.Math.Abs(mainCharacter.transform.position.x - e.transform.position.x) < 0.25 &&
+            System.Math.Abs(mainCharacter.transform.position.y - e.transform.position.y) < 0.25)
+            && !over)
+        {
+            // prevents multiple lives lost in one game
+            over = true;
+            LevelManager.GetComponent<Transition>().LoseMiniGame(0.5f);
+        }
+            
         //play lose sound
         //GetComponent<AudioSource>().PlayOneShot(loseSound);
     }
 
-    public void PopulateBears(int numBears)
+    public void Win()
+    {
+        if(!over)
+        {
+            over = true;
+            LevelManager.GetComponent<Transition>().WinMiniGame(0f);
+        }
+    }
+
+    public void PopulateBears(int numBears, Transform startPoint)
     {
         for (int i = 0; i < numBears; i++)
         {
             float x = Random.Range(xBounds.x, xBounds.y);
             float y = Random.Range(yBounds.x, yBounds.y);
+            Vector3 position = new Vector3(x, y, 0);
 
-            GameObject go = Instantiate<GameObject>(Mother);
-            go.transform.position = new Vector3(x, y, 0);
+            if (Vector3.SqrMagnitude(position - startPoint.position) > Mathf.Pow(MamaBear.radius * 1.25f, 2))
+            {
+                GameObject go = Instantiate<GameObject>(Mother);
+                go.transform.position = position;
+            }
+            else
+                i--;
         }
     }
 }

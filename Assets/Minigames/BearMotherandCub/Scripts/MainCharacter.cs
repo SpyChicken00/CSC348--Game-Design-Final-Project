@@ -13,7 +13,8 @@ public class MainCharacter : MonoBehaviour
     public MainMotherCub main;
     public AudioClip bearSound;
     public AudioClip babyBearSound;
-    
+    public GameObject sprite;
+    public float rotationSpeed;
 
     private Rigidbody2D rigid;
     
@@ -32,21 +33,14 @@ public class MainCharacter : MonoBehaviour
     void Update()
     {
         // Pull in information from the Input class
-        float hAxis = Input.GetAxis("Horizontal");
-        float vAxis = Input.GetAxis("Vertical");
+        Vector2 movementDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        movementDirection.Normalize();
 
-         //Change transform.position based on the axes
-        Vector3 pos = transform.position;
-        pos.x += hAxis * speed * Time.deltaTime;
-        pos.y += vAxis * speed * Time.deltaTime;
-        pos.z = 0;
-        transform.position = pos;
+        transform.Translate(movementDirection * speed * Time.deltaTime, Space.World);
 
-    }
+        if(movementDirection != Vector2.zero)
+            sprite.transform.up = movementDirection;
 
-    public void Restart()
-    {
-        this.transform.position = main.s.transform.position;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -59,10 +53,9 @@ public class MainCharacter : MonoBehaviour
                 if (!GetComponent<AudioSource>().isPlaying) GetComponent<AudioSource>().PlayOneShot(bearSound);
                 Debug.Log("AHHHHHH");
             }
+
+            main.Lose();
         }
-
-        
-
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
