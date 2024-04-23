@@ -160,7 +160,7 @@ public class BearTreeScratching : MonoBehaviour
             // set playerMove if a direction is hit, returns if other button is hit
             if (Input.GetKeyDown("right") || Input.GetKeyDown(KeyCode.D)) {
                 playerMove = 0;
-                Instantiate(StartLeftScratch, new Vector3(2.25f, -1.9f, 10), Quaternion.Euler(0,0, 90));
+                Instantiate(StartLeftScratch, new Vector3(2.25f + 0.37f, -1.9f, 10), Quaternion.Euler(0,0, 90));
                 playerRenderer.flipX = false;
                 playerAnim.speed = 0.6f;
                 playerAnim.Play("LeftSwipe");
@@ -168,7 +168,7 @@ public class BearTreeScratching : MonoBehaviour
             }
             else if (Input.GetKeyDown("up")|| Input.GetKeyDown(KeyCode.W)) {
                 playerMove = 1;
-                Instantiate(StartDownScratch, new Vector3(2.35f, -1.9f, 10), Quaternion.identity);
+                Instantiate(StartDownScratch, new Vector3(2.35f+ 0.37f, -1.9f, 10), Quaternion.identity);
                 playerRenderer.flipX = false;
                 playerAnim.speed = 0.6f;
                 playerAnim.Play("DownSwipe");
@@ -176,7 +176,7 @@ public class BearTreeScratching : MonoBehaviour
             }
             else if (Input.GetKeyDown("left")|| Input.GetKeyDown(KeyCode.A)) {
                 playerMove = 2;
-                Instantiate(StartRightScratch, new Vector3(2.5f, -1.7f, 10), Quaternion.Euler(0, 0, 90));
+                Instantiate(StartRightScratch, new Vector3(2.5f+ 0.37f, -1.7f, 10), Quaternion.Euler(0, 0, 90));
                 playerRenderer.flipX = true;     //TODO switch to playerRenderer
                 playerAnim.speed = 0.6f;
                 playerAnim.Play("RightSwipe");
@@ -185,7 +185,7 @@ public class BearTreeScratching : MonoBehaviour
             }
             else if (Input.GetKeyDown("down")|| Input.GetKeyDown(KeyCode.S)) {
                 playerMove = 3;
-                Instantiate(StartUpScratch, new Vector3(2.35f, -1.80f, 10), Quaternion.identity);
+                Instantiate(StartUpScratch, new Vector3(2.35f+ 0.37f, -1.80f, 10), Quaternion.identity);
                 playerRenderer.flipX = false;
                 playerAnim.speed = 0.6f;
                 playerAnim.Play("UpSwipe");
