@@ -18,7 +18,7 @@ public class LogoTransition : MonoBehaviour
     IEnumerator LogoTransitionCoroutine()
     {
         //start animation
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(5);
         levelManager.GetComponent<Transition>().LoadLevel("Opening");
     }
 }
