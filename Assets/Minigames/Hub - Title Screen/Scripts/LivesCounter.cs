@@ -1,3 +1,10 @@
+/*
+ * File Title: LivesCounter
+ * Lead Programmer: Hayes Brown
+ * Description: Keeps track of player lives
+ * Date: 4/23/24
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

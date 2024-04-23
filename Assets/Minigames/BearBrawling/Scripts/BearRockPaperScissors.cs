@@ -1,3 +1,10 @@
+/*
+ * File Title: BearRockPaperScissors
+ * Lead Programmer: Jace Rettig
+ * Description: Controls the RPS game
+ * Date: 4/23/24
+ */
+
 using System.Collections;
 using TMPro;
 using UnityEngine;

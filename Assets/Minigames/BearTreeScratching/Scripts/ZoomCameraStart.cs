@@ -1,3 +1,10 @@
+/*
+ * File Title: ZoomCameraStart
+ * Lead Programmer: Jace Rettig
+ * Description: Controls how the camera zooms at the start of the level
+ * Date: 4/23/24
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

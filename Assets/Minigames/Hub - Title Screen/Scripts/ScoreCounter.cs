@@ -1,3 +1,10 @@
+/*
+ * File Title: ScoreCounter
+ * Lead Programmer: Hayes Brown
+ * Description: Keeps track of player score
+ * Date: 4/23/24
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

@@ -1,3 +1,10 @@
+/*
+ * File Title: MamaBear
+ * Lead Programmer: Hayes Brown
+ * Description: Controls the movement of the Mama Bear
+ * Date: 4/23/24
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;

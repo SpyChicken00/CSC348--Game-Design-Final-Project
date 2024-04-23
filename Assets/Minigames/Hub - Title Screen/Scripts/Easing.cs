@@ -1,10 +1,17 @@
+/*
+ * File Title: Easing
+ * Lead Programmer: Jace Rettig
+ * Description: Easing function based on lab
+ * Date: 4/23/24
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Easing 
 {
-    public enum Type{ // a
+    public enum Type{
         linear,
         easeIn,
         easeOut,

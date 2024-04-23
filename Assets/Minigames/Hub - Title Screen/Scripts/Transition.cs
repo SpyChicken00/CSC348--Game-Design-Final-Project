@@ -1,3 +1,10 @@
+/*
+ * File Title: Transition
+ * Lead Programmer: Hayes Brown
+ * Description: Handles transitions between minigames
+ * Date: 4/23/24
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

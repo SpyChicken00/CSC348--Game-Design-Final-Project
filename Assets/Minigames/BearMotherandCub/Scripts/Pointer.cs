@@ -1,3 +1,10 @@
+/*
+ * File Title: Pointer
+ * Lead Programmer: Hayes Brown
+ * Description: moves an arrow to show where the player should go
+ * Date: 4/23/24
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
