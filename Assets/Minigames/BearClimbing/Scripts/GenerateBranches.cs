@@ -11,7 +11,9 @@ public class GenerateBranches : MonoBehaviour
     public int branchNum = 5;
     public GameObject branchPrefabLeft;
     public GameObject branchPrefabRight;  
-    public float MAX_HEIGHT = 1.46f;
+    //public float MAX_HEIGHT = 1.46f;
+    //public float MIN_HEIGHT = -2.4f;
+    public float MAX_HEIGHT = 1.97f;
     public float MIN_HEIGHT = -2.4f;
     public float leftRightOffset = 0;
     public float upDownOffset = 0;
