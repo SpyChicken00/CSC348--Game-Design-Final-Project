@@ -12,10 +12,12 @@ public class LogoTransition : MonoBehaviour
     {
         //levelManager = FindObjectOfType<LevelManager>();
         StartCoroutine(LogoTransitionCoroutine());
+
     }
 
     IEnumerator LogoTransitionCoroutine()
     {
+        //start animation
         yield return new WaitForSeconds(3);
         levelManager.GetComponent<Transition>().LoadLevel("Opening");
     }
