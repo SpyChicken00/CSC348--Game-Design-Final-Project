@@ -1,3 +1,10 @@
+/*
+ * File Title: MainMotherCub
+ * Lead Programmer: Hayes Brown
+ * Description: Instantiates bears, start point, and end point, and handles wins and losses
+ * Date: 4/23/24
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

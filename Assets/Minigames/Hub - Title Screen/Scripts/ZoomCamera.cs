@@ -1,3 +1,10 @@
+/*
+ * File Title: ZoomCamera
+ * Lead Programmer: Jace Rettig
+ * Description: Interpolates camera
+ * Date: 4/23/24
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

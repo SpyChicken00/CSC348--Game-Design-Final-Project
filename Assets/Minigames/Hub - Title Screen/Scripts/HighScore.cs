@@ -1,3 +1,10 @@
+/*
+ * File Title: HighScore
+ * Lead Programmer: Hayes Brown
+ * Description: saves score and high score
+ * Date: 4/23/24
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

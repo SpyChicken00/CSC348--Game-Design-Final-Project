@@ -1,3 +1,10 @@
+/*
+ * File Title: Player
+ * Lead Programmer: Jace Rettig
+ * Description: controls player movement, winning, losing
+ * Date: 4/23/24
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

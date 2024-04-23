@@ -1,3 +1,10 @@
+/*
+ * File Title: 
+ * Lead Programmer: Jace Rettig
+ * Description: Controls berry destruction
+ * Date: 4/23/24
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

@@ -1,3 +1,10 @@
+/*
+ * File Title: MainCharacter
+ * Lead Programmer: Hayes Brown
+ * Description: Moves main character and triggers lose conditions
+ * Date: 4/23/24
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
