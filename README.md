@@ -12,7 +12,6 @@ A CSC348- Game Design Project
   * Teaching a bear cub to ride a unicycle
 * Programming and Sound Design: Jace Rettig
   * Would lose in a fist fight against a bear
-  
 * Special Apperance: Chris Alvin
  * Professional Voice Actgrr
 ## The Story
