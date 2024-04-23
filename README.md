@@ -12,7 +12,9 @@ A CSC348- Game Design Project
   * Teaching a bear cub to ride a unicycle
 * Programming and Sound Design: Jace Rettig
   * Would lose in a fist fight against a bear
-
+  
+* Special Apperance: Chris Alvin
+ * Professional Voice Actgrr
 ## The Story
 
 Dr. Benjamin Edward Anthony Roberts III has dedicated his entire life to the study of bears, and his passion for his subject knows no bounds. He has even developed the habit of forcing bear puns into every conversation without thinking about it. In conjunction with his partner Dr. Edwin Hayes, he has risen to the top of his field, but he wants to push the envelope even more. In a research proposal, he suggests integrating himself into a nearby bear community by disguising himself as a bear and living among them, recording his findings when the bears are asleep. The research board rejects his idea.
