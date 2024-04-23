@@ -47,17 +47,6 @@ public class MainMotherCub : MonoBehaviour
         PopulateBears(numMamaBear, startLocations[startIndex]);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        // If the player gets close enough to the goal, win
-        if (System.Math.Abs(mainCharacter.transform.position.x - e.transform.position.x) < 4 &&
-            System.Math.Abs(mainCharacter.transform.position.y - e.transform.position.y) < 4)
-        {
-            Win();
-        }
-    }
-
     // loses minigame and transitions to next
     public void Lose()
     {

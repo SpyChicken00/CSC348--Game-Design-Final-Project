@@ -55,6 +55,11 @@ public class MainCharacter : MonoBehaviour
             // Lose if a bear is hit
             main.Lose();
         }
+
+        if (collision.CompareTag("Finish"))
+        {
+            main.Win();
+        }
     }
 
     // If a bear is hit, lose
