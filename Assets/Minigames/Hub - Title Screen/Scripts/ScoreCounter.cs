@@ -1,3 +1,10 @@
+/*
+ * File Title: ScoreCounter
+ * Lead Programmer: Hayes Brown
+ * Description: Keeps track of player score
+ * Date: 4/23/24
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,14 +17,15 @@ public class ScoreCounter : MonoBehaviour
     public static int score = 0;
     public TextMeshProUGUI uiText;
     public static bool show;
-    // c
 
+    // Initializes score counter
     void Start()
     {
         uiText.text = "Score: " + score.ToString("#,0");
         uiText.enabled = show;
     }
 
+    // updates based on changes to score var
     void Update()
     {
         uiText.text = "Score: " + score.ToString("#,0");

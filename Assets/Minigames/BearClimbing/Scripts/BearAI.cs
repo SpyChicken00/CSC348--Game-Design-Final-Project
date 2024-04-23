@@ -1,3 +1,10 @@
+/*
+ * File Title: BearAI
+ * Lead Programmer: Jace Rettig
+ * Description: controls bear movement and detection
+ * Date: 4/23/24
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

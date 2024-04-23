@@ -1,3 +1,10 @@
+/*
+ * File Title: GenerateBranches
+ * Lead Programmer: Jace Rettig
+ * Description: generates branches
+ * Date: 4/23/24
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,7 +25,7 @@ public class GenerateBranches : MonoBehaviour
     public float leftRightOffset = 0;
     public float upDownOffset = 0;
     
-
+    // Initializes branches
     void Start()
     {
         treeLocation = this.transform.position.x;

@@ -1,3 +1,10 @@
+/*
+ * File Title: Scratch
+ * Lead Programmer: Jace Rettig
+ * Description: controls animations for scratches
+ * Date: 4/23/24
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

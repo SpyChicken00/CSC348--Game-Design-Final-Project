@@ -1,3 +1,10 @@
+/*
+ * File Title: BabyBear
+ * Lead Programmer: Hayes Brown
+ * Description: Controls movement for BabyBear
+ * Date: 4/23/24
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

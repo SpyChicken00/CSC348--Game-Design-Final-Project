@@ -1,3 +1,10 @@
+/*
+ * File Title: Bear Tree Scratching
+ * Lead Programmer: Hayes Brown and Jace Rettig
+ * Description: Controls bear tree scratching game
+ * Date: 4/23/24
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

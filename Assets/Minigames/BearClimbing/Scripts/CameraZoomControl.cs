@@ -1,4 +1,11 @@
-    using System.Collections;
+/*
+ * File Title: CameraZoomControl
+ * Lead Programmer: Jace Rettig
+ * Description: Controls how the camera moves
+ * Date: 4/23/24
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;

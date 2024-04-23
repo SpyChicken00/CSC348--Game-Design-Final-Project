@@ -1,7 +1,14 @@
+/*
+ * File Title: HighScore
+ * Lead Programmer: Hayes Brown
+ * Description: saves score and high score
+ * Date: 4/23/24
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;     // We need this line for uGUI to work.
+using UnityEngine.UI;
 using TMPro;
 
 public class HighScore : MonoBehaviour
@@ -21,6 +28,7 @@ public class HighScore : MonoBehaviour
         PlayerPrefs.SetInt("HighScore", SCORE);
     }
 
+    // keeps track of score for that run
     static public int SCORE
     {                                                 // e
         get { return _SCORE; }
@@ -31,12 +39,14 @@ public class HighScore : MonoBehaviour
         }
     }
 
+    // Tries to set the high score
     static public void TRY_SET_HIGH_SCORE(int scoreToTry)
     {                 // h
         if (scoreToTry <= SCORE) return; // If scoreToTry is too low, return
         SCORE = scoreToTry;
     }
 
+    // Shows high score
     void Update()
     {
         if (_UI_TEXT != null)
@@ -49,6 +59,7 @@ public class HighScore : MonoBehaviour
     [Tooltip("Check this box to reset the HighScore in PlayerPrefs")]
     public bool resetHighScoreNow = false;                                           // d
 
+    // sets the high score
     void OnDrawGizmos()
     {                                                            // e
         if (resetHighScoreNow)
