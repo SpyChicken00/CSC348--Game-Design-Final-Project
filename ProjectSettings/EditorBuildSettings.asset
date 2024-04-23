@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Minigames/Hub - Title Screen/Scenes/CompanyLogo.unity
+    guid: d490f52b8e6448d4f81f2d941948a864
+  - enabled: 1
     path: Assets/Minigames/Hub - Title Screen/Scenes/Opening.unity
     guid: b2c6ead9ef9937c40855b0acff816e4c
   - enabled: 1
