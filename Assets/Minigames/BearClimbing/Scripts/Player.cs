@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
     public AudioClip birdChirp;
 
 
-    
+    // Initializes vars, waits 2 seconds
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -113,7 +113,7 @@ public class Player : MonoBehaviour
             anim.enabled = false;
             //Debug.Log("Player stops moving");
         }
-        
+        // ends game
         if (numOfBranches <= 0 && !gameOver)
             {
                 gameOver = true;
@@ -124,13 +124,14 @@ public class Player : MonoBehaviour
     
     }
 
-    
+    // stops timer
     public void stopTimer() {
         StopCoroutine(UpdateTimer());
         timerText.text = "0";
         timerText.enabled = false;
     }
 
+    // makes timer tick down
     private IEnumerator UpdateTimer()
     {
         if (gameOver){
@@ -141,6 +142,8 @@ public class Player : MonoBehaviour
             yield return new WaitForSeconds(1);
             gameTimer -= 1;
             timerText.text = gameTimer.ToString();
+
+            // If timer runs out, lose
             if (gameTimer <= 0)
             {
                 Debug.Log("Time's up!");

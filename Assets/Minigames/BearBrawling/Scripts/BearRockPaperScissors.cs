@@ -25,6 +25,7 @@ public class BearRockPaperScissors : MonoBehaviour
     private Sprite armSprite;
     private Sprite bearSprite;
 
+    // Audio
     public AudioClip brawlStartClip;
     public AudioClip  brawlLoopClip120;
     public AudioClip  brawlLoopClip180;

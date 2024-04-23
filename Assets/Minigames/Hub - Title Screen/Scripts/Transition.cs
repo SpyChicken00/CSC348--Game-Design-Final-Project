@@ -19,7 +19,8 @@ public class Transition : MonoBehaviour
     void Awake()
     {
         if (gameMode == GameMode.InOrder) gameIndex = -1;
-        
+
+        // initializes transition animator
         animator = GameObject.Find("Transition").GetComponent<Animator>();
 
         // does not show stats if we are in the hub, resets stats in hub
@@ -35,16 +36,20 @@ public class Transition : MonoBehaviour
         }
     }
 
+    // loses a life and checks if the run is over
     public void LoseMiniGame(float delay)
     {
         LivesCounter.lives -= 1;
+
+        // If all lives lost, lose
         if (LivesCounter.lives <= 0)
             SceneManager.LoadScene("Discovered");
-            //LoadLevel("Hub");
+        // If still have lives, go to random game
         else
             DelayLoadRandomGame(delay);
     }
 
+    // Increments score, loads random game
     public void WinMiniGame(float delay)
     {
         ScoreCounter.score += 1;
