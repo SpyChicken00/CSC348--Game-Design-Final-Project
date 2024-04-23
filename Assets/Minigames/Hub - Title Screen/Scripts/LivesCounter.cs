@@ -10,8 +10,8 @@ public class LivesCounter : MonoBehaviour
     public static int lives = 3;
     public TextMeshProUGUI uiText;
     public static bool show = true;
-    // c
 
+    // initializes lives counter
     void Start()
     {
         uiText.text = "Lives: " + lives.ToString("#,0");
@@ -19,6 +19,7 @@ public class LivesCounter : MonoBehaviour
         uiText.enabled = show;
     }
 
+    // updates based on number of lives
     void Update()
     {
         uiText.text = "Lives: " + lives.ToString("#,0");
