@@ -48,6 +48,7 @@ public class Transition : MonoBehaviour
     public void WinMiniGame(float delay)
     {
         ScoreCounter.score += 1;
+        HighScore.TRY_SET_HIGH_SCORE(ScoreCounter.score);
         DelayLoadRandomGame(delay);
     }
 
