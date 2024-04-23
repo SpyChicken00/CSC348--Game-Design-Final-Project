@@ -10,18 +10,23 @@ public class FlyingFish : MonoBehaviour
     private float u;
     private float timeStart;
     private const float TIME_DURATION = 2f;
-    public bool isLeft = true;
+    public bool isLeft = true; //Updated in Unity editor so not all fish start on the left
     private Vector3 startPoint;
 
     private void Start()
     {
+        //Generate the start points for fish
+        //If it should start on the left
         if (isLeft)
         {
+            //Set the start position in the bottom left corner of the screen
             this.transform.position = Camera.main.ScreenToWorldPoint(Vector3.zero);
             startPoint = this.transform.position;
         }
+        //If it should start on the right
         else
         {
+            //Set the start position in the bottom right corner of the screen
             this.transform.position = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0, 0));
             startPoint = this.transform.position;   
         }
@@ -30,14 +35,15 @@ public class FlyingFish : MonoBehaviour
 
     void Update()
     {
-
+        //The animation should last for 2 seconds. This variable indicates where on the
+        //Bezier curve the fish should be
         u = (Time.time - timeStart) / TIME_DURATION;
         if (u >= 1) 
         {
-            Destroy(this.gameObject);
-            //_openMouthBear.SetActive(false);
-            //_fishCaughtBear.SetActive(true);
+            Destroy(this.gameObject); //Destroy the flying fish when it gets to the bear's mouth
         }
+
+        //Set the position of the fish to the correct point of the Bezier Curve
         transform.position = BezierR(u, new Vector3[]{startPoint, InterpPoint.transform.position, _openMouthBear.transform.position });
                                                            
     }

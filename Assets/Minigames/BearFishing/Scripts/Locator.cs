@@ -10,11 +10,10 @@ public class Locator : MonoBehaviour
 
     [Header("Inscribed")]
     public float speed = 30;
-    private bool isMoving;
+    private bool isMoving; //Indicates if the locator should have the ability to move
     public GameObject spear;
     public float spearSpeed = 1;
-    private int SpearCount;
-    private bool haveSpear;
+    private bool haveSpear; //Indicates if a spear is on the screen
     public AudioSource shootSound;
 
     void Awake()
@@ -25,9 +24,10 @@ public class Locator : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Hero.Awake() - Attempted to assign second Locator.S!");
+            Debug.LogError("Locator.Awake() - Attempted to assign second Locator.S!");
         }
 
+        //Locator should be moving at the start and should not have fired a spear yet.
         isMoving = true;
         haveSpear = false;
     }
@@ -47,10 +47,12 @@ public class Locator : MonoBehaviour
             transform.position = pos;
         }
 
+        //If there is no spear on the screen and the player 
+        //hits the space bar, fire a spear
         if (Input.GetKeyDown(KeyCode.Space) && !haveSpear)
         {
             isMoving = false;
-            //play shooting sound effect
+            //Play shooting sound effect
             shootSound.Play();
             ShootHarpoon();
             haveSpear = true;
@@ -60,13 +62,18 @@ public class Locator : MonoBehaviour
 
     public GameObject ShootHarpoon()
     {
+        //Generate the spear at the position of the main character
         GameObject go = Instantiate<GameObject>(spear);
         go.transform.position = new Vector3(0, 3, 0);
+
+        //Set the direction vector and point the spear toward the locator
         Vector3 dvect = this.transform.position - go.transform.position;
         go.transform.rotation = Quaternion.LookRotation(
                        Vector3.forward, // Keep z+ pointing straight into the screen.
                        -dvect        // Point y+ toward the target.
                      ) * Quaternion.Euler(0, 0, -90);
+
+        //Set the velocity of the spear
         Rigidbody2D rigidB = go.GetComponent<Rigidbody2D>();
         rigidB.velocity = dvect * spearSpeed;
         return go;
@@ -75,24 +82,20 @@ public class Locator : MonoBehaviour
     void OnTriggerExit2D(Collider2D other)
     {
         GameObject otherGO = other.gameObject;
+
+        //If a spear runs into the locator
         if (otherGO.name == "Spear(Clone)")
         {
             Destroy(otherGO);      // Destroy the Spear
             isMoving = true;       // Let the locator move again
-            haveSpear = false;
+            haveSpear = false;     // Indicate that there is no more spear
         }
     }
 
     public void reanimate()
     {
-        isMoving = true;
-        haveSpear = false;
-    }
-
-    public Vector3 setRotation(Vector3 shotAngle)
-    {
-        float angle = Mathf.Acos((shotAngle.y * -1) / Mathf.Sqrt(Mathf.Pow(shotAngle.x, 2) + Mathf.Pow(shotAngle.y, 2)));
-        return new Vector3(0.0f, 0.0f, angle);
+        isMoving = true;   // Allow the locator to move again
+        haveSpear = false; // Indicate no spear is on the screen
     }
 }
 

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class RightMovingFish : Fish
 {
+
+    //Method moves the fish from the left side to the right side of the screen
     public override void Move()
     {
         Vector3 tempPos = pos;

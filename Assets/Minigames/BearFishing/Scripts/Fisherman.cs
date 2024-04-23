@@ -13,21 +13,27 @@ public class Fisherman : MonoBehaviour
     public AudioSource loseSound;
 
     public void Awake() {
+
+        //Get the sounds to play when player wins or loses.
         winSound = GetComponent<AudioSource>().GetComponents<AudioSource>()[0];
         loseSound = GetComponent<AudioSource>().GetComponents<AudioSource>()[1];
     }
 
     public void WinScreen() {
         Debug.Log("You Win!");
-        //play win sound
+        //Play win sound
         winSound.Play();
+
+        //Signal to overall interface that the player won the game
         levelManager.GetComponent<Transition>().WinMiniGame(2.0f);
     }
 
     public void LoseScreen() {
         Debug.Log("You Lose!");
-        //play lose sound
+        //Play lose sound
         loseSound.Play();
+
+        //Signal to overall interface that the player lost the game
         levelManager.GetComponent<Transition>().LoseMiniGame(2.0f);
     }
 

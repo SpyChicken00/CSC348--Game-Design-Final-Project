@@ -6,7 +6,7 @@ public class WaterCheck : MonoBehaviour
 {
     [System.Flags]
     public enum eScreenLocs
-    {                                        // a
+    {                                        
         onScreen = 0,  // 0000 in binary (zero)
         offRight = 1,  // 0001 in binary
         offLeft = 2,  // 0010 in binary
@@ -16,7 +16,7 @@ public class WaterCheck : MonoBehaviour
     public enum eType { center, inset, outset };
 
     [Header("Inscribed")]
-    public eType boundsType = eType.center;                                   // a
+    public eType boundsType = eType.center;                                   
     public float radius = 3f;
     public bool keepOnScreen = true;
     public float waterLower;
@@ -31,15 +31,16 @@ public class WaterCheck : MonoBehaviour
 
     void Awake()
     {
+        //Get the bounds of the water on the screen
         waterLower = Camera.main.ScreenToWorldPoint(Vector3.zero).y;
         waterUpper = waterfall.transform.position.y;
         waterLeft = Camera.main.ScreenToWorldPoint(Vector3.zero).x + 2;
-        waterRight = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0)).x - 2;                         // c
+        waterRight = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0)).x - 2;                         
     }
 
     void LateUpdate()
     {
-        // Find the checkRadius that will enable center, inset, or outset     // b
+        // Find the checkRadius that will enable center, inset, or outset     
         float checkRadius = 0;
         if (boundsType == eType.inset) checkRadius = -radius;
         if (boundsType == eType.outset) checkRadius = radius;
@@ -47,45 +48,47 @@ public class WaterCheck : MonoBehaviour
         Vector3 pos = transform.position;
         screenLocs = eScreenLocs.onScreen;
 
-        // Restrict the X position to waterWidth
+        // Restrict the X position to water Width
         if (pos.x > waterRight + checkRadius)
-        {                                  // c
+        {                                 
             pos.x = waterRight + checkRadius;
             screenLocs |= eScreenLocs.offRight;
         }
         if (pos.x < waterLeft - checkRadius)
-        {                                 // c
-            pos.x = waterLeft - checkRadius;                                   // c
+        {                                 
+            pos.x = waterLeft - checkRadius;                                   
             screenLocs |= eScreenLocs.offLeft;
         }
 
-        // Restrict the Y position to camHeight
+        // Restrict the Y position to water Height
         if (pos.y > waterUpper + checkRadius)
-        {                                 // c
-            pos.y = waterUpper + checkRadius;                                   // c
+        {                                 
+            pos.y = waterUpper + checkRadius;                                   
             screenLocs |= eScreenLocs.offUp;
         }
         if (pos.y < waterLower - checkRadius)
-        {                                // c
-            pos.y = waterLower - checkRadius;                                  // c
+        {                                
+            pos.y = waterLower - checkRadius;                                  
             screenLocs |= eScreenLocs.offDown;
         }
 
+        //If we are trying to keep the object in the water, keep it in the water
         if (keepOnScreen && !isOnScreen)
-        {                                  // f
-            transform.position = pos;                                         // g
+        {                                  
+            transform.position = pos;                                         
             screenLocs = eScreenLocs.onScreen;
         }
     }
 
     public bool isOnScreen
-    {                                                  // e
+    {                                                  
         get { return (screenLocs == eScreenLocs.onScreen); }
     }
 
+    //Method to check if the object is off in a certain direction
     public bool LocIs(eScreenLocs checkLoc)
     {
-        if (checkLoc == eScreenLocs.onScreen) return isOnScreen;          // a
-        return ((screenLocs & checkLoc) == checkLoc);                     // b
+        if (checkLoc == eScreenLocs.onScreen) return isOnScreen;         
+        return ((screenLocs & checkLoc) == checkLoc);                     
     }
 }
