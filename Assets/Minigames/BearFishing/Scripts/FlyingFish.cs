@@ -1,3 +1,10 @@
+/*
+ * Title: Flying Fish.cs
+ * Lead Programmer: Joshua Hutson
+ * Description: Controls the behavior for all flying fish objects
+ * Date: April 23rd 2024
+ */ 
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,9 +20,9 @@ public class FlyingFish : MonoBehaviour
     public bool isLeft = true; //Updated in Unity editor so not all fish start on the left
     private Vector3 startPoint;
 
+    //Generate the start points for fish
     private void Start()
     {
-        //Generate the start points for fish
         //If it should start on the left
         if (isLeft)
         {
@@ -33,6 +40,7 @@ public class FlyingFish : MonoBehaviour
         timeStart = Time.time;
     }
 
+    //Updates the position of the flying fish based on a Bezier Curve
     void Update()
     {
         //The animation should last for 2 seconds. This variable indicates where on the
@@ -48,6 +56,7 @@ public class FlyingFish : MonoBehaviour
                                                            
     }
 
+    //Recursive Bezier Curve call
     static public Vector3 BezierR(float u, List<Vector3> pts, int iL = 0, int iR = -1)
     {
         // If iR is the default -1 value, set iR to the last element in pts // b

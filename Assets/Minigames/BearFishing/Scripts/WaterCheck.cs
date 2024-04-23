@@ -1,3 +1,10 @@
+/*
+ * Title: WaterCheck.cs
+ * Lead Programmer: Joshua Hutson
+ * Description: Keeps certain objects on the screen and destroys others when they leave the screen.
+ * Date: April 23rd 2024
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -29,15 +36,16 @@ public class WaterCheck : MonoBehaviour
 
     public GameObject waterfall;
 
+    //Initialize the bounds of the water on the screen
     void Awake()
-    {
-        //Get the bounds of the water on the screen
+    {   
         waterLower = Camera.main.ScreenToWorldPoint(Vector3.zero).y;
         waterUpper = waterfall.transform.position.y;
         waterLeft = Camera.main.ScreenToWorldPoint(Vector3.zero).x + 2;
         waterRight = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0)).x - 2;                         
     }
 
+    //After every frame, check where the object is and keep it where it is if need bb.
     void LateUpdate()
     {
         // Find the checkRadius that will enable center, inset, or outset     
@@ -80,12 +88,13 @@ public class WaterCheck : MonoBehaviour
         }
     }
 
+    //Check if an object is on the screen.
     public bool isOnScreen
     {                                                  
         get { return (screenLocs == eScreenLocs.onScreen); }
     }
 
-    //Method to check if the object is off in a certain direction
+    //Check if the object is off in a certain direction
     public bool LocIs(eScreenLocs checkLoc)
     {
         if (checkLoc == eScreenLocs.onScreen) return isOnScreen;         

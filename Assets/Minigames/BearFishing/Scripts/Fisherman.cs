@@ -1,3 +1,10 @@
+/*
+ * Title: Fisherman.cs
+ * Lead Programmer: Joshua Hutson
+ * Description: A central hub for transitioning between this game and the next
+ * Date: April 23rd 2024
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
@@ -12,13 +19,13 @@ public class Fisherman : MonoBehaviour
     public AudioSource winSound;
     public AudioSource loseSound;
 
+    //Initialize the sounds to play when player wins or loses.
     public void Awake() {
-
-        //Get the sounds to play when player wins or loses.
         winSound = GetComponent<AudioSource>().GetComponents<AudioSource>()[0];
         loseSound = GetComponent<AudioSource>().GetComponents<AudioSource>()[1];
     }
 
+    //Plays the win music and updates the UI accordingly
     public void WinScreen() {
         Debug.Log("You Win!");
         //Play win sound
@@ -28,6 +35,7 @@ public class Fisherman : MonoBehaviour
         levelManager.GetComponent<Transition>().WinMiniGame(2.0f);
     }
 
+    //Plays the lose music and updates the UI accordingly
     public void LoseScreen() {
         Debug.Log("You Lose!");
         //Play lose sound

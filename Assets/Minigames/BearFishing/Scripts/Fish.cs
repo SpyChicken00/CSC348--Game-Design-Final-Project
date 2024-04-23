@@ -1,3 +1,10 @@
+/*
+ * Title: Fish.cs
+ * Lead Programmer: Joshua Hutson
+ * Description: Controls the various movement for fish in the water.
+ * Date: April 23rd 2024
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -29,9 +36,9 @@ public class Fish : MonoBehaviour
         isCaught = false;
     }
 
+    //Indicates whether the player has caught the fish in their mouth.
     public bool GetCaughtStatus()
     {
-        //Indicates whether the player has caught the fish in their mouth.
         return stopfall;
     }
 
@@ -48,6 +55,7 @@ public class Fish : MonoBehaviour
         }
     }
 
+    //Regulates movement of the fish based on events in the game.
     void Update()
     {
         //Movement for fish that are swimming in the water
@@ -79,8 +87,10 @@ public class Fish : MonoBehaviour
 
     }
 
+    //Describes normal movement.
     public virtual void Move(){} //Defined in children classes
 
+    //Modifies movement after a fish has been hit with a spear.
     private void OnTriggerEnter2D(Collider2D collision)
     {
         GameObject go = collision.gameObject;
@@ -96,6 +106,8 @@ public class Fish : MonoBehaviour
         
     }
 
+    //Checks for user input while fish is over player's face.
+    //Plays win screen if fish is caught.
     private void OnTriggerStay2D(Collider2D collision)
     {
         GameObject go = collision.gameObject;
@@ -113,7 +125,9 @@ public class Fish : MonoBehaviour
             }
         }
     }
-
+    
+    // If a fish falls back into the water, this method destroys it
+    // and allows the game to continue
     private void OnTriggerExit2D(Collider2D collision)
     {
         GameObject go = collision.gameObject;
@@ -137,6 +151,7 @@ public class Fish : MonoBehaviour
         }
     }
 
+    //Describes the movement of the fish after it has been hit by the spear.
     private void CaughtMove()
     {
         //If the fish is on the way up
@@ -155,9 +170,9 @@ public class Fish : MonoBehaviour
         }
     }
 
+    //Indicates if the player has speared a fish and is trying to catch it.
     public bool GetIsCatchingFish()
     {
-        //Indicates if the player has speared a fish and is trying to catch it.
         return isCatchingFish;
     }
 }

@@ -1,3 +1,10 @@
+/*
+ * Title: Spear.cs
+ * Lead Programmer: Joshua Hutson
+ * Description: Ensures the Spear component is destroyed if it falls off the screen
+ * Date: April 23rd 2024
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

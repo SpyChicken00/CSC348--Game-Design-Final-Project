@@ -1,3 +1,10 @@
+/*
+ * Title: PlayAnimation.cs
+ * Lead Programmer: Joshua Hutson
+ * Description: Animates the start sign on the start screen when someone clicks the spacebar
+ * Date: April 23rd 2024
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,20 +12,18 @@ using UnityEngine.SceneManagement;
 
 public class PlayAnimation : MonoBehaviour
 {
-
-    //This class animates the start sign on the start screen when someone clicks the spacebar
-
     public AnimationClip walk;
     Animator anim;
     public GameObject levelManager;
     public AudioClip scratch;
 
+    //Get the Animator component on startup 
     void Start()
     {
-        //Get the Animator component
         anim = GetComponent<Animator>();
     }
 
+    //Checks for user input on start screen to start the game.
     void Update()
     {
         //Run is mouse is clicked or spacebar is down
@@ -33,6 +38,7 @@ public class PlayAnimation : MonoBehaviour
         }
     }
 
+    //Coroutine to start the dialogue in the cutscene
     IEnumerator BeginCutscene(float wait)
     {
         //Wait to run the animation and then transition to the game itself.

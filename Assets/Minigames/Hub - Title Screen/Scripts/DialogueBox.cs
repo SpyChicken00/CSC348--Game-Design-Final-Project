@@ -1,3 +1,10 @@
+/*
+ * Title: DialogueBox.cs
+ * Lead Programmer: Joshua Hutson
+ * Description: Controls the dialogue box and associated text in the opening scene
+ * Date: April 23rd 2024
+ */
+
 using UnityEngine.UI;
 using System;
 using System.Collections;
@@ -24,6 +31,7 @@ public class DialogueBox: MonoBehaviour
 
     float charactersPerSecond = 90;
 
+    //Initalize all values for dialogue box and text, and name text
     private void Awake()
     {
         if (instance == null)
@@ -44,6 +52,7 @@ public class DialogueBox: MonoBehaviour
         StartCoroutine(StartOfScene(2f));
     }
 
+    //Checks for user input to run lines of dialogue on the screen.
     public void Update()
     {
         //Run if there are still lines of dialogue left to be seen
@@ -103,6 +112,7 @@ public class DialogueBox: MonoBehaviour
         isTyping = false; 
     }
 
+    //Coroutine to load the start screen after the text box has finished.
     IEnumerator LoadNewScene(float wait)
     {
         //Wait for a few seconds and then deactivate all text and dialogue boxes
@@ -116,6 +126,7 @@ public class DialogueBox: MonoBehaviour
         levelManager.GetComponent<Transition>().LoadLevel("Hub");
     }
 
+    //Coroutine to start the opening scene
     IEnumerator StartOfScene(float wait)
     {
         //At the beginning of the scene activate all text and dialogue boxes 

@@ -1,3 +1,10 @@
+/*
+ * Title: LeftMovingFish.cs
+ * Lead Programmer: Joshua Hutson
+ * Description: Inherits Fish.cs and modifies the Move function so the fish moves towards the left
+ * Date: April 23rd 2024
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
