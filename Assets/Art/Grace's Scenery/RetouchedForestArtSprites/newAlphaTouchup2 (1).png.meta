@@ -1,0 +1,445 @@
+fileFormatVersion: 2
+guid: 00f88796902aa4c7caad613425093b05
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7981401827686890879
+    second: newAlphaTouchup2 (1)_0
+  - first:
+      213: 4984733468874314472
+    second: newAlphaTouchup2 (1)_1
+  - first:
+      213: -4036522044236877817
+    second: newAlphaTouchup2 (1)_2
+  - first:
+      213: 3311763953854389694
+    second: newAlphaTouchup2 (1)_3
+  - first:
+      213: -746841014062568665
+    second: newAlphaTouchup2 (1)_4
+  - first:
+      213: 3739748288274793147
+    second: newAlphaTouchup2 (1)_5
+  - first:
+      213: -2000498661561590308
+    second: newAlphaTouchup2 (1)_6
+  - first:
+      213: 3216457061451884081
+    second: newAlphaTouchup2 (1)_7
+  - first:
+      213: -785299848133804172
+    second: newAlphaTouchup2 (1)_8
+  - first:
+      213: -1453193633292810486
+    second: newAlphaTouchup2 (1)_9
+  - first:
+      213: 865370950563316645
+    second: newAlphaTouchup2 (1)_10
+  - first:
+      213: 8631397728475757013
+    second: newAlphaTouchup2 (1)_11
+  - first:
+      213: 2184998538853619137
+    second: newAlphaTouchup2 (1)_12
+  - first:
+      213: -6913900357559375912
+    second: newAlphaTouchup2 (1)_13
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: newAlphaTouchup2 (1)_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 225
+        width: 101
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d3eeccca2a3ce60800000000000000
+      internalID: 7981401827686890879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newAlphaTouchup2 (1)_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 227
+        width: 98
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e211400ea45d2540800000000000000
+      internalID: 4984733468874314472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newAlphaTouchup2 (1)_2
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 225
+        width: 101
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7003a3156946bf7c0800000000000000
+      internalID: -4036522044236877817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newAlphaTouchup2 (1)_3
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 224
+        width: 100
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebd1f6105cfb5fd20800000000000000
+      internalID: 3311763953854389694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newAlphaTouchup2 (1)_4
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 225
+        width: 74
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72bab1dfd00b2a5f0800000000000000
+      internalID: -746841014062568665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newAlphaTouchup2 (1)_5
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 227
+        width: 81
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb28eff014146e330800000000000000
+      internalID: 3739748288274793147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newAlphaTouchup2 (1)_6
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 119
+        width: 82
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd1afff01dcc34e0800000000000000
+      internalID: -2000498661561590308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newAlphaTouchup2 (1)_7
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 123
+        width: 120
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 136e227e7a623ac20800000000000000
+      internalID: 3216457061451884081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newAlphaTouchup2 (1)_8
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 30
+        width: 106
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47ff0d5e2fd0a15f0800000000000000
+      internalID: -785299848133804172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newAlphaTouchup2 (1)_9
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 28
+        width: 83
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0709b1071835dbe0800000000000000
+      internalID: -1453193633292810486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newAlphaTouchup2 (1)_10
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 25
+        width: 96
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a3c44b6b4a620c00800000000000000
+      internalID: 865370950563316645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newAlphaTouchup2 (1)_11
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 28
+        width: 164
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d939e0c082e8c770800000000000000
+      internalID: 8631397728475757013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newAlphaTouchup2 (1)_12
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 27
+        width: 95
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c51e1f289ca25e10800000000000000
+      internalID: 2184998538853619137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newAlphaTouchup2 (1)_13
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 26
+        width: 97
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d72a379144ec00a0800000000000000
+      internalID: -6913900357559375912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
