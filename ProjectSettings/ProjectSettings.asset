@@ -41,17 +41,17 @@ PlayerSettings:
     height: 1
   m_SplashScreenLogos:
   - logo: {fileID: 21300000, guid: 6e3e428adbde1c649be90b64b03d713d, type: 3}
-    duration: 4
+    duration: 2
   - logo: {fileID: 21300000, guid: 68c07ef9cb1bcf743a97a78912b6b6f6, type: 3}
-    duration: 4
+    duration: 2
   - logo: {fileID: 21300000, guid: b91cdb8fe60a508468c87f944b064465, type: 3}
-    duration: 4
+    duration: 2
   - logo: {fileID: 21300000, guid: 3192ab2f470ac3b47a5a476f819e1d40, type: 3}
-    duration: 4
+    duration: 2
   - logo: {fileID: 21300000, guid: 5f92f59957042db41a1b29b26823ef4f, type: 3}
-    duration: 4
+    duration: 2
   - logo: {fileID: 21300000, guid: de013b723ee69784684f2a4e7101674d, type: 3}
-    duration: 5
+    duration: 2
   m_VirtualRealitySplashScreen: {fileID: 2800000, guid: cc42a2e0e21754ca0bf777bc147d903c, type: 3}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1920
@@ -88,7 +88,7 @@ PlayerSettings:
   androidFullscreenMode: 1
   defaultIsNativeResolution: 0
   macRetinaSupport: 1
-  runInBackground: 0
+  runInBackground: 1
   captureSingleScreen: 0
   muteOtherAudioSources: 0
   Prepare IOS For Recording: 0
